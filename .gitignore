@@ -1,8 +1,61 @@
-node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
+.DS_Store
+.idea
+*.log
+*.swp
+node_modules/
+dist/
+
+# Borrowed from -- https://stackoverflow.com/a/57749909
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+logs/
+*.code-workspace
+*.scss.json
+/scripts/tmux/dev-proxy
+cbp-proxy
+pkgs/*/build/
+
+apps/*/build/
+public
+report.*.json
+.eslintcache
+
+installations.json
+packages/
+storybook-static
+deployment/
+
+# Used by the gh-pages package to generate a temporary folder to push to the
+# gh-pages branch
+tmp-repo/
+
+# Prevent ignoring css and scss files in pkgs/design-tokens/build
+!pkgs/design-tokens/build
+pkgs/design-tokens/build/*
+!pkgs/design-tokens/build/*.css
+!pkgs/design-tokens/build/*.scss
+
+# yarn 3 when not using Zero-Installs
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Docker temp build
+docker-temp
+docker-*-temp
+
+# Generated manually from pkgs/pr-explorer (yarn changelog)
+changelog.md
+changelog.html
+
+
 .env
-dist

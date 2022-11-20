@@ -1,16 +1,8 @@
 <template>
-  <div class="">
-    <NuxtPage />
+  <div>
+    <NuxtLayout>
+      <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#dab7ff 0%,#0047e1 100%" />
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
-<script>
-export default {
-  components: {},
-
-  watch: {
-    $route() {
-      location.reload();
-    },
-  },
-};
-</script>
