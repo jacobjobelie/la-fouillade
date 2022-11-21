@@ -37,6 +37,7 @@ export default defineConfig({
         color: 'black',
       },
     },
+    'txt-2': ' dark:text-gray-200 text-gray-700',
     'bg-success': ' dark:bg-green-400 bg-green-400 hover:bg-green-100',
     'btn-green': 'text-white bg-green-500 hover:bg-green-700',
   },

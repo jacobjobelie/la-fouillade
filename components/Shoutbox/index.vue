@@ -3,8 +3,9 @@
     <div class="">
       <ul class="pl-0">
         <li class="flex gap-2" v-for="(s, idx) in shouts" :key="s.id">
-          <span v-if="!!s.name">{{ s.name }}</span>
           <span>{{ s.data.text }}</span>
+          <span v-if="!!s.name">--</span>
+          <span class="italic txt-2" v-if="!!s.name">{{ s.name }}</span>
         </li>
       </ul>
     </div>
