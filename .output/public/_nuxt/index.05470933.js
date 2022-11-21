@@ -1,0 +1,1 @@
+import e from"./index.53e1cb7e.js";import{a as o,o as c,f as s,k as _,j as n}from"./entry.e6c3838a.js";/* empty css                                              */const a={},r={class:"h-12 px-8"},m={class:"h-full text-gray-400 text-left"};function f(p,d){const t=e;return c(),s("div",r,[_("div",m,[n(t,{sm:"",b:""})])])}const u=o(a,[["render",f]]);export{u as default};

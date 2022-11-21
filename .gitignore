@@ -20,7 +20,6 @@ cbp-proxy
 pkgs/*/build/
 
 apps/*/build/
-public
 report.*.json
 .eslintcache
 
