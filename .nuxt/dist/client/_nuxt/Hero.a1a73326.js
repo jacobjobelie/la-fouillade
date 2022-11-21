@@ -1,1 +1,0 @@
-import e from"./index.2572216d.js";import{a as r,o as n,c,w as s,r as _}from"./entry.764ef635.js";/* empty css                                              */const a={};function f(o,m){const t=e;return n(),c(t,{hero:""},{default:s(()=>[_(o.$slots,"default")]),_:3})}const i=r(a,[["render",f]]);export{i as default};

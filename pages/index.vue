@@ -1,7 +1,11 @@
 <template>
   <div class="h-full mx-auto">
-    <div class="w-full h-full grid items-center place-items-center">
+    <div class="relative w-full h-full grid items-center place-items-center">
       <Text h1>{{ welcom }}</Text>
+      <div
+        class="absolute top-0 left-0 h-full w-full opacity-30 pointer-events-none"
+        ref="mapEl"
+      ></div>
     </div>
   </div>
 </template>
@@ -9,8 +13,16 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
 import { ref } from 'vue'
+import { createGif } from '../ts/gif'
+import { createMap } from '../ts/ol'
 
 const welcom = ref('Destination: La Fouillade - July 1-8 2023')
+const mapEl = ref<HTMLDivElement>()
+const cEl = ref<HTMLDivElement>()
+
+onMounted(() => {
+  createMap(mapEl.value!)
+})
 
 const welcomList = [
   'Hello!👋',

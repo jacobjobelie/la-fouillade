@@ -1,3 +1,5 @@
+import { viteCommonjs, esbuildCommonjs } from '@originjs/vite-plugin-commonjs'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/supabase',
@@ -23,14 +25,29 @@ export default defineNuxtConfig({
     '@nuxt-hero-icons/outline/nuxt',
     '@nuxt-hero-icons/solid/nuxt',
   ],
+
   // custom tailwindcss path
   tailwindcss: {
     // cssPath: "~/assets/main.css",
+  },
+  vite: {
+    plugins: [viteCommonjs()],
+    optimizeDeps: {
+      exclude: ['gifler'],
+      include: ['gifler'],
+      //     exclude:['gifler', '@amcharts/amcharts5-geodata'],
+      // include: ['@amcharts/amcharts5-geodata > polylabel']
+    },
+    esbuildOptions: {
+      plugins: [esbuildCommonjs(['gifler'])],
+    },
   },
   // server config variable
 
   // register nitro plugin
 
   /// transpile  afew packages
-  build: {},
+  build: {
+    transpile: ['gifler'],
+  },
 })

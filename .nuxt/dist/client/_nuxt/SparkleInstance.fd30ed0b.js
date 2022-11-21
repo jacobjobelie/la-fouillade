@@ -1,1 +1,0 @@
-import"./SparkleInstance.vue_vue_type_script_setup_true_lang.500212ed.js";import{_ as t}from"./SparkleInstance.vue_vue_type_script_setup_true_lang.500212ed.js";import"./entry.764ef635.js";export{t as default};
