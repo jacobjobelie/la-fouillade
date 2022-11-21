@@ -1,8 +1,12 @@
 <template>
   <div class="h-full mx-auto p-4">
     <div class="relative w-full h-full grid items-center place-items-center">
-      <div class="w-full h-full grid gap-2 grid-rows-[auto,1fr]">
+      <div class="w-full h-full grid gap-2 grid-rows-[auto,auto,1fr]">
         <Text h1>{{ welcom }}</Text>
+        <div class="w-full h-full">
+          <h2>sticky notes</h2>
+          <Shoutbox />
+        </div>
         <div class="relative w-full h-full grid items-center place-items-center">
           <div class="absolute top-0 left-0 h-full w-full" ref="mapEl"></div>
         </div>
