@@ -35,6 +35,8 @@
     "@nuxt-hero-icons/solid": "^1.0.1",
     "@pinia/nuxt": "^0.4.2",
     "@vee-validate/rules": "^4.6.7",
+    "gifler": "^0.1.0",
+    "ol": "^7.1.0",
     "pinia": "^2.0.22",
     "vee-validate": "^4.6.7"
   },

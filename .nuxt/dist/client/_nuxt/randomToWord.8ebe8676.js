@@ -1,0 +1,1 @@
+const r="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*",c=n=>{let e="";const l=r.length;for(let t=0;t<n;t++)e+=r.charAt(Math.floor(Math.random()*l));return e},h=(n,e,l=60)=>{let t=0,a;e.length<5?a=5:a=e.length;const s=setInterval(()=>{n.value=e.slice(0,t)+c(e.length-t+0),t++,t===a&&(clearInterval(s),n.value=e)},l)};export{h as r};

@@ -8,7 +8,6 @@
       viewBox="0 0 72.000000 60.361644"
       preserveAspectRatio="xMidYMid meet"
     >
-      <metadata>Created by potrace 1.16, written by Peter Selinger 2001-2019</metadata>
       <g
         transform="translate(0.000000,60.361644) scale(0.002466,-0.002466)"
         :fill="$colorMode.preference === 'dark' ? '#fff' : '#222'"
@@ -4606,7 +4605,5 @@ M15630 232 c0 -5 9 -17 20 -27 11 -10 20 -25 20 -34 0 -9 9 -29 20 -46 19 -29
 </template>
 
 <script setup lang="ts">
-type sparkleProps = {}
-
-const props = defineProps<sparkleProps>()
+const props = defineProps()
 </script>

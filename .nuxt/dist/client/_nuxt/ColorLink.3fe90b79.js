@@ -1,0 +1,1 @@
+import"./ColorLink.vue_vue_type_script_setup_true_lang.abf622e3.js";import{_ as i}from"./ColorLink.vue_vue_type_script_setup_true_lang.abf622e3.js";/* empty css                                                             */import"./entry.764ef635.js";export{i as default};

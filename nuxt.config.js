@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
   ],
+  target: 'static',
   colorMode: {
     preference: 'system',
     fallback: 'light',
