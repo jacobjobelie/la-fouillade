@@ -1181,6 +1181,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/arcgis-rest-api@npm:*":
+  version: 10.4.5
+  resolution: "@types/arcgis-rest-api@npm:10.4.5"
+  checksum: 876840ee8d467a4d5ae31d4ea79cdd14b469b5e37546065e8dab12ffcf72510215442256fa8573920253a17c927f92e2dafc1a42e482e69ce7842fb88a68dee0
+  languageName: node
+  linkType: hard
+
 "@types/debug@npm:^4.0.0":
   version: 4.1.7
   resolution: "@types/debug@npm:4.1.7"
@@ -1194,6 +1201,13 @@ __metadata:
   version: 1.0.0
   resolution: "@types/estree@npm:1.0.0"
   checksum: 910d97fb7092c6738d30a7430ae4786a38542023c6302b95d46f49420b797f21619cdde11fa92b338366268795884111c2eb10356e4bd2c8ad5b92941e9e6443
+  languageName: node
+  linkType: hard
+
+"@types/geojson@npm:*":
+  version: 7946.0.10
+  resolution: "@types/geojson@npm:7946.0.10"
+  checksum: 12c407c2dc93ecb26c08af533ee732f1506a9b29456616ba7ba1d525df96206c28ddf44a528f6a5415d7d22893e9d967420940a9c095ee5e539c1eba5fefc1f4
   languageName: node
   linkType: hard
 
@@ -1229,6 +1243,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ol@npm:^6.5.3":
+  version: 6.5.3
+  resolution: "@types/ol@npm:6.5.3"
+  dependencies:
+    "@types/arcgis-rest-api": "*"
+    "@types/geojson": "*"
+    "@types/rbush": "*"
+    "@types/topojson-specification": "*"
+  checksum: 7627fd4e0a00ec8aef41d47937cee499d9abd7cb7b9251fdfd5146cf3e1f735342699686c441fb0b49fc94b2e9d72ee2521d0bb3a6563cea4589324f34ecdf51
+  languageName: node
+  linkType: hard
+
 "@types/parse5@npm:^6.0.0":
   version: 6.0.3
   resolution: "@types/parse5@npm:6.0.3"
@@ -1243,10 +1269,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/rbush@npm:*":
+  version: 3.0.0
+  resolution: "@types/rbush@npm:3.0.0"
+  checksum: 050eb2af4d7cb59c5b3dddfb9af93e4abfcffb1766d82fdcd4d37e03cff374f7cf761eef3b8cd48f976416ee3dd7ee4991bde938698865ed0c660317f3a020c2
+  languageName: node
+  linkType: hard
+
 "@types/resolve@npm:1.20.2":
   version: 1.20.2
   resolution: "@types/resolve@npm:1.20.2"
   checksum: 61c2cad2499ffc8eab36e3b773945d337d848d3ac6b7b0a87c805ba814bc838ef2f262fc0f109bfd8d2e0898ff8bd80ad1025f9ff64f1f71d3d4294c9f14e5f6
+  languageName: node
+  linkType: hard
+
+"@types/topojson-specification@npm:*":
+  version: 1.0.2
+  resolution: "@types/topojson-specification@npm:1.0.2"
+  dependencies:
+    "@types/geojson": "*"
+  checksum: ad1a759cc9cb76d388140eaac160794d0ea33f8b4ba5b75bad4a48b6b0a28c72e031fca78d564871759eb6a8b4173a5e19baedb79f2c5b5eaa18c9b808248a89
   languageName: node
   linkType: hard
 
@@ -7523,6 +7565,7 @@ __metadata:
     "@nuxtjs/color-mode": ^3.1.8
     "@nuxtjs/supabase": ^0.2.2
     "@pinia/nuxt": ^0.4.2
+    "@types/ol": ^6.5.3
     "@vee-validate/rules": ^4.6.7
     "@vueuse/core": ^9.5.0
     "@vueuse/nuxt": ^9.5.0

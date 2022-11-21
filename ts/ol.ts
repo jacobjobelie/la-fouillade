@@ -35,12 +35,13 @@ export function createMap(target: HTMLDivElement) {
         source: new OSM(),
       }),
       vectorLayer,
-      rasterLayer,
     ],
     target,
     view: new View({
       projection: 'EPSG:4326',
       center: LONGCOL,
+      minZoom: 16,
+      maxZoom: 18,
       zoom: 17,
     }),
   })
@@ -60,6 +61,7 @@ export function createMap(target: HTMLDivElement) {
     new Style({
       image: new Icon({
         img: canvas,
+        offset: [-320, -179],
         imgSize: [640, 357],
         opacity: 0.8,
       }),

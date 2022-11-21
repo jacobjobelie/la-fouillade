@@ -6,6 +6,12 @@
     <div id="links" class="flex gap-4 px-3">
       <NavItemB
         icon="fa-feather-pointed"
+        text="Directions"
+        to="/article/directions"
+        :activated="routeActivated"
+      />
+      <NavItemB
+        icon="fa-feather-pointed"
         text="Findings"
         to="/article"
         :activated="routeActivated"
@@ -57,3 +63,9 @@ export default defineComponent({
   },
 })
 </script>
+
+<style global>
+.ol-control {
+  display: none;
+}
+</style>
