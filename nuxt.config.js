@@ -1,5 +1,3 @@
-import { viteCommonjs, esbuildCommonjs } from '@originjs/vite-plugin-commonjs'
-
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/supabase',
