@@ -31,23 +31,13 @@ export default defineNuxtConfig({
     // cssPath: "~/assets/main.css",
   },
   vite: {
-    plugins: [viteCommonjs()],
-    optimizeDeps: {
-      exclude: ['gifler'],
-      include: ['gifler'],
-      //     exclude:['gifler', '@amcharts/amcharts5-geodata'],
-      // include: ['@amcharts/amcharts5-geodata > polylabel']
-    },
-    esbuildOptions: {
-      plugins: [esbuildCommonjs(['gifler'])],
-    },
+    optimizeDeps: {},
+    esbuildOptions: {},
   },
   // server config variable
 
   // register nitro plugin
 
   /// transpile  afew packages
-  build: {
-    transpile: ['gifler'],
-  },
+  build: {},
 })

@@ -4,8 +4,8 @@
       <br />
       <Text hero>Components.</Text>
       <Text>
-        The DIY components used in this website,
-        inspired by <ColorLink :href="NextUILink">Next UI</ColorLink>.
+        The DIY components used in this website, inspired by
+        <ColorLink :href="NextUILink">Next UI</ColorLink>.
       </Text>
       <br />
     </div>
@@ -13,9 +13,7 @@
       <Text h3 title>
         <code>Text</code>
       </Text>
-      <Text p>
-        Rich text with well-defined typographic styles.
-      </Text>
+      <Text p> Rich text with well-defined typographic styles. </Text>
       <Text hero>This is a <em>hero</em> text.</Text>
       <Text h1>h1: This is a h1 text.</Text>
       <Text h2>h2: This is a h2 text.</Text>
@@ -28,8 +26,10 @@
     </section>
     <section>
       <Text h3 title><Code>ColorLink</Code></Text>
-      <Text>The links would be rendered by different color according to its
-        <Code>type</Code> attribute.</Text>
+      <Text
+        >The links would be rendered by different color according to its
+        <Code>type</Code> attribute.</Text
+      >
       <Text>
         <ColorLink type="primary">primary</ColorLink>
         <ColorLink type="secondary">secondary</ColorLink>
@@ -41,17 +41,16 @@
     <section>
       <Text h3><Code>Card</Code></Text>
       <Text>
-        The <code>Card</code> component has three parts: header, body, and
-        footer, which can be separately defined by <code>slot</code> tags.
+        The <code>Card</code> component has three parts: header, body, and footer, which can be
+        separately defined by <code>slot</code> tags.
       </Text>
       <Card class="p-1.5rem">
         <template #header><Text h4>Card header</Text></template>
         <template #body>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis fugit earum voluptas officia, quasi saepe et commodi,
-            dolores cumque quam fuga ullam, itaque ea dignissimos asperiores
-            adipisci ad eveniet repellendus
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugit earum
+            voluptas officia, quasi saepe et commodi, dolores cumque quam fuga ullam, itaque ea
+            dignissimos asperiores adipisci ad eveniet repellendus
           </Text>
         </template>
         <template #footer>
@@ -61,35 +60,38 @@
       <br />
 
       <Text>
-        Cards' visual styles can be defined by <code>variant</code> attribute.
-        There are three variants: <code>shadow</code>(default),
-        <code>flat</code>, and <code>bordered</code>
+        Cards' visual styles can be defined by <code>variant</code> attribute. There are three
+        variants: <code>shadow</code>(default), <code>flat</code>, and <code>bordered</code>
       </Text>
       <div class="flex gap-2 <sm:flex-col">
         <Card class="p-1rem flex-1" variant="shadow">
-          <template #body><Text>This is a <code>shadow</code> card</Text></template>
+          <template #body
+            ><Text>This is a <code>shadow</code> card</Text></template
+          >
         </Card>
         <Card class="p-1rem flex-1" variant="flat">
-          <template #body><Text>This is a <code>flat</code> card</Text></template>
+          <template #body
+            ><Text>This is a <code>flat</code> card</Text></template
+          >
         </Card>
         <Card class="p-1rem flex-1" variant="bordered">
-          <template #body><Text>This is a <code>bordered</code> card</Text></template>
+          <template #body
+            ><Text>This is a <code>bordered</code> card</Text></template
+          >
         </Card>
       </div>
       <br />
 
       <Text>
-        If <code>isHoverable</code> attribute is enabled, the card will have
-        shadow effect while mouse is hovering over it.
+        If <code>isHoverable</code> attribute is enabled, the card will have shadow effect while
+        mouse is hovering over it.
       </Text>
       <Card class="p-1rem" variant="flat" isHoverable>
         <template #body><Text>Hover effect enabled</Text></template>
       </Card>
       <br />
 
-      <Text>
-        Additionally, you can also design a fine looking card with image cover.
-      </Text>
+      <Text> Additionally, you can also design a fine looking card with image cover. </Text>
       <br />
       <div class="flex gap-4 <sm:flex-col">
         <Card class="min-h-300px flex-1 test" variant="flat">
@@ -104,7 +106,9 @@
             </div>
           </template>
           <template #footer>
-            <div class="p-1rem backdrop-filter backdrop-blur-md rounded-b-1rem border-t-gray-400 border-t-1">
+            <div
+              class="p-1rem backdrop-filter backdrop-blur-md rounded-b-1rem border-t-gray-400 border-t-1"
+            >
               <div class="flex justify-between items-center">
                 <div>
                   <Text sm class="text-gray-300">Travel App </Text>
@@ -130,7 +134,9 @@
             </div>
           </template>
           <template #footer>
-            <div class="p-1rem backdrop-filter backdrop-blur-md rounded-b-1rem border-t-gray-400 border-t-1">
+            <div
+              class="p-1rem backdrop-filter backdrop-blur-md rounded-b-1rem border-t-gray-400 border-t-1"
+            >
               <div class="flex justify-between items-center">
                 <div>
                   <Text sm class="text-gray-300">Travel App </Text>
@@ -155,35 +161,37 @@
     <section>
       <Text h3 code>Sparkle</Text>
       <Text>
-        This is <Sparkle>sparking text</Sparkle>. You can use it to wrap some
-        text or img elements. Also, it has some interesting effect, like:
-        <Sparkle rainbow> rainbow sparkles </Sparkle>. You can also choose
-        whatever color you like:
+        This is <Sparkle>sparking text</Sparkle>. You can use it to wrap some text or img elements.
+        Also, it has some interesting effect, like: <Sparkle rainbow> rainbow sparkles </Sparkle>.
+        You can also choose whatever color you like:
         <Sparkle color="lightseagreen"> lightseagreen sparkle.</Sparkle>
       </Text>
     </section>
     <section>
       <Text h3 code>Description</Text>
       <Text>
-        The <Code>Description</Code> component contains an image and it's
-        description. The corners of the image have been rounded. The image is
-        defined by <Code>src</Code> prop. The description could be defined as a
-        child components.
+        The <Code>Description</Code> component contains an image and it's description. The corners
+        of the image have been rounded. The image is defined by <Code>src</Code> prop. The
+        description could be defined as a child components.
       </Text>
       <Description></Description>
-      <Text>The image and text's order could be reversed when you pass
-        <Code>reverse</Code> props. Additionally, the width proportion of the
-        image and text area can be modified by given number to
-        <Code>textSize</Code> or <Code>imgSize</Code> props.
+      <Text
+        >The image and text's order could be reversed when you pass <Code>reverse</Code> props.
+        Additionally, the width proportion of the image and text area can be modified by given
+        number to <Code>textSize</Code> or <Code>imgSize</Code> props.
       </Text>
       <Description reverse src="/img/sample2.jpg" :textSize="3"></Description>
     </section>
 
     <section>
       <Text h3 code>ArticleTitle</Text>
-      <ArticleTitle title="Cyberpunk 2077 is now released" date="2077/10/13"
+      <ArticleTitle
+        title="Cyberpunk 2077 is now released"
+        date="2077/10/13"
         description="Cyberpunk 2077 is an open-world, action-adventure story set in Night City, a megalopolis obsessed with power, glamour and body modification"
-        cover="/img/cyberpunk.png" :tags="['Game', 'RPG', 'Cyberpunk', 'CDPR']" />
+        cover="/img/cyberpunk.png"
+        :tags="['Game', 'RPG', 'Cyberpunk', 'CDPR']"
+      />
     </section>
   </div>
 </template>
@@ -196,7 +204,7 @@ const NextUILink = 'https://nextui.org/docs/components/text'
 section {
   margin-bottom: 2rem;
 }
-
+/*
 .test {
   background-image: url(/img/iceberg.jpg);
   background-repeat: no-repeat;
@@ -209,5 +217,5 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+} */
 </style>

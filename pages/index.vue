@@ -2,10 +2,7 @@
   <div class="h-full mx-auto">
     <div class="relative w-full h-full grid items-center place-items-center">
       <Text h1>{{ welcom }}</Text>
-      <div
-        class="absolute top-0 left-0 h-full w-full opacity-30 pointer-events-none"
-        ref="mapEl"
-      ></div>
+      <div class="absolute top-0 left-0 h-full w-full" ref="mapEl"></div>
     </div>
   </div>
 </template>

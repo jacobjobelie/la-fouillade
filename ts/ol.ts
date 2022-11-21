@@ -66,7 +66,6 @@ export function createMap(target: HTMLDivElement) {
     }),
   )
   gif.on('frame', function (frame) {
-    console.log(frame.imageBitMap)
     ctx.clearRect(0, 0, frame.dims.width, frame.dims.height)
     if (frame.imageBitMap) {
       ctx.drawImage(frame.imageBitMap, 0, 0)

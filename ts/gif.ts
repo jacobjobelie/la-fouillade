@@ -13,7 +13,6 @@ export function createGif(canvas: HTMLCanvasElement) {
   })
   gif.on('frame', function (frame) {
     ctx!.clearRect(0, 0, frame.dims.width, frame.dims.height)
-    console.log(frame.imageBitMap)
     if (frame.imageBitMap) {
       ctx.drawImage(frame.imageBitMap, 0, 0)
     } else {
