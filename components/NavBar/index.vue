@@ -30,7 +30,7 @@ export default defineComponent({
     const routeActivated = computed(() => {
       const route = useRoute()
       const rootRoute = `/${route.path.split('/')[1]}`
-      return rootRoute
+      return route.path
     })
 
     useHead({

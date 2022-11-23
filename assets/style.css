@@ -31,6 +31,19 @@ p,li,ul {
   @apply <md: (text-base);
 }
 
+li{
+  a{
+    @apply  text-blue-400 underline-dotted underline-2 underline-blue-gray-200 underline-offset-2;
+  }
+}
+
+.dark{
+  li{
+    a{
+      @apply  text-blue-400 underline-dotted underline-2 underline-blue-gray-200 underline-offset-2;
+    }
+  }
+}
 
 
 ul {

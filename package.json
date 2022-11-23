@@ -17,7 +17,8 @@
     "@vueuse/nuxt": "^9.5.0",
     "nuxt": "3.0.0",
     "nuxt-windicss": "^2.5.5",
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.0",
+    "prettier-plugin-tailwind": "^2.2.12"
   },
   "dependencies": {
     "@fontsource/jetbrains-mono": "^4.5.10",
