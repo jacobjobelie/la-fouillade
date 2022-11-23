@@ -40,7 +40,7 @@ export function createMap(target: HTMLDivElement) {
     view: new View({
       projection: 'EPSG:4326',
       center: LONGCOL,
-      minZoom: 16,
+      minZoom: 14,
       maxZoom: 18,
       zoom: 17,
     }),
@@ -76,32 +76,6 @@ export function createMap(target: HTMLDivElement) {
     }
     map.render()
   })
-  // gifFrames({ url: gifUrl, frames: 0 }).then(function (frameData) {
-  //   console.log(frameData)
-  //   // frameData[0].getImage().pipe(fs.createWriteStream('firstframe.jpg'));
-  // })
-
-  // gif.frames(
-  //   document.createElement('canvas'),
-  //   function (ctx, frame) {
-  //     if (!iconFeature.getStyle()) {
-  //       iconFeature.setStyle(
-  //         new Style({
-  //           image: new Icon({
-  //             img: ctx.canvas,
-  //             imgSize: [frame.width, frame.height],
-  //             opacity: 0.8,
-  //           }),
-  //         }),
-  //       )
-  //     }
-  //     ctx.clearRect(0, 0, frame.width, frame.height)
-  //     ctx.drawImage(frame.buffer, frame.x, frame.y)
-  //     map.render()
-  //   },
-  //   true,
-  // )
-
   // change mouse cursor when over icon
   map.on('pointermove', function (e) {
     const pixel = map.getEventPixel(e.originalEvent)

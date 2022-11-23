@@ -8,6 +8,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #213547;
+  box-sizing: border-box
 }
 
 h2 {
@@ -25,10 +26,11 @@ h4 {
   @apply <sm: (text-lg);
 }
 
-p {
+p,li,ul {
   @apply text-lg my-2;
   @apply <md: (text-base);
 }
+
 
 
 ul {

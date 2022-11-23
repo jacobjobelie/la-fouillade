@@ -17,6 +17,14 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
   },
+  css: [
+    'assets/style.css',
+    '@fontsource/lato',
+    '@fontsource/jetbrains-mono',
+    '@fontsource/material-icons',
+    '@fontsource/material-icons-outlined',
+    '@fortawesome/fontawesome-svg-core/styles.css',
+  ],
   buildModules: [
     // ...
     // https://github.com/whardier/nuxt-hero-icons
