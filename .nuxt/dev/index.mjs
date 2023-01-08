@@ -1,56 +1,58 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join as join$1 } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/std-env/dist/index.mjs';
-import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, assertMethod, readBody, setCookie, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/vue/server-renderer/index.mjs';
-import { parseURL, withQuery, joinURL, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/ufo/dist/index.mjs';
-import destr from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/destr/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/scule/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/radix3/dist/index.mjs';
-import { visit } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unist-util-visit/index.js';
-import { createUtils } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/@windicss/plugin-utils/dist/index.mjs';
-import { extname, join } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unified/index.js';
-import { toString } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/mdast-util-to-string/index.js';
-import { preprocess } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/micromark/dev/lib/preprocess.js';
-import { postprocess } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/micromark/dev/lib/postprocess.js';
-import { stringifyPosition } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/micromark-util-resolve-all/index.js';
-import remarkEmoji from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/rehype-raw/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/remark-mdc/dist/index.mjs';
-import remarkParse from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/remark-rehype/index.js';
-import { all } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/detab/index.js';
-import { u } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unist-builder/index.js';
-import { encode } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/mdurl/index.js';
-import slugify from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/slugify/slugify.js';
-import { position } from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/unist-util-position/index.js';
-import htmlTags from 'file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/html-tags/index.js';
+import { provider, isWindows } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/std-env/dist/index.mjs';
+import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, assertMethod, readBody, setCookie, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withQuery, joinURL, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ufo/dist/index.mjs';
+import destr from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/destr/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/dist/drivers/fs.mjs';
+import defu from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/radix3/dist/index.mjs';
+import { visit } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-visit/index.js';
+import { createUtils } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@windicss/plugin-utils/dist/index.mjs';
+import { extname, join } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unified/index.js';
+import { toString } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/mdast-util-to-string/index.js';
+import { preprocess } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark/dev/lib/preprocess.js';
+import { postprocess } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark/dev/lib/postprocess.js';
+import { stringifyPosition } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark-util-resolve-all/index.js';
+import remarkEmoji from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-raw/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-mdc/dist/index.mjs';
+import remarkParse from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-rehype/index.js';
+import { all } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/detab/index.js';
+import { u } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-builder/index.js';
+import { encode } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/mdurl/index.js';
+import slugify from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/slugify/slugify.js';
+import { position } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-position/index.js';
+import htmlTags from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/html-tags/index.js';
+import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/shiki-es/dist/shiki.node.mjs';
+import consola from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unenv/runtime/npm/consola.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{"supabase":{"url":"https://cdrtkjrdczjukawybxwb.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkcnRranJkY3pqdWthd3lieHdiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njg5NzQ1NjUsImV4cCI6MTk4NDU1MDU2NX0.9_pC21cI5sHDVfYfRlLEtg1yLWlWiW9grZIwNLZPRqM","client":{},"redirect":false,"cookies":{"name":"sb","lifetime":28800,"domain":"","path":"/","sameSite":"lax"}},"content":{"clientDB":{"isSPA":false},"navigation":{"fields":[]},"base":"_content","tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"anchorLinks":{"depth":4,"exclude":[1]}}},"supabase":{},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"_content","watch":{"ws":{"port":4000,"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routeRules":{"/__nuxt_error":{"cache":false}},"envPrefix":"NUXT_"},"public":{"supabase":{"url":"https://cdrtkjrdczjukawybxwb.supabase.co","key":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNkcnRranJkY3pqdWthd3lieHdiIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Njg5NzQ1NjUsImV4cCI6MTk4NDU1MDU2NX0.9_pC21cI5sHDVfYfRlLEtg1yLWlWiW9grZIwNLZPRqM","client":{},"redirect":false,"cookies":{"name":"sb","lifetime":28800,"domain":"","path":"/","sameSite":"lax"}},"content":{"locales":[],"experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"anchorLinks":{"depth":4,"exclude":[1]}}},"supabase":{},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -107,7 +109,7 @@ const timingMiddleware = eventHandler((event) => {
   }.bind(event.res);
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/selie/Documents/Hacks/NuxtSupabaseApp/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/selie/Documents/Hacks/la-fouillade/server/assets"}];
 
 const assets = createStorage();
 
@@ -121,12 +123,12 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/selie/Documents/Hacks/NuxtSupabaseApp/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/NuxtSupabaseApp/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/NuxtSupabaseApp","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/NuxtSupabaseApp/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/NuxtSupabaseApp/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/NuxtSupabaseApp/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -401,17 +403,25 @@ const cachedEventHandler = defineCachedEventHandler;
 
 const config$1 = {"darkMode":"class","theme":{"extend":{"boxShadow":{"nsm":"0 2px 8px 2px rgb(104 112 118 / 0.07), 0 2px 4px -1px rgb(104 112 118 / 0.04)","nmd":"0 12px 20px 6px rgb(104 112 118 / 0.08)","nlg":"0 12px 34px 6px rgb(104 112 118 / 0.18)","nxl":"0 25px 65px 0px rgb(104 112 118 / 0.35)"}}},"shortcuts":{"flex-center":"flex justify-center items-center","flex-between":"flex justify-between items-center","btn":{"color":"white","@apply":"py-2 px-4 font-semibold rounded-lg","&:hover":{"@apply":"bg-green-700","color":"black"}},"txt-2":" dark:text-gray-200 text-gray-700","bg-success":" dark:bg-green-400 bg-green-400 hover:bg-green-100","btn-green":"text-white bg-green-500 hover:bg-green-700"},"plugins":[],"css":["assets/style.css","@fontsource/lato","@fontsource/jetbrains-mono","@fontsource/material-icons","@fontsource/material-icons-outlined","@fortawesome/fontawesome-svg-core/styles.css"],"content":{"highlight":{"theme":{"default":"github-dark"},"preload":["c","cpp","java","shell","python","js","ts","css","html"]}}};
 
-const _3z9h6doUa3 = async (nitroApp) => {
+const _CNTTPx5jdr = async (nitroApp) => {
   const utils = createUtils({
     enablePreflight: false,
     scan: false,
     preflight: false,
     config: config$1,
   }, { name: 'nuxt-windicss-nitro' });
-  nitroApp.hooks.hook('content:file:afterParse', async (file) => {
+  nitroApp.hooks.hook('content:file:afterParse', async (content) => {
+    if (!content.body || !Array.isArray(content.body.children))
+      return
+
+    const ext = extname(content.id);
+    // only markdown supported
+    if (!ext.endsWith('md'))
+      return
+
     await utils.ensureInit();
 
-    visit(file.body, n => !!n?.props?.class, (node) => {
+    visit(content.body, n => !!n?.props?.class, (node) => {
       utils.addClasses([
         // @todo attributify support
         ...node.props.class.split(' '),
@@ -422,7 +432,7 @@ const _3z9h6doUa3 = async (nitroApp) => {
       return
     const css = await utils.generateCSS();
     // add to the end of the file
-    file.body.children.push({
+    content.body.children.push({
       type: 'element',
       tag: 'style',
       props: {
@@ -432,17 +442,17 @@ const _3z9h6doUa3 = async (nitroApp) => {
   });
 };
 
-const script = "const w=window,de=document.documentElement,knownColorSchemes=[\"dark\",\"light\"],preference=window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let value=preference===\"system\"?getColorScheme():preference;const forcedColorMode=de.getAttribute(\"data-color-mode-forced\");forcedColorMode&&(value=forcedColorMode),addColorScheme(value),w[\"__NUXT_COLOR_MODE__\"]={preference,value,getColorScheme,addColorScheme,removeColorScheme};function addColorScheme(e){const o=\"\"+e+\"\",t=\"\";de.classList?de.classList.add(o):de.className+=\" \"+o,t&&de.setAttribute(\"data-\"+t,e)}function removeColorScheme(e){const o=\"\"+e+\"\",t=\"\";de.classList?de.classList.remove(o):de.className=de.className.replace(new RegExp(o,\"g\"),\"\"),t&&de.removeAttribute(\"data-\"+t)}function prefersColorScheme(e){return w.matchMedia(\"(prefers-color-scheme\"+e+\")\")}function getColorScheme(){if(w.matchMedia&&prefersColorScheme(\"\").media!==\"not all\"){for(const e of knownColorSchemes)if(prefersColorScheme(\":\"+e).matches)return e}return\"light\"}\n";
+const script = "\"use strict\";const w=window,de=document.documentElement,knownColorSchemes=[\"dark\",\"light\"],preference=window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let value=preference===\"system\"?getColorScheme():preference;const forcedColorMode=de.getAttribute(\"data-color-mode-forced\");forcedColorMode&&(value=forcedColorMode),addColorScheme(value),w[\"__NUXT_COLOR_MODE__\"]={preference,value,getColorScheme,addColorScheme,removeColorScheme};function addColorScheme(e){const o=\"\"+e+\"\",t=\"\";de.classList?de.classList.add(o):de.className+=\" \"+o,t&&de.setAttribute(\"data-\"+t,e)}function removeColorScheme(e){const o=\"\"+e+\"\",t=\"\";de.classList?de.classList.remove(o):de.className=de.className.replace(new RegExp(o,\"g\"),\"\"),t&&de.removeAttribute(\"data-\"+t)}function prefersColorScheme(e){return w.matchMedia(\"(prefers-color-scheme\"+e+\")\")}function getColorScheme(){if(w.matchMedia&&prefersColorScheme(\"\").media!==\"not all\"){for(const e of knownColorSchemes)if(prefersColorScheme(\":\"+e).matches)return e}return\"light\"}\n";
 
-const _ONgTV0lurp = (function(nitro) {
+const _m6JzmhzKUD = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _3z9h6doUa3,
-_ONgTV0lurp
+  _CNTTPx5jdr,
+_m6JzmhzKUD
 ];
 
 function hasReqHeader(event, name, includes) {
@@ -507,7 +517,7 @@ const errorHandler = (async function errorhandler(error, event) {
     redirect: "manual"
   }).catch(() => null) : null;
   if (!res) {
-    const { template } = await import('file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
+    const { template } = await import('file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@nuxt/ui-templates/dist/templates/error-dev.mjs') ;
     {
       errorObject.description = errorObject.message;
     }
@@ -528,7 +538,7 @@ const errorHandler = (async function errorhandler(error, event) {
 });
 
 const config = useRuntimeConfig().public;
-const _7F4Wwf = defineEventHandler(async (event) => {
+const _ZCe39a = defineEventHandler(async (event) => {
   assertMethod(event, "POST");
   const body = await readBody(event);
   const cookieOptions = config.supabase.cookies;
@@ -778,6 +788,15 @@ function createPipelineFetcher(getContentsList) {
 
 const defineTransformer = (transformer) => {
   return transformer;
+};
+const createSingleton = (fn) => {
+  let instance;
+  return (...args) => {
+    if (!instance) {
+      instance = fn(...args);
+    }
+    return instance;
+  };
 };
 
 function createTokenizer(parser, initialize, from) {
@@ -1854,6 +1873,9 @@ function compiler(_options) {
     if (Array.isArray(node)) {
       return node.map(parseAsJSON).filter(Boolean);
     }
+    if (node.tagName?.startsWith("h") && node.properties.id) {
+      node.properties.id = node.properties.id.replace(/-+/g, "-").replace(/-$/, "").replace(/^-/, "");
+    }
     if (node.type === "element") {
       if (node.tagName === "li") {
         let hasPreviousParagraph = false;
@@ -2100,10 +2122,7 @@ async function importPlugins(plugins = {}) {
   for (const [name, plugin] of Object.entries(plugins)) {
     if (plugin) {
       resolvedPlugins[name] = {
-        instance: plugin.instance || await import(
-          /* @vite-ignore */
-          name
-        ).then((m) => m.default || m),
+        instance: plugin.instance || await import(name).then((m) => m.default || m),
         ...plugin
       };
     } else {
@@ -2133,6 +2152,847 @@ ${content}
   }
 });
 
+var information_for_contributors = [
+	"This file has been converted from https://github.com/docusgen/vscode-extension/blob/main/syntaxes/mdc.tmLanguage.json",
+	"If you want to provide a fix or improvement, please create a pull request against the original repository.",
+	"Once accepted there, we are happy to receive an update request."
+];
+var version = "https://github.com/docusgen/vscode-extension/blob/1303abd16342880a42a4d143a660da049c79ea6c/syntaxes/mdc.tmLanguage.json";
+var name = "markdown";
+var injectionSelector = "L:text.html.markdown";
+var scopeName = "text.markdown.mdc";
+var patterns = [
+	{
+		include: "text.html.markdown#frontMatter"
+	},
+	{
+		include: "#component_block"
+	},
+	{
+		include: "#block"
+	}
+];
+var repository = {
+	block: {
+		comment: "Same as `text.html.markdown#block`, but without `raw_block`",
+		patterns: [
+			{
+				include: "#component_block"
+			},
+			{
+				include: "text.html.markdown#separator"
+			},
+			{
+				include: "#heading"
+			},
+			{
+				include: "#blockquote"
+			},
+			{
+				include: "#lists"
+			},
+			{
+				include: "#paragraph"
+			},
+			{
+				include: "text.html.markdown#fenced_code_block"
+			},
+			{
+				include: "text.html.markdown#link-def"
+			},
+			{
+				include: "text.html.markdown#html"
+			}
+		]
+	},
+	inline: {
+		patterns: [
+			{
+				include: "#component_inline"
+			},
+			{
+				include: "#span"
+			},
+			{
+				include: "#markdown_attributes"
+			}
+		]
+	},
+	markdown_attributes: {
+		match: "(?x)([^ ])(               # attributes\n    ({)\n      ([^{]*)\n    (})\n  )",
+		name: "markup.component.attribute",
+		captures: {
+			"4": {
+				patterns: [
+					{
+						include: "#attribute"
+					}
+				]
+			}
+		}
+	},
+	span: {
+		match: "(?x)\n  (\\[)           # Open\n    ([^]]*)\n  (\\])\n  (               # attributes\n    ({)\n      ([^{]*)\n    (})\n  )?",
+		name: "markup.component.span",
+		captures: {
+			"2": {
+				name: "string.other.link.description.title.markdown"
+			},
+			"4": {
+				patterns: [
+					{
+						include: "#attributes"
+					}
+				]
+			}
+		}
+	},
+	attributes: {
+		match: "(?x)(               # attributes\n    ({)\n      ([^{]*)\n    (})\n  )",
+		name: "markup.attributes",
+		captures: {
+			"3": {
+				patterns: [
+					{
+						include: "#attribute"
+					}
+				]
+			}
+		}
+	},
+	component_inline: {
+		match: "(?x)\n  (^|\\G|\\s+)\n  (:)           # component colon\n  (?i:             # component name\n    (\\w[\\w\\d-]*)\n  )\n  (\n      ({[^}]*})        # attributes\n      (\\[[^\\]]*\\]?) # slot\n      # reverse order\n    | (\\[[^\\]]*\\])  # slot\n      ({[^}]*})?       # attributes\n  )?",
+		name: "markup.component.inline",
+		captures: {
+			"2": {
+				name: "punctuation.definition.tag.start.component"
+			},
+			"3": {
+				name: "entity.name.tag.component"
+			},
+			"5": {
+				patterns: [
+					{
+						include: "#attributes"
+					}
+				]
+			},
+			"6": {
+				patterns: [
+					{
+						include: "#span"
+					}
+				]
+			},
+			"7": {
+				patterns: [
+					{
+						include: "#span"
+					}
+				]
+			},
+			"8": {
+				patterns: [
+					{
+						include: "#attributes"
+					}
+				]
+			}
+		}
+	},
+	component_block: {
+		begin: "(?x)\n  (^|\\G)(\\s*)\n  (:{2,})     # component colons\n  (?i:\n    (\\w[\\w\\d-]+)   # component name\n    (                 # folowing spaces or attributes\n        \\s*\n      | {([^{]*)}\n    )\n    $\n  )",
+		name: "markup.component.block",
+		end: "(^|\\G)(\\2)(\\3)\\s*$",
+		beginCaptures: {
+			"4": {
+				name: "entity.name.tag.component"
+			},
+			"5": {
+				patterns: [
+					{
+						include: "#attribute"
+					}
+				]
+			}
+		},
+		patterns: [
+			{
+				include: "#content"
+			}
+		]
+	},
+	content: {
+		begin: "(^|\\G)(\\s*)(.*)",
+		"while": "(^|\\G)(?!\\s*([:]{2,})\\s*$)",
+		contentName: "meta.embedded.block.component",
+		patterns: [
+			{
+				begin: "(^|\\G)(\\s*)(-{3})(\\s*)$",
+				end: "(^|\\G)(\\s*(-{3})(\\s*)$)",
+				patterns: [
+					{
+						include: "source.yaml"
+					}
+				]
+			},
+			{
+				match: "^(\\s*)(#[\\w\\-\\_]*)\\s*(<!--(.*)-->)?$",
+				captures: {
+					"2": {
+						name: "entity.other.attribute-name.html"
+					},
+					"3": {
+						name: "comment.block.html"
+					}
+				}
+			},
+			{
+				comment: "Block Repository created to disable 4-space raw block inside components",
+				include: "#block"
+			}
+		]
+	},
+	attribute: {
+		patterns: [
+			{
+				match: "(?x)\n  (\n    ([^=><\\s]*)  # attribute name\n    (             # attribute value\n        =[\"]([^\"]*)([\"])|[']([^']*)(['])\n      | =[^\\s'\"]*\n    )?\n    \\s*\n  )",
+				captures: {
+					"2": {
+						name: "entity.other.attribute-name.html"
+					},
+					"3": {
+						patterns: [
+							{
+								include: "#attribute-interior"
+							}
+						]
+					}
+				}
+			}
+		]
+	},
+	"attribute-interior": {
+		comment: "https://github.com/microsoft/vscode/blob/08d59c432609ae9306eb3889815977e93bb548de/extensions/html/syntaxes/html.tmLanguage.json#L376",
+		patterns: [
+			{
+				begin: "=",
+				beginCaptures: {
+					"0": {
+						name: "punctuation.separator.key-value.html"
+					}
+				},
+				end: "(?<=[^\\s=])(?!\\s*=)|(?=/?>)",
+				patterns: [
+					{
+						match: "([^\\s\"'=<>`/]|/(?!>))+",
+						name: "string.unquoted.html"
+					},
+					{
+						begin: "\"",
+						beginCaptures: {
+							"0": {
+								name: "punctuation.definition.string.begin.html"
+							}
+						},
+						end: "\"",
+						endCaptures: {
+							"0": {
+								name: "punctuation.definition.string.end.html"
+							}
+						},
+						name: "string.quoted.double.html",
+						patterns: [
+							{
+								include: "#entities"
+							}
+						]
+					},
+					{
+						begin: "'",
+						beginCaptures: {
+							"0": {
+								name: "punctuation.definition.string.begin.html"
+							}
+						},
+						end: "'",
+						endCaptures: {
+							"0": {
+								name: "punctuation.definition.string.end.html"
+							}
+						},
+						name: "string.quoted.single.html",
+						patterns: [
+							{
+								include: "#entities"
+							}
+						]
+					},
+					{
+						match: "=",
+						name: "invalid.illegal.unexpected-equals-sign.html"
+					}
+				]
+			}
+		]
+	},
+	entities: {
+		comment: "https://github.com/microsoft/vscode/blob/08d59c432609ae9306eb3889815977e93bb548de/extensions/html/syntaxes/html.tmLanguage.json#L532",
+		patterns: [
+			{
+				captures: {
+					"1": {
+						name: "punctuation.definition.entity.html"
+					},
+					"912": {
+						name: "punctuation.definition.entity.html"
+					}
+				},
+				comment: "Yes this is a bit ridiculous, there are quite a lot of these",
+				match: "(?x)\n\t\t\t\t\t\t(&)\t(?=[a-zA-Z])\n\t\t\t\t\t\t(\n\t\t\t\t\t\t\t(a(s(ymp(eq)?|cr|t)|n(d(slope|d|v|and)?|g(s(t|ph)|zarr|e|le|rt(vb(d)?)?|msd(a(h|c|d|e|f|a|g|b))?)?)|c(y|irc|d|ute|E)?|tilde|o(pf|gon)|uml|p(id|os|prox(eq)?|e|E|acir)?|elig|f(r)?|w(conint|int)|l(pha|e(ph|fsym))|acute|ring|grave|m(p|a(cr|lg))|breve)|A(s(sign|cr)|nd|MP|c(y|irc)|tilde|o(pf|gon)|uml|pplyFunction|fr|Elig|lpha|acute|ring|grave|macr|breve))\n\t\t\t\t\t\t  | (B(scr|cy|opf|umpeq|e(cause|ta|rnoullis)|fr|a(ckslash|r(v|wed))|reve)|b(s(cr|im(e)?|ol(hsub|b)?|emi)|n(ot|e(quiv)?)|c(y|ong)|ig(s(tar|qcup)|c(irc|up|ap)|triangle(down|up)|o(times|dot|plus)|uplus|vee|wedge)|o(t(tom)?|pf|wtie|x(h(d|u|D|U)?|times|H(d|u|D|U)?|d(R|l|r|L)|u(R|l|r|L)|plus|D(R|l|r|L)|v(R|h|H|l|r|L)?|U(R|l|r|L)|V(R|h|H|l|r|L)?|minus|box))|Not|dquo|u(ll(et)?|mp(e(q)?|E)?)|prime|e(caus(e)?|t(h|ween|a)|psi|rnou|mptyv)|karow|fr|l(ock|k(1(2|4)|34)|a(nk|ck(square|triangle(down|left|right)?|lozenge)))|a(ck(sim(eq)?|cong|prime|epsilon)|r(vee|wed(ge)?))|r(eve|vbar)|brk(tbrk)?))\n\t\t\t\t\t\t  | (c(s(cr|u(p(e)?|b(e)?))|h(cy|i|eck(mark)?)|ylcty|c(irc|ups(sm)?|edil|a(ps|ron))|tdot|ir(scir|c(eq|le(d(R|circ|S|dash|ast)|arrow(left|right)))?|e|fnint|E|mid)?|o(n(int|g(dot)?)|p(y(sr)?|f|rod)|lon(e(q)?)?|m(p(fn|le(xes|ment))?|ma(t)?))|dot|u(darr(l|r)|p(s|c(up|ap)|or|dot|brcap)?|e(sc|pr)|vee|wed|larr(p)?|r(vearrow(left|right)|ly(eq(succ|prec)|vee|wedge)|arr(m)?|ren))|e(nt(erdot)?|dil|mptyv)|fr|w(conint|int)|lubs(uit)?|a(cute|p(s|c(up|ap)|dot|and|brcup)?|r(on|et))|r(oss|arr))|C(scr|hi|c(irc|onint|edil|aron)|ircle(Minus|Times|Dot|Plus)|Hcy|o(n(tourIntegral|int|gruent)|unterClockwiseContourIntegral|p(f|roduct)|lon(e)?)|dot|up(Cap)?|OPY|e(nterDot|dilla)|fr|lo(seCurly(DoubleQuote|Quote)|ckwiseContourIntegral)|a(yleys|cute|p(italDifferentialD)?)|ross))\n\t\t\t\t\t\t  | (d(s(c(y|r)|trok|ol)|har(l|r)|c(y|aron)|t(dot|ri(f)?)|i(sin|e|v(ide(ontimes)?|onx)?|am(s|ond(suit)?)?|gamma)|Har|z(cy|igrarr)|o(t(square|plus|eq(dot)?|minus)?|ublebarwedge|pf|wn(harpoon(left|right)|downarrows|arrow)|llar)|d(otseq|a(rr|gger))?|u(har|arr)|jcy|e(lta|g|mptyv)|f(isht|r)|wangle|lc(orn|rop)|a(sh(v)?|leth|rr|gger)|r(c(orn|rop)|bkarow)|b(karow|lac)|Arr)|D(s(cr|trok)|c(y|aron)|Scy|i(fferentialD|a(critical(Grave|Tilde|Do(t|ubleAcute)|Acute)|mond))|o(t(Dot|Equal)?|uble(Right(Tee|Arrow)|ContourIntegral|Do(t|wnArrow)|Up(DownArrow|Arrow)|VerticalBar|L(ong(RightArrow|Left(RightArrow|Arrow))|eft(RightArrow|Tee|Arrow)))|pf|wn(Right(TeeVector|Vector(Bar)?)|Breve|Tee(Arrow)?|arrow|Left(RightVector|TeeVector|Vector(Bar)?)|Arrow(Bar|UpArrow)?))|Zcy|el(ta)?|D(otrahd)?|Jcy|fr|a(shv|rr|gger)))\n\t\t\t\t\t\t  | (e(s(cr|im|dot)|n(sp|g)|c(y|ir(c)?|olon|aron)|t(h|a)|o(pf|gon)|dot|u(ro|ml)|p(si(v|lon)?|lus|ar(sl)?)|e|D(ot|Dot)|q(s(im|lant(less|gtr))|c(irc|olon)|u(iv(DD)?|est|als)|vparsl)|f(Dot|r)|l(s(dot)?|inters|l)?|a(ster|cute)|r(Dot|arr)|g(s(dot)?|rave)?|x(cl|ist|p(onentiale|ectation))|m(sp(1(3|4))?|pty(set|v)?|acr))|E(s(cr|im)|c(y|irc|aron)|ta|o(pf|gon)|NG|dot|uml|TH|psilon|qu(ilibrium|al(Tilde)?)|fr|lement|acute|grave|x(ists|ponentialE)|m(pty(SmallSquare|VerySmallSquare)|acr)))\n\t\t\t\t\t\t  | (f(scr|nof|cy|ilig|o(pf|r(k(v)?|all))|jlig|partint|emale|f(ilig|l(ig|lig)|r)|l(tns|lig|at)|allingdotseq|r(own|a(sl|c(1(2|8|3|4|5|6)|78|2(3|5)|3(8|4|5)|45|5(8|6)))))|F(scr|cy|illed(SmallSquare|VerySmallSquare)|o(uriertrf|pf|rAll)|fr))\n\t\t\t\t\t\t  | (G(scr|c(y|irc|edil)|t|opf|dot|T|Jcy|fr|amma(d)?|reater(Greater|SlantEqual|Tilde|Equal(Less)?|FullEqual|Less)|g|breve)|g(s(cr|im(e|l)?)|n(sim|e(q(q)?)?|E|ap(prox)?)|c(y|irc)|t(c(c|ir)|dot|quest|lPar|r(sim|dot|eq(qless|less)|less|a(pprox|rr)))?|imel|opf|dot|jcy|e(s(cc|dot(o(l)?)?|l(es)?)?|q(slant|q)?|l)?|v(nE|ertneqq)|fr|E(l)?|l(j|E|a)?|a(cute|p|mma(d)?)|rave|g(g)?|breve))\n\t\t\t\t\t\t  | (h(s(cr|trok|lash)|y(phen|bull)|circ|o(ok(leftarrow|rightarrow)|pf|arr|rbar|mtht)|e(llip|arts(uit)?|rcon)|ks(earow|warow)|fr|a(irsp|lf|r(dcy|r(cir|w)?)|milt)|bar|Arr)|H(s(cr|trok)|circ|ilbertSpace|o(pf|rizontalLine)|ump(DownHump|Equal)|fr|a(cek|t)|ARDcy))\n\t\t\t\t\t\t  | (i(s(cr|in(s(v)?|dot|v|E)?)|n(care|t(cal|prod|e(rcal|gers)|larhk)?|odot|fin(tie)?)?|c(y|irc)?|t(ilde)?|i(nfin|i(nt|int)|ota)?|o(cy|ta|pf|gon)|u(kcy|ml)|jlig|prod|e(cy|xcl)|quest|f(f|r)|acute|grave|m(of|ped|a(cr|th|g(part|e|line))))|I(scr|n(t(e(rsection|gral))?|visible(Comma|Times))|c(y|irc)|tilde|o(ta|pf|gon)|dot|u(kcy|ml)|Ocy|Jlig|fr|Ecy|acute|grave|m(plies|a(cr|ginaryI))?))\n\t\t\t\t\t\t  | (j(s(cr|ercy)|c(y|irc)|opf|ukcy|fr|math)|J(s(cr|ercy)|c(y|irc)|opf|ukcy|fr))\n\t\t\t\t\t\t  | (k(scr|hcy|c(y|edil)|opf|jcy|fr|appa(v)?|green)|K(scr|c(y|edil)|Hcy|opf|Jcy|fr|appa))\n\t\t\t\t\t\t  | (l(s(h|cr|trok|im(e|g)?|q(uo(r)?|b)|aquo)|h(ar(d|u(l)?)|blk)|n(sim|e(q(q)?)?|E|ap(prox)?)|c(y|ub|e(il|dil)|aron)|Barr|t(hree|c(c|ir)|imes|dot|quest|larr|r(i(e|f)?|Par))?|Har|o(ng(left(arrow|rightarrow)|rightarrow|mapsto)|times|z(enge|f)?|oparrow(left|right)|p(f|lus|ar)|w(ast|bar)|a(ng|rr)|brk)|d(sh|ca|quo(r)?|r(dhar|ushar))|ur(dshar|uhar)|jcy|par(lt)?|e(s(s(sim|dot|eq(qgtr|gtr)|approx|gtr)|cc|dot(o(r)?)?|g(es)?)?|q(slant|q)?|ft(harpoon(down|up)|threetimes|leftarrows|arrow(tail)?|right(squigarrow|harpoons|arrow(s)?))|g)?|v(nE|ertneqq)|f(isht|loor|r)|E(g)?|l(hard|corner|tri|arr)?|a(ng(d|le)?|cute|t(e(s)?|ail)?|p|emptyv|quo|rr(sim|hk|tl|pl|fs|lp|b(fs)?)?|gran|mbda)|r(har(d)?|corner|tri|arr|m)|g(E)?|m(idot|oust(ache)?)|b(arr|r(k(sl(d|u)|e)|ac(e|k))|brk)|A(tail|arr|rr))|L(s(h|cr|trok)|c(y|edil|aron)|t|o(ng(RightArrow|left(arrow|rightarrow)|rightarrow|Left(RightArrow|Arrow))|pf|wer(RightArrow|LeftArrow))|T|e(ss(Greater|SlantEqual|Tilde|EqualGreater|FullEqual|Less)|ft(Right(Vector|Arrow)|Ceiling|T(ee(Vector|Arrow)?|riangle(Bar|Equal)?)|Do(ubleBracket|wn(TeeVector|Vector(Bar)?))|Up(TeeVector|DownVector|Vector(Bar)?)|Vector(Bar)?|arrow|rightarrow|Floor|A(ngleBracket|rrow(RightArrow|Bar)?)))|Jcy|fr|l(eftarrow)?|a(ng|cute|placetrf|rr|mbda)|midot))\n\t\t\t\t\t\t  | (M(scr|cy|inusPlus|opf|u|e(diumSpace|llintrf)|fr|ap)|m(s(cr|tpos)|ho|nplus|c(y|omma)|i(nus(d(u)?|b)?|cro|d(cir|dot|ast)?)|o(dels|pf)|dash|u(ltimap|map)?|p|easuredangle|DDot|fr|l(cp|dr)|a(cr|p(sto(down|up|left)?)?|l(t(ese)?|e)|rker)))\n\t\t\t\t\t\t  | (n(s(hort(parallel|mid)|c(cue|e|r)?|im(e(q)?)?|u(cc(eq)?|p(set(eq(q)?)?|e|E)?|b(set(eq(q)?)?|e|E)?)|par|qsu(pe|be)|mid)|Rightarrow|h(par|arr|Arr)|G(t(v)?|g)|c(y|ong(dot)?|up|edil|a(p|ron))|t(ilde|lg|riangle(left(eq)?|right(eq)?)|gl)|i(s(d)?|v)?|o(t(ni(v(c|a|b))?|in(dot|v(c|a|b)|E)?)?|pf)|dash|u(m(sp|ero)?)?|jcy|p(olint|ar(sl|t|allel)?|r(cue|e(c(eq)?)?)?)|e(s(im|ear)|dot|quiv|ar(hk|r(ow)?)|xist(s)?|Arr)?|v(sim|infin|Harr|dash|Dash|l(t(rie)?|e|Arr)|ap|r(trie|Arr)|g(t|e))|fr|w(near|ar(hk|r(ow)?)|Arr)|V(dash|Dash)|l(sim|t(ri(e)?)?|dr|e(s(s)?|q(slant|q)?|ft(arrow|rightarrow))?|E|arr|Arr)|a(ng|cute|tur(al(s)?)?|p(id|os|prox|E)?|bla)|r(tri(e)?|ightarrow|arr(c|w)?|Arr)|g(sim|t(r)?|e(s|q(slant|q)?)?|E)|mid|L(t(v)?|eft(arrow|rightarrow)|l)|b(sp|ump(e)?))|N(scr|c(y|edil|aron)|tilde|o(nBreakingSpace|Break|t(R(ightTriangle(Bar|Equal)?|everseElement)|Greater(Greater|SlantEqual|Tilde|Equal|FullEqual|Less)?|S(u(cceeds(SlantEqual|Tilde|Equal)?|perset(Equal)?|bset(Equal)?)|quareSu(perset(Equal)?|bset(Equal)?))|Hump(DownHump|Equal)|Nested(GreaterGreater|LessLess)|C(ongruent|upCap)|Tilde(Tilde|Equal|FullEqual)?|DoubleVerticalBar|Precedes(SlantEqual|Equal)?|E(qual(Tilde)?|lement|xists)|VerticalBar|Le(ss(Greater|SlantEqual|Tilde|Equal|Less)?|ftTriangle(Bar|Equal)?))?|pf)|u|e(sted(GreaterGreater|LessLess)|wLine|gative(MediumSpace|Thi(nSpace|ckSpace)|VeryThinSpace))|Jcy|fr|acute))\n\t\t\t\t\t\t  | (o(s(cr|ol|lash)|h(m|bar)|c(y|ir(c)?)|ti(lde|mes(as)?)|S|int|opf|d(sold|iv|ot|ash|blac)|uml|p(erp|lus|ar)|elig|vbar|f(cir|r)|l(c(ir|ross)|t|ine|arr)|a(st|cute)|r(slope|igof|or|d(er(of)?|f|m)?|v|arr)?|g(t|on|rave)|m(i(nus|cron|d)|ega|acr))|O(s(cr|lash)|c(y|irc)|ti(lde|mes)|opf|dblac|uml|penCurly(DoubleQuote|Quote)|ver(B(ar|rac(e|ket))|Parenthesis)|fr|Elig|acute|r|grave|m(icron|ega|acr)))\n\t\t\t\t\t\t  | (p(s(cr|i)|h(i(v)?|one|mmat)|cy|i(tchfork|v)?|o(intint|und|pf)|uncsp|er(cnt|tenk|iod|p|mil)|fr|l(us(sim|cir|two|d(o|u)|e|acir|mn|b)?|an(ck(h)?|kv))|ar(s(im|l)|t|a(llel)?)?|r(sim|n(sim|E|ap)|cue|ime(s)?|o(d|p(to)?|f(surf|line|alar))|urel|e(c(sim|n(sim|eqq|approx)|curlyeq|eq|approx)?)?|E|ap)?|m)|P(s(cr|i)|hi|cy|i|o(incareplane|pf)|fr|lusMinus|artialD|r(ime|o(duct|portion(al)?)|ecedes(SlantEqual|Tilde|Equal)?)?))\n\t\t\t\t\t\t  | (q(scr|int|opf|u(ot|est(eq)?|at(int|ernions))|prime|fr)|Q(scr|opf|UOT|fr))\n\t\t\t\t\t\t  | (R(s(h|cr)|ho|c(y|edil|aron)|Barr|ight(Ceiling|T(ee(Vector|Arrow)?|riangle(Bar|Equal)?)|Do(ubleBracket|wn(TeeVector|Vector(Bar)?))|Up(TeeVector|DownVector|Vector(Bar)?)|Vector(Bar)?|arrow|Floor|A(ngleBracket|rrow(Bar|LeftArrow)?))|o(undImplies|pf)|uleDelayed|e(verse(UpEquilibrium|E(quilibrium|lement)))?|fr|EG|a(ng|cute|rr(tl)?)|rightarrow)|r(s(h|cr|q(uo(r)?|b)|aquo)|h(o(v)?|ar(d|u(l)?))|nmid|c(y|ub|e(il|dil)|aron)|Barr|t(hree|imes|ri(e|f|ltri)?)|i(singdotseq|ng|ght(squigarrow|harpoon(down|up)|threetimes|left(harpoons|arrows)|arrow(tail)?|rightarrows))|Har|o(times|p(f|lus|ar)|a(ng|rr)|brk)|d(sh|ca|quo(r)?|ldhar)|uluhar|p(polint|ar(gt)?)|e(ct|al(s|ine|part)?|g)|f(isht|loor|r)|l(har|arr|m)|a(ng(d|e|le)?|c(ute|e)|t(io(nals)?|ail)|dic|emptyv|quo|rr(sim|hk|c|tl|pl|fs|w|lp|ap|b(fs)?)?)|rarr|x|moust(ache)?|b(arr|r(k(sl(d|u)|e)|ac(e|k))|brk)|A(tail|arr|rr)))\n\t\t\t\t\t\t  | (s(s(cr|tarf|etmn|mile)|h(y|c(hcy|y)|ort(parallel|mid)|arp)|c(sim|y|n(sim|E|ap)|cue|irc|polint|e(dil)?|E|a(p|ron))?|t(ar(f)?|r(ns|aight(phi|epsilon)))|i(gma(v|f)?|m(ne|dot|plus|e(q)?|l(E)?|rarr|g(E)?)?)|zlig|o(pf|ftcy|l(b(ar)?)?)|dot(e|b)?|u(ng|cc(sim|n(sim|eqq|approx)|curlyeq|eq|approx)?|p(s(im|u(p|b)|et(neq(q)?|eq(q)?)?)|hs(ol|ub)|1|n(e|E)|2|d(sub|ot)|3|plus|e(dot)?|E|larr|mult)?|m|b(s(im|u(p|b)|et(neq(q)?|eq(q)?)?)|n(e|E)|dot|plus|e(dot)?|E|rarr|mult)?)|pa(des(uit)?|r)|e(swar|ct|tm(n|inus)|ar(hk|r(ow)?)|xt|mi|Arr)|q(su(p(set(eq)?|e)?|b(set(eq)?|e)?)|c(up(s)?|ap(s)?)|u(f|ar(e|f))?)|fr(own)?|w(nwar|ar(hk|r(ow)?)|Arr)|larr|acute|rarr|m(t(e(s)?)?|i(d|le)|eparsl|a(shp|llsetminus))|bquo)|S(scr|hort(RightArrow|DownArrow|UpArrow|LeftArrow)|c(y|irc|edil|aron)?|tar|igma|H(cy|CHcy)|opf|u(c(hThat|ceeds(SlantEqual|Tilde|Equal)?)|p(set|erset(Equal)?)?|m|b(set(Equal)?)?)|OFTcy|q(uare(Su(perset(Equal)?|bset(Equal)?)|Intersection|Union)?|rt)|fr|acute|mallCircle))\n\t\t\t\t\t\t  | (t(s(hcy|c(y|r)|trok)|h(i(nsp|ck(sim|approx))|orn|e(ta(sym|v)?|re(4|fore))|k(sim|ap))|c(y|edil|aron)|i(nt|lde|mes(d|b(ar)?)?)|o(sa|p(cir|f(ork)?|bot)?|ea)|dot|prime|elrec|fr|w(ixt|ohead(leftarrow|rightarrow))|a(u|rget)|r(i(sb|time|dot|plus|e|angle(down|q|left(eq)?|right(eq)?)?|minus)|pezium|ade)|brk)|T(s(cr|trok)|RADE|h(i(nSpace|ckSpace)|e(ta|refore))|c(y|edil|aron)|S(cy|Hcy)|ilde(Tilde|Equal|FullEqual)?|HORN|opf|fr|a(u|b)|ripleDot))\n\t\t\t\t\t\t  | (u(scr|h(ar(l|r)|blk)|c(y|irc)|t(ilde|dot|ri(f)?)|Har|o(pf|gon)|d(har|arr|blac)|u(arr|ml)|p(si(h|lon)?|harpoon(left|right)|downarrow|uparrows|lus|arrow)|f(isht|r)|wangle|l(c(orn(er)?|rop)|tri)|a(cute|rr)|r(c(orn(er)?|rop)|tri|ing)|grave|m(l|acr)|br(cy|eve)|Arr)|U(scr|n(ion(Plus)?|der(B(ar|rac(e|ket))|Parenthesis))|c(y|irc)|tilde|o(pf|gon)|dblac|uml|p(si(lon)?|downarrow|Tee(Arrow)?|per(RightArrow|LeftArrow)|DownArrow|Equilibrium|arrow|Arrow(Bar|DownArrow)?)|fr|a(cute|rr(ocir)?)|ring|grave|macr|br(cy|eve)))\n\t\t\t\t\t\t  | (v(s(cr|u(pn(e|E)|bn(e|E)))|nsu(p|b)|cy|Bar(v)?|zigzag|opf|dash|prop|e(e(eq|bar)?|llip|r(t|bar))|Dash|fr|ltri|a(ngrt|r(s(igma|u(psetneq(q)?|bsetneq(q)?))|nothing|t(heta|riangle(left|right))|p(hi|i|ropto)|epsilon|kappa|r(ho)?))|rtri|Arr)|V(scr|cy|opf|dash(l)?|e(e|r(yThinSpace|t(ical(Bar|Separator|Tilde|Line))?|bar))|Dash|vdash|fr|bar))\n\t\t\t\t\t\t  | (w(scr|circ|opf|p|e(ierp|d(ge(q)?|bar))|fr|r(eath)?)|W(scr|circ|opf|edge|fr))\n\t\t\t\t\t\t  | (X(scr|i|opf|fr)|x(s(cr|qcup)|h(arr|Arr)|nis|c(irc|up|ap)|i|o(time|dot|p(f|lus))|dtri|u(tri|plus)|vee|fr|wedge|l(arr|Arr)|r(arr|Arr)|map))\n\t\t\t\t\t\t  | (y(scr|c(y|irc)|icy|opf|u(cy|ml)|en|fr|ac(y|ute))|Y(scr|c(y|irc)|opf|uml|Icy|Ucy|fr|acute|Acy))\n\t\t\t\t\t\t  | (z(scr|hcy|c(y|aron)|igrarr|opf|dot|e(ta|etrf)|fr|w(nj|j)|acute)|Z(scr|c(y|aron)|Hcy|opf|dot|e(ta|roWidthSpace)|fr|acute))\n\t\t\t\t\t\t)\n\t\t\t\t\t\t(;)\n\t\t\t\t\t",
+				name: "constant.character.entity.named.$2.html"
+			},
+			{
+				captures: {
+					"1": {
+						name: "punctuation.definition.entity.html"
+					},
+					"3": {
+						name: "punctuation.definition.entity.html"
+					}
+				},
+				match: "(&)#[0-9]+(;)",
+				name: "constant.character.entity.numeric.decimal.html"
+			},
+			{
+				captures: {
+					"1": {
+						name: "punctuation.definition.entity.html"
+					},
+					"3": {
+						name: "punctuation.definition.entity.html"
+					}
+				},
+				match: "(&)#[xX][0-9a-fA-F]+(;)",
+				name: "constant.character.entity.numeric.hexadecimal.html"
+			},
+			{
+				match: "&(?=[a-zA-Z0-9]+;)",
+				name: "invalid.illegal.ambiguous-ampersand.html"
+			}
+		]
+	},
+	heading: {
+		match: "(?:^|\\G)[ ]*(#{1,6}\\s+(.*?)(\\s+#{1,6})?\\s*)$",
+		captures: {
+			"1": {
+				patterns: [
+					{
+						match: "(#{6})\\s+(.*?)(?:\\s+(#+))?\\s*$",
+						name: "heading.6.markdown",
+						captures: {
+							"1": {
+								name: "punctuation.definition.heading.markdown"
+							},
+							"2": {
+								name: "entity.name.section.markdown",
+								patterns: [
+									{
+										include: "text.html.markdown#inline"
+									},
+									{
+										include: "text.html.derivative"
+									}
+								]
+							},
+							"3": {
+								name: "punctuation.definition.heading.markdown"
+							}
+						}
+					},
+					{
+						match: "(#{5})\\s+(.*?)(?:\\s+(#+))?\\s*$",
+						name: "heading.5.markdown",
+						captures: {
+							"1": {
+								name: "punctuation.definition.heading.markdown"
+							},
+							"2": {
+								name: "entity.name.section.markdown",
+								patterns: [
+									{
+										include: "text.html.markdown#inline"
+									},
+									{
+										include: "text.html.derivative"
+									}
+								]
+							},
+							"3": {
+								name: "punctuation.definition.heading.markdown"
+							}
+						}
+					},
+					{
+						match: "(#{4})\\s+(.*?)(?:\\s+(#+))?\\s*$",
+						name: "heading.4.markdown",
+						captures: {
+							"1": {
+								name: "punctuation.definition.heading.markdown"
+							},
+							"2": {
+								name: "entity.name.section.markdown",
+								patterns: [
+									{
+										include: "text.html.markdown#inline"
+									},
+									{
+										include: "text.html.derivative"
+									}
+								]
+							},
+							"3": {
+								name: "punctuation.definition.heading.markdown"
+							}
+						}
+					},
+					{
+						match: "(#{3})\\s+(.*?)(?:\\s+(#+))?\\s*$",
+						name: "heading.3.markdown",
+						captures: {
+							"1": {
+								name: "punctuation.definition.heading.markdown"
+							},
+							"2": {
+								name: "entity.name.section.markdown",
+								patterns: [
+									{
+										include: "text.html.markdown#inline"
+									},
+									{
+										include: "text.html.derivative"
+									}
+								]
+							},
+							"3": {
+								name: "punctuation.definition.heading.markdown"
+							}
+						}
+					},
+					{
+						match: "(#{2})\\s+(.*?)(?:\\s+(#+))?\\s*$",
+						name: "heading.2.markdown",
+						captures: {
+							"1": {
+								name: "punctuation.definition.heading.markdown"
+							},
+							"2": {
+								name: "entity.name.section.markdown",
+								patterns: [
+									{
+										include: "text.html.markdown#inline"
+									},
+									{
+										include: "text.html.derivative"
+									}
+								]
+							},
+							"3": {
+								name: "punctuation.definition.heading.markdown"
+							}
+						}
+					},
+					{
+						match: "(#{1})\\s+(.*?)(?:\\s+(#+))?\\s*$",
+						name: "heading.1.markdown",
+						captures: {
+							"1": {
+								name: "punctuation.definition.heading.markdown"
+							},
+							"2": {
+								name: "entity.name.section.markdown",
+								patterns: [
+									{
+										include: "text.html.markdown#inline"
+									},
+									{
+										include: "text.html.derivative"
+									}
+								]
+							},
+							"3": {
+								name: "punctuation.definition.heading.markdown"
+							}
+						}
+					}
+				]
+			}
+		},
+		name: "markup.heading.markdown",
+		patterns: [
+			{
+				include: "text.html.markdown#inline"
+			}
+		]
+	},
+	"heading-setext": {
+		patterns: [
+			{
+				match: "^(={3,})(?=[ \\t]*$\\n?)",
+				name: "markup.heading.setext.1.markdown"
+			},
+			{
+				match: "^(-{3,})(?=[ \\t]*$\\n?)",
+				name: "markup.heading.setext.2.markdown"
+			}
+		]
+	},
+	lists: {
+		patterns: [
+			{
+				begin: "(^|\\G)([ ]*)([*+-])([ \\t])",
+				beginCaptures: {
+					"3": {
+						name: "punctuation.definition.list.begin.markdown"
+					}
+				},
+				comment: "Currently does not support un-indented second lines.",
+				name: "markup.list.unnumbered.markdown",
+				patterns: [
+					{
+						include: "#block"
+					},
+					{
+						include: "text.html.markdown#list_paragraph"
+					}
+				],
+				"while": "((^|\\G)([ ]*|\\t))|(^[ \\t]*$)"
+			},
+			{
+				begin: "(^|\\G)([ ]*)([0-9]+\\.)([ \\t])",
+				beginCaptures: {
+					"3": {
+						name: "punctuation.definition.list.begin.markdown"
+					}
+				},
+				name: "markup.list.numbered.markdown",
+				patterns: [
+					{
+						include: "#block"
+					},
+					{
+						include: "text.html.markdown#list_paragraph"
+					}
+				],
+				"while": "((^|\\G)([ ]*|\\t))|(^[ \\t]*$)"
+			}
+		]
+	},
+	paragraph: {
+		begin: "(^|\\G)[ ]*(?=\\S)",
+		name: "meta.paragraph.markdown",
+		patterns: [
+			{
+				include: "#inline"
+			},
+			{
+				include: "text.html.markdown#inline"
+			},
+			{
+				include: "text.html.derivative"
+			},
+			{
+				include: "#heading-setext"
+			}
+		],
+		"while": "(^|\\G)((?=\\s*[-=]{3,}\\s*$)|[ ]{4,}(?=\\S))"
+	},
+	blockquote: {
+		begin: "(^|\\G)[ ]*(>) ?",
+		captures: {
+			"2": {
+				name: "punctuation.definition.quote.begin.markdown"
+			}
+		},
+		name: "markup.quote.markdown",
+		patterns: [
+			{
+				include: "#block"
+			}
+		],
+		"while": "(^|\\G)\\s*(>) ?"
+	}
+};
+const mdcTMLanguage = {
+	information_for_contributors: information_for_contributors,
+	version: version,
+	name: name,
+	injectionSelector: injectionSelector,
+	scopeName: scopeName,
+	patterns: patterns,
+	repository: repository
+};
+
+const logger = consola.withScope("@nuxt/content");
+const resolveLang = (lang) => BUNDLED_LANGUAGES.find((l) => l.id === lang || l.aliases?.includes(lang))?.id || lang;
+const resolveTheme = (theme) => {
+  if (!theme) {
+    return;
+  }
+  if (typeof theme === "string") {
+    theme = {
+      default: theme
+    };
+  }
+  return Object.entries(theme).reduce((acc, [key, value]) => {
+    acc[key] = BUNDLED_THEMES.find((t) => t === value);
+    return acc;
+  }, {});
+};
+const useShikiHighlighter = createSingleton((opts) => {
+  const { theme, preload } = opts || {};
+  let promise;
+  const getShikiHighlighter = () => {
+    if (!promise) {
+      promise = getHighlighter({
+        theme: theme?.default || theme || "dark-plus",
+        langs: [
+          ...preload || [],
+          "diff",
+          "json",
+          "js",
+          "ts",
+          "css",
+          "shell",
+          "html",
+          "md",
+          "yaml",
+          "vue",
+          {
+            id: "md",
+            scopeName: "text.markdown.mdc",
+            path: "mdc.tmLanguage.json",
+            aliases: ["markdown", "md", "mdc"],
+            grammar: mdcTMLanguage
+          }
+        ]
+      });
+    }
+    return promise;
+  };
+  const getHighlightedTokens = async (code, lang, theme2) => {
+    const highlighter = await getShikiHighlighter();
+    code = code.replace(/\n+$/, "");
+    lang = resolveLang(lang || "");
+    theme2 = resolveTheme(theme2 || "") || { default: highlighter.getTheme() };
+    if (!lang) {
+      return [[{ content: code }]];
+    }
+    if (!highlighter.getLoadedLanguages().includes(lang)) {
+      let message = "Content Highlighter Error\n\n";
+      message = message + `Language "${lang}" is not loaded Shiki. Falling back to plain code.
+
+`;
+      message = message + `Please make sure you add "${lang}" to the 'preload' list in your Nuxt config.
+
+`;
+      message = message + "See: https://content.nuxtjs.org/api/configuration#highlight";
+      logger.warn(message);
+      return [[{ content: code }]];
+    }
+    await Promise.all(
+      Object.values(theme2).map(async (theme3) => {
+        if (!highlighter.getLoadedThemes().includes(theme3)) {
+          await highlighter.loadTheme(theme3);
+        }
+      })
+    );
+    const coloredTokens = Object.entries(theme2).map(([key, theme3]) => {
+      const tokens = highlighter.codeToThemedTokens(code, lang, theme3);
+      return {
+        key,
+        theme: theme3,
+        tokens
+      };
+    });
+    const highlightedCode = [];
+    for (const line in coloredTokens[0].tokens) {
+      highlightedCode[line] = coloredTokens.reduce((acc, color) => {
+        return mergeLines({
+          key: coloredTokens[0].key,
+          tokens: acc
+        }, {
+          key: color.key,
+          tokens: color.tokens[line]
+        });
+      }, coloredTokens[0].tokens[line]);
+    }
+    return highlightedCode;
+  };
+  const getHighlightedAST = async (code, lang, theme2, opts2) => {
+    const lines = await getHighlightedTokens(code, lang, theme2);
+    const { highlights = [], colorMap = {} } = opts2 || {};
+    return lines.map((line, lineIndex) => ({
+      type: "element",
+      tag: "span",
+      props: { class: ["line", highlights.includes(lineIndex + 1) ? "highlight" : ""].join(" ").trim() },
+      children: line.map(tokenSpan)
+    }));
+    function getColorProps(token) {
+      if (!token.color) {
+        return {};
+      }
+      if (typeof token.color === "string") {
+        return { style: { color: token.color } };
+      }
+      const key = Object.values(token.color).join("");
+      if (!colorMap[key]) {
+        colorMap[key] = {
+          colors: token.color,
+          className: "ct-" + Math.random().toString(16).substring(2, 8)
+        };
+      }
+      return { class: colorMap[key].className };
+    }
+    function tokenSpan(token) {
+      return {
+        type: "element",
+        tag: "span",
+        props: getColorProps(token),
+        children: [{ type: "text", value: token.content }]
+      };
+    }
+  };
+  const getHighlightedCode = async (code, lang, theme2, opts2) => {
+    const colorMap = opts2?.colorMap || {};
+    const highlights = opts2?.highlights || [];
+    const ast = await getHighlightedAST(code, lang, theme2, { colorMap, highlights });
+    function renderNode(node) {
+      if (node.type === "text") {
+        return node.value;
+      }
+      const children = node.children.map(renderNode).join("");
+      return `<${node.tag} class="${node.props.class}">${children}</${node.tag}>`;
+    }
+    return {
+      code: ast.map(renderNode).join(""),
+      styles: generateStyles(colorMap)
+    };
+  };
+  const generateStyles = (colorMap) => {
+    const colors = [];
+    for (const colorClass of Object.values(colorMap)) {
+      Object.entries(colorClass.colors).forEach(([variant, color]) => {
+        if (variant === "default") {
+          colors.unshift(`.${colorClass.className}{color:${color}}`);
+        } else {
+          colors.push(`.${variant} .${colorClass.className}{color:${color}}`);
+        }
+      });
+    }
+    return colors.join("\n");
+  };
+  return {
+    getHighlightedTokens,
+    getHighlightedAST,
+    getHighlightedCode,
+    generateStyles
+  };
+});
+function mergeLines(line1, line2) {
+  const mergedTokens = [];
+  const getColors = (h, i) => typeof h.tokens[i].color === "string" ? { [h.key]: h.tokens[i].color } : h.tokens[i].color;
+  const right = {
+    key: line1.key,
+    tokens: line1.tokens.slice()
+  };
+  const left = {
+    key: line2.key,
+    tokens: line2.tokens.slice()
+  };
+  let index = 0;
+  while (index < right.tokens.length) {
+    const rightToken = right.tokens[index];
+    const leftToken = left.tokens[index];
+    if (rightToken.content === leftToken.content) {
+      mergedTokens.push({
+        content: rightToken.content,
+        color: {
+          ...getColors(right, index),
+          ...getColors(left, index)
+        }
+      });
+      index += 1;
+      continue;
+    }
+    if (rightToken.content.startsWith(leftToken.content)) {
+      const nextRightToken = {
+        ...rightToken,
+        content: rightToken.content.slice(leftToken.content.length)
+      };
+      rightToken.content = leftToken.content;
+      right.tokens.splice(index + 1, 0, nextRightToken);
+      continue;
+    }
+    if (leftToken.content.startsWith(rightToken.content)) {
+      const nextLeftToken = {
+        ...leftToken,
+        content: leftToken.content.slice(rightToken.content.length)
+      };
+      leftToken.content = rightToken.content;
+      left.tokens.splice(index + 1, 0, nextLeftToken);
+      continue;
+    }
+    throw new Error("Unexpected token");
+  }
+  return mergedTokens;
+}
+
+const shiki = defineTransformer({
+  name: "highlight",
+  extensions: [".md"],
+  transform: async (content, options = {}) => {
+    const shikiHighlighter = useShikiHighlighter(options);
+    const colorMap = {};
+    const codeBlocks = [];
+    const inlineCodes = [];
+    visit(
+      content.body,
+      (node) => node.tag === "code" && node?.props.code || node.tag === "code-inline" && (node.props?.lang || node.props?.language),
+      (node) => {
+        if (node.tag === "code") {
+          codeBlocks.push(node);
+        } else if (node.tag === "code-inline") {
+          inlineCodes.push(node);
+        }
+      }
+    );
+    await Promise.all(codeBlocks.map(highlightBlock));
+    await Promise.all(inlineCodes.map(highlightInline));
+    if (Object.values(colorMap).length) {
+      content.body.children.push({
+        type: "element",
+        tag: "style",
+        children: [{ type: "text", value: shikiHighlighter.generateStyles(colorMap) }]
+      });
+    }
+    return content;
+    async function highlightInline(node) {
+      const code = node.children[0].value;
+      const lines = await shikiHighlighter.getHighlightedAST(code, node.props.lang || node.props.language, options.theme, { colorMap });
+      node.children = lines[0].children;
+      node.props = Object.assign(node.props || {}, { class: "colored" });
+      return node;
+    }
+    async function highlightBlock(node) {
+      const { code, language: lang, highlights = [] } = node.props;
+      const innerCodeNode = node.children[0].children[0];
+      innerCodeNode.children = await shikiHighlighter.getHighlightedAST(code, lang, options.theme, { colorMap, highlights });
+      return node;
+    }
+  }
+});
+
 const json = defineTransformer({
   name: "Json",
   extensions: [".json", ".json5"],
@@ -2140,7 +3000,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -2166,6 +3026,7 @@ const TRANSFORMERS = [
   markdown,
   json,
   yaml,
+  shiki,
   pathMeta
 ];
 function getParser(ext, additionalTransformers = []) {
@@ -2195,8 +3056,11 @@ async function transformContent(id, content, options = {}) {
   const matchedTransformers = getTransformers(ext, transformers);
   const result = await matchedTransformers.reduce(async (prev, cur) => {
     const next = await prev || parsed;
-    const transformOptions = options[camelCase(cur.name)] || {};
-    return cur.transform(next, transformOptions);
+    const transformOptions = options[camelCase(cur.name)];
+    if (transformOptions === false) {
+      return next;
+    }
+    return cur.transform(next, transformOptions || {});
   }, Promise.resolve(parsed));
   return result;
 }
@@ -2211,14 +3075,16 @@ const getPreview = (event) => {
 };
 
 async function getContentIndex(event) {
+  const defaultLocale = useRuntimeConfig().content.defaultLocale;
   let contentIndex = await cacheStorage.getItem("content-index.json");
   if (!contentIndex) {
-    const data = await serverQueryContent(event).find();
+    const data = await getContentsList(event);
     contentIndex = data.reduce((acc, item) => {
-      if (!acc[item._path]) {
-        acc[item._path] = item._id;
-      } else if (item._id.startsWith("content:")) {
-        acc[item._path] = item._id;
+      acc[item._path] = acc[item._path] || [];
+      if (item._locale === defaultLocale) {
+        acc[item._path].unshift(item._id);
+      } else {
+        acc[item._path].push(item._id);
       }
       return acc;
     }, {});
@@ -2231,7 +3097,7 @@ async function getIndexedContentsList(event, query) {
   const path = params?.where?.find((wh) => wh._path)?._path;
   if (!isPreview(event) && (typeof path === "string" || path instanceof RegExp)) {
     const index = await getContentIndex(event);
-    const keys = Object.keys(index).filter((key) => path.test ? path.test(key) : key === String(path)).map((key) => index[key]);
+    const keys = Object.keys(index).filter((key) => path.test ? path.test(key) : key === String(path)).flatMap((key) => index[key]);
     const contents = await Promise.all(keys.map((key) => getContent(event, key)));
     return contents;
   }
@@ -2354,6 +3220,12 @@ const createServerQueryFetch = (event, path) => (query) => {
   if (!query.params().sort?.length) {
     query.sort({ _file: 1, $numeric: true });
   }
+  if (contentConfig.locales.length) {
+    const queryLocale = query.params().where?.find((w) => w._locale)?._locale;
+    if (!queryLocale) {
+      query.locale(contentConfig.defaultLocale);
+    }
+  }
   return createPipelineFetcher(() => getIndexedContentsList(event, query))(query);
 };
 function serverQueryContent(event, path, ...pathParts) {
@@ -2376,26 +3248,39 @@ function regExpReviver(_key, value) {
   return value;
 }
 
-const parseQueryParams = (body) => {
+const parseJSONQueryParams = (body) => {
   try {
     return jsonParse(body);
   } catch (e) {
     throw createError({ statusCode: 400, message: "Invalid _params query" });
   }
 };
+const decodeQuryParams = (encoded) => {
+  encoded = encoded.replace(/\//g, "");
+  encoded = encoded.replace(/-/g, "+").replace(/_/g, "/");
+  encoded = encoded.padEnd(encoded.length + (4 - encoded.length % 4) % 4, "=");
+  return parseJSONQueryParams(typeof Buffer !== "undefined" ? Buffer.from(encoded, "base64").toString() : atob(encoded));
+};
 const memory = {};
 const getContentQuery = (event) => {
+  const { params } = event.context.params || {};
+  if (params) {
+    return decodeQuryParams(params.replace(/.json$/, ""));
+  }
   const qid = event.context.params.qid?.replace(/.json$/, "");
   const query = getQuery(event) || {};
   if (qid && query._params) {
-    memory[qid] = parseQueryParams(query._params);
+    memory[qid] = parseJSONQueryParams(query._params);
+    if (memory[qid].where && !Array.isArray(memory[qid].where)) {
+      memory[qid].where = [memory[qid].where];
+    }
     return memory[qid];
   }
   if (memory[qid]) {
     return memory[qid];
   }
   if (query._params) {
-    return parseQueryParams(query._params);
+    return parseJSONQueryParams(query._params);
   }
   if (typeof query.only === "string" && query.only.includes(",")) {
     query.only = query.only.split(",").map((s) => s.trim());
@@ -2411,7 +3296,7 @@ const getContentQuery = (event) => {
     }
   }
   if (query.sort) {
-    query.sort = query.sort.split(",").map((s) => {
+    query.sort = String(query.sort).split(",").map((s) => {
       const [key, order] = s.split(":");
       return [key, +order];
     });
@@ -2432,14 +3317,14 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _HSKBaT = defineEventHandler(async (event) => {
+const _ok7Qeb = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (query.first) {
     const content = await serverQueryContent(event, query).findOne();
     const path = content?._path || query.where?.find((w) => w._path)?._path;
     if (path) {
       const _dir = await serverQueryContent(event).where({ _path: join(path, "_dir") }).without("_").findOne();
-      if (!Array.isArray(_dir)) {
+      if (_dir && !Array.isArray(_dir)) {
         return {
           _path: path,
           ...content || {},
@@ -2463,11 +3348,12 @@ const _HSKBaT = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _D2Lxtd = defineEventHandler(async (event) => {
+const _zscNKH = defineEventHandler(async (event) => {
+  const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
   await getContentIndex(event);
-  const navigation = await $fetch("/api/_content/navigation");
+  const navigation = await $fetch(`${content.api.baseURL}/navigation`);
   await cacheStorage.setItem("content-navigation.json", navigation);
   return {
     generatedAt: now,
@@ -2564,7 +3450,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _og3K52 = defineEventHandler(async (event) => {
+const _KJdSOO = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -2580,7 +3466,7 @@ const _og3K52 = defineEventHandler(async (event) => {
   }).find();
   const dirConfigs = await serverQueryContent(event).where({ _path: /\/_dir$/i, _partial: true }).find();
   const configs = dirConfigs.reduce((configs2, conf) => {
-    if (conf.title.toLowerCase() === "dir") {
+    if (conf.title?.toLowerCase() === "dir") {
       conf.title = void 0;
     }
     const key = conf._path.split("/").slice(0, -1).join("/") || "/";
@@ -2593,17 +3479,19 @@ const _og3K52 = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_VOIWBw = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_Gzzh7x = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_VOIWBw, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_supabase/session', handler: _7F4Wwf, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid', handler: _HSKBaT, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _HSKBaT, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _D2Lxtd, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _og3K52, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _og3K52, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_VOIWBw, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_Gzzh7x, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_supabase/session', handler: _ZCe39a, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _zscNKH, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _KJdSOO, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _KJdSOO, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _KJdSOO, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_Gzzh7x, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -2693,9 +3581,9 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('/Users/selie/Documents/Hacks/NuxtSupabaseApp/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('/Users/selie/Documents/Hacks/la-fouillade/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('/Users/selie/Documents/Hacks/NuxtSupabaseApp/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/Users/selie/Documents/Hacks/la-fouillade/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {

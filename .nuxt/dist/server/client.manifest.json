@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "/Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/nuxt/dist/app/entry.mjs": {
+  "/Users/selie/Documents/Hacks/la-fouillade/node_modules/nuxt/dist/app/entry.mjs": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "/Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/nuxt/dist/app/entry.mjs"
+    "file": "/Users/selie/Documents/Hacks/la-fouillade/node_modules/nuxt/dist/app/entry.mjs"
   }
 }

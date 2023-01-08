@@ -41,16 +41,6 @@ onMounted(() => {
   createMap(mapEl.value!)
 })
 
-const welcomList = [
-  'Hello!👋',
-  '你好啊，朋友!👏',
-  '5#t~C7T`V ✨',
-  'Aloha!🌴',
-  'こんにちは!🙌',
-  'Bonjour!🍾',
-  'Hallo!🍻',
-  'नमस्ते🙏',
-]
 let i = 1
 </script>
 

@@ -1,1 +1,1 @@
-export { default } from "file:///Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
+export { default } from "file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

@@ -7,6 +7,7 @@ export { computedAsync, asyncComputed, computedEager, eagerComputed, computedInj
 export { getUid } from '../utils/getUid';
 export { generateRandomString } from '../utils/randomString';
 export { randomToWord } from '../utils/randomToWord';
+export { useSupabaseAuthClient } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseAuthClient';
 export { useSupabaseClient } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient';
 export { useSupabaseToken } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken';
 export { useSupabaseUser } from '../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser';

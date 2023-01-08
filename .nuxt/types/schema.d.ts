@@ -29,9 +29,17 @@ declare module '@nuxt/schema' {
 
         base: string,
 
+        api: {
+             baseURL: string,
+        },
+
         watch: {
              ws: {
-                   port: number,
+                   port: {
+                          port: number,
+
+                          portRange: Array<number>,
+                   },
 
                    hostname: string,
 
@@ -127,6 +135,8 @@ declare module '@nuxt/schema' {
 
         experimental: {
              clientDB: boolean,
+
+             stripQueryParameters: boolean,
         },
     },
   }
@@ -154,17 +164,25 @@ declare module '@nuxt/schema' {
     },
 
     content: {
-        clientDB: {
-             isSPA: boolean,
+        locales: Array<any>,
 
-             integrity: any,
+        defaultLocale: any,
+
+        integrity: any,
+
+        experimental: {
+             stripQueryParameters: boolean,
+
+             clientDB: boolean,
+        },
+
+        api: {
+             baseURL: string,
         },
 
         navigation: {
              fields: Array<any>,
         },
-
-        base: string,
 
         tags: {
              p: string,

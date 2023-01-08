@@ -1,5 +1,5 @@
 
-import { defuFn } from '/Users/selie/Documents/Hacks/NuxtSupabaseApp/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/Users/selie/Documents/Hacks/la-fouillade/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

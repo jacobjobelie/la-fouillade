@@ -262,6 +262,7 @@ declare global {
   const useStepper: typeof import('@vueuse/core')['useStepper']
   const useStorageAsync: typeof import('@vueuse/core')['useStorageAsync']
   const useStyleTag: typeof import('@vueuse/core')['useStyleTag']
+  const useSupabaseAuthClient: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseAuthClient')['useSupabaseAuthClient']
   const useSupabaseClient: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']
   const useSupabaseToken: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']
   const useSupabaseUser: typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']
@@ -584,6 +585,7 @@ declare module 'vue' {
     readonly useStepper: UnwrapRef<typeof import('@vueuse/core')['useStepper']>
     readonly useStorageAsync: UnwrapRef<typeof import('@vueuse/core')['useStorageAsync']>
     readonly useStyleTag: UnwrapRef<typeof import('@vueuse/core')['useStyleTag']>
+    readonly useSupabaseAuthClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseAuthClient')['useSupabaseAuthClient']>
     readonly useSupabaseClient: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseClient')['useSupabaseClient']>
     readonly useSupabaseToken: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseToken')['useSupabaseToken']>
     readonly useSupabaseUser: UnwrapRef<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/composables/useSupabaseUser')['useSupabaseUser']>
