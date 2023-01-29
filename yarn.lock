@@ -390,10 +390,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/jetbrains-mono@npm:^4.5.11":
-  version: 4.5.11
-  resolution: "@fontsource/jetbrains-mono@npm:4.5.11"
-  checksum: 2f794029028287093b1b6499d8d04058d70a832932631e27ede235fcba025c42099515dbd46d483eb376cf3c27c604d0104c092dc73505f769bef201ffe17c7b
+"@fontsource/jetbrains-mono@npm:^4.5.12":
+  version: 4.5.12
+  resolution: "@fontsource/jetbrains-mono@npm:4.5.12"
+  checksum: 887fc5e98486fa8a711a2f55175002e7b7aa232113a71484455dca393dbea9cfa61ef423f51348a20b1ad85992f7910307f1247dd811e697618ff34c0da2a223
   languageName: node
   linkType: hard
 
@@ -418,10 +418,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/roboto-flex@npm:^4.5.2":
-  version: 4.5.2
-  resolution: "@fontsource/roboto-flex@npm:4.5.2"
-  checksum: e1f8222e8ca5c21000a47dc71f881bfc4c9ac9aacfdf539c22550778171c54a7da76e6ce3da57415975a0a231af766fd0b855237773a490e3e047de94e48a7a1
+"@fontsource/roboto-flex@npm:^4.5.5":
+  version: 4.5.5
+  resolution: "@fontsource/roboto-flex@npm:4.5.5"
+  checksum: e3a54d07efa4c82721e910e229014537dd253ddcc0461ca6a8566104ca79cd7019f8514a6d5b623b8a1fc57953d43b2da7a7f8988c3a7475b3f60c7f656591ce
   languageName: node
   linkType: hard
 
@@ -1495,15 +1495,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/core@npm:9.9.0, @vueuse/core@npm:^9.9.0":
-  version: 9.9.0
-  resolution: "@vueuse/core@npm:9.9.0"
+"@vueuse/core@npm:9.11.1, @vueuse/core@npm:^9.11.1":
+  version: 9.11.1
+  resolution: "@vueuse/core@npm:9.11.1"
   dependencies:
     "@types/web-bluetooth": ^0.0.16
-    "@vueuse/metadata": 9.9.0
-    "@vueuse/shared": 9.9.0
+    "@vueuse/metadata": 9.11.1
+    "@vueuse/shared": 9.11.1
     vue-demi: "*"
-  checksum: a3edc33994515a2d91fe84767a5230d51debcf7f4a53afc9c56c3793d4f47771fbcf43d32f3e33b1db316267a7607a60d31de068ef86d8fb77e7c4e050e29b36
+  checksum: c9b4d65d50441d19d452dfebe4e13c8b56a8ea296b31b9cd93b5a52ee1b461c40ebc530415d3869083852eb874c99d5742311fd8bf750d405f4d52a768aebaa3
   languageName: node
   linkType: hard
 
@@ -1521,34 +1521,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vueuse/metadata@npm:9.9.0":
-  version: 9.9.0
-  resolution: "@vueuse/metadata@npm:9.9.0"
-  checksum: d0dd631f79d515c4650eb35671a38b282cf9458f3b86768a97a5d74fb1836440db1e0fed178d084d5174c926aa586509ed31597f0b062240ce268e6fe1f6c6fd
+"@vueuse/metadata@npm:9.11.1":
+  version: 9.11.1
+  resolution: "@vueuse/metadata@npm:9.11.1"
+  checksum: d4025257dc891b4ae3712a68b881409e7a58517f7b96f8949a74a99cec5e46f202fc2c326765eed9bffc8fbde6417ee737d3c2ac650799dd9e99fa5a7f9c2363
   languageName: node
   linkType: hard
 
-"@vueuse/nuxt@npm:^9.9.0":
-  version: 9.9.0
-  resolution: "@vueuse/nuxt@npm:9.9.0"
+"@vueuse/nuxt@npm:^9.11.1":
+  version: 9.11.1
+  resolution: "@vueuse/nuxt@npm:9.11.1"
   dependencies:
     "@nuxt/kit": ^3.0.0
-    "@vueuse/core": 9.9.0
-    "@vueuse/metadata": 9.9.0
+    "@vueuse/core": 9.11.1
+    "@vueuse/metadata": 9.11.1
     local-pkg: ^0.4.2
     vue-demi: "*"
   peerDependencies:
     nuxt: ^3.0.0
-  checksum: 8815ed30138dad8f5597bbb02c4efdec49204c868e5ce344d692f9f876a1b8b1c960f8733f9ae69d5fcfb7286ecdec9271ee6af3e5d07577f0e46180bdcd5dd6
+  checksum: 2828ee7f9f6cd0f5a7f33aac1bf247855c3892482bb7fe003311d745a9d7cabc6459816597973aa2487fe2664b715b573fe74c90b64b8fcab11e2e8181eafde5
   languageName: node
   linkType: hard
 
-"@vueuse/shared@npm:9.9.0":
-  version: 9.9.0
-  resolution: "@vueuse/shared@npm:9.9.0"
+"@vueuse/shared@npm:9.11.1":
+  version: 9.11.1
+  resolution: "@vueuse/shared@npm:9.11.1"
   dependencies:
     vue-demi: "*"
-  checksum: 590ffe76c883f7c53acecd1dfa34eea148d88a4bd17642bbaef10f8aed2b558cb50dbeeb1e07827f589a6b96a2bb2cc57dab576b20c34a6e5ab4b517d47b7b9d
+  checksum: 373a725ba87dd84eec3882cef4dc92706f28b53256f1c23a800444c12de675c71c1773c254def5d9c3096e54b9830154d13540264c1f017770395f04b07d789f
   languageName: node
   linkType: hard
 
@@ -6627,7 +6627,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:>=2.0.27, pinia@npm:^2.0.28":
+"pinia@npm:>=2.0.27":
   version: 2.0.28
   resolution: "pinia@npm:2.0.28"
   dependencies:
@@ -6643,6 +6643,25 @@ __metadata:
     typescript:
       optional: true
   checksum: d515cd6220262560f1864855ab117bd16e4bf4ab3d6d279459281aa16960b5e84b6ddd4de3f1d863040a81539378451c1a14fddd32e7571b51e5d1c95911154d
+  languageName: node
+  linkType: hard
+
+"pinia@npm:^2.0.29":
+  version: 2.0.29
+  resolution: "pinia@npm:2.0.29"
+  dependencies:
+    "@vue/devtools-api": ^6.4.5
+    vue-demi: "*"
+  peerDependencies:
+    "@vue/composition-api": ^1.4.0
+    typescript: ">=4.4.4"
+    vue: ^2.6.14 || ^3.2.0
+  peerDependenciesMeta:
+    "@vue/composition-api":
+      optional: true
+    typescript:
+      optional: true
+  checksum: 600a941a9cde357407f40ac278158cf7627a536637d6dbf98a45c717447f5295c6946a7816ba6ccf27224fc1849c7784d2039967c78e6369cb2ef76e4367551f
   languageName: node
   linkType: hard
 
@@ -7049,12 +7068,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "prettier@npm:2.8.1"
+"prettier@npm:^2.8.3":
+  version: 2.8.3
+  resolution: "prettier@npm:2.8.3"
   bin:
     prettier: bin-prettier.js
-  checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
+  checksum: 92f2ceb522d454370e02082aa74ad27388672f7cee8975028b59517c069fe643bdc73e322675c8faf2ff173d7a626d1a6389f26b474000308e793aa25fff46e5
   languageName: node
   linkType: hard
 
@@ -7542,12 +7561,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@fontsource/jetbrains-mono": ^4.5.11
+    "@fontsource/jetbrains-mono": ^4.5.12
     "@fontsource/lato": ^4.5.10
     "@fontsource/material-icons": ^4.5.4
     "@fontsource/material-icons-outlined": ^4.5.4
     "@fontsource/roboto": ^4.5.8
-    "@fontsource/roboto-flex": ^4.5.2
+    "@fontsource/roboto-flex": ^4.5.5
     "@fortawesome/fontawesome-svg-core": ^6.2.1
     "@fortawesome/free-brands-svg-icons": ^6.2.1
     "@fortawesome/free-regular-svg-icons": ^6.2.1
@@ -7562,14 +7581,14 @@ __metadata:
     "@pinia/nuxt": ^0.4.6
     "@types/ol": ^6.5.3
     "@vee-validate/rules": ^4.7.3
-    "@vueuse/core": ^9.9.0
-    "@vueuse/nuxt": ^9.9.0
+    "@vueuse/core": ^9.11.1
+    "@vueuse/nuxt": ^9.11.1
     gifloop: ^0.4.0
     nuxt: 3.0.0
     nuxt-windicss: ^2.6.0
     ol: ^7.2.2
-    pinia: ^2.0.28
-    prettier: ^2.8.1
+    pinia: ^2.0.29
+    prettier: ^2.8.3
     prettier-plugin-tailwind: ^2.2.12
     vee-validate: ^4.7.3
   languageName: unknown

@@ -4,8 +4,15 @@
       <div class="w-full h-full grid gap-2 grid-rows-[auto,auto,1fr]">
         <Text h1>{{ welcom }}</Text>
         <div class="w-full h-full">
-          <h2>sticky notes</h2>
-          <Shoutbox />
+          <!-- <h2>sticky notes</h2>
+          <Shoutbox /> -->
+
+  <NavItemB
+        icon="fa-feather-pointed"
+        text="Directions"
+        to="/article/directions"
+        activated=""
+      />
         </div>
         <div class="relative w-full h-full grid items-center place-items-center">
           <div class="grid grid-cols-2 gap-2 grid-rows-1 w-full h-full">
