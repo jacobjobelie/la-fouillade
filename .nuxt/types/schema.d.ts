@@ -5,246 +5,252 @@ declare module '@nuxt/schema' {
     ["windicss"]?: typeof import("nuxt-windicss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["nuxt-config-schema"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/supabase", NuxtConfig["supabase"]] | ["nuxt-windicss", NuxtConfig["windicss"]] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/color-mode", NuxtConfig["colorMode"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
   }
   interface RuntimeConfig {
-     app: {
-        baseURL: string,
+   app: {
+      baseURL: string,
 
-        buildAssetsDir: string,
+      buildAssetsDir: string,
 
-        cdnURL: string,
-    },
+      cdnURL: string,
+   },
 
-    supabase: {
-        serviceKey: any,
-    },
+   supabase: {
+      serviceKey: any,
+   },
 
-    content: {
-        cacheVersion: number,
+   content: {
+      cacheVersion: number,
 
-        cacheIntegrity: string,
+      cacheIntegrity: string,
 
-        transformers: Array<any>,
+      transformers: Array<any>,
 
-        base: string,
+      base: string,
 
-        api: {
-             baseURL: string,
-        },
+      api: {
+         baseURL: string,
+      },
 
-        watch: {
-             ws: {
-                   port: {
-                          port: number,
+      watch: {
+         ws: {
+            port: {
+               port: number,
 
-                          portRange: Array<number>,
-                   },
+               portRange: Array<number>,
+            },
 
-                   hostname: string,
+            hostname: string,
 
-                   showURL: boolean,
-             },
-        },
+            showURL: boolean,
+         },
+      },
 
-        sources: any,
+      sources: any,
 
-        ignores: Array<string>,
+      ignores: Array<string>,
 
-        locales: Array<any>,
+      locales: Array<any>,
 
-        defaultLocale: any,
+      defaultLocale: any,
 
-        highlight: boolean,
+      highlight: boolean,
 
-        markdown: {
-             tags: {
-                   p: string,
+      markdown: {
+         tags: {
+            p: string,
 
-                   a: string,
+            a: string,
 
-                   blockquote: string,
+            blockquote: string,
 
-                   "code-inline": string,
+            "code-inline": string,
 
-                   code: string,
+            code: string,
 
-                   em: string,
+            em: string,
 
-                   h1: string,
+            h1: string,
 
-                   h2: string,
+            h2: string,
 
-                   h3: string,
+            h3: string,
 
-                   h4: string,
+            h4: string,
 
-                   h5: string,
+            h5: string,
 
-                   h6: string,
+            h6: string,
 
-                   hr: string,
+            hr: string,
 
-                   img: string,
+            img: string,
 
-                   ul: string,
+            ul: string,
 
-                   ol: string,
+            ol: string,
 
-                   li: string,
+            li: string,
 
-                   strong: string,
+            strong: string,
 
-                   table: string,
+            table: string,
 
-                   thead: string,
+            thead: string,
 
-                   tbody: string,
+            tbody: string,
 
-                   td: string,
+            td: string,
 
-                   th: string,
+            th: string,
 
-                   tr: string,
-             },
+            tr: string,
+         },
 
-             anchorLinks: {
-                   depth: number,
+         anchorLinks: {
+            depth: number,
 
-                   exclude: Array<number>,
-             },
+            exclude: Array<number>,
+         },
 
-             remarkPlugins: any,
+         remarkPlugins: any,
 
-             rehypePlugins: any,
-        },
+         rehypePlugins: any,
+      },
 
-        yaml: any,
+      yaml: any,
 
-        csv: {
-             delimeter: string,
+      csv: {
+         delimeter: string,
 
-             json: boolean,
-        },
+         json: boolean,
+      },
 
-        navigation: {
-             fields: Array<any>,
-        },
+      navigation: {
+         fields: Array<any>,
+      },
 
-        documentDriven: boolean,
+      documentDriven: boolean,
 
-        experimental: {
-             clientDB: boolean,
+      experimental: {
+         clientDB: boolean,
 
-             stripQueryParameters: boolean,
-        },
-    },
+         stripQueryParameters: boolean,
+      },
+   },
   }
   interface PublicRuntimeConfig {
-     supabase: {
-        url: string,
+   supabase: {
+      url: any,
 
-        key: string,
+      key: any,
 
-        client: any,
+      client: any,
 
-        redirect: boolean,
+      redirect: boolean,
 
-        cookies: {
-             name: string,
+      cookies: {
+         name: string,
 
-             lifetime: number,
+         lifetime: number,
 
-             domain: string,
+         domain: string,
 
-             path: string,
+         path: string,
 
-             sameSite: string,
-        },
-    },
+         sameSite: string,
+      },
+   },
 
-    content: {
-        locales: Array<any>,
+   content: {
+      locales: Array<any>,
 
-        defaultLocale: any,
+      defaultLocale: any,
 
-        integrity: any,
+      integrity: any,
 
-        experimental: {
-             stripQueryParameters: boolean,
+      experimental: {
+         stripQueryParameters: boolean,
 
-             clientDB: boolean,
-        },
+         clientDB: boolean,
+      },
 
-        api: {
-             baseURL: string,
-        },
+      api: {
+         baseURL: string,
+      },
 
-        navigation: {
-             fields: Array<any>,
-        },
+      navigation: {
+         fields: Array<any>,
+      },
 
-        tags: {
-             p: string,
+      tags: {
+         p: string,
 
-             a: string,
+         a: string,
 
-             blockquote: string,
+         blockquote: string,
 
-             "code-inline": string,
+         "code-inline": string,
 
-             code: string,
+         code: string,
 
-             em: string,
+         em: string,
 
-             h1: string,
+         h1: string,
 
-             h2: string,
+         h2: string,
 
-             h3: string,
+         h3: string,
 
-             h4: string,
+         h4: string,
 
-             h5: string,
+         h5: string,
 
-             h6: string,
+         h6: string,
 
-             hr: string,
+         hr: string,
 
-             img: string,
+         img: string,
 
-             ul: string,
+         ul: string,
 
-             ol: string,
+         ol: string,
 
-             li: string,
+         li: string,
 
-             strong: string,
+         strong: string,
 
-             table: string,
+         table: string,
 
-             thead: string,
+         thead: string,
 
-             tbody: string,
+         tbody: string,
 
-             td: string,
+         td: string,
 
-             th: string,
+         th: string,
 
-             tr: string,
-        },
+         tr: string,
+      },
 
-        highlight: boolean,
+      highlight: boolean,
 
-        wsUrl: string,
+      wsUrl: string,
 
-        documentDriven: boolean,
+      documentDriven: boolean,
 
-        anchorLinks: {
-             depth: number,
+      host: string,
 
-             exclude: Array<number>,
-        },
-    },
+      trailingSlash: boolean,
+
+      anchorLinks: {
+         depth: number,
+
+         exclude: Array<number>,
+      },
+   },
   }
 }
