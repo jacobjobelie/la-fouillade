@@ -1,1 +1,0 @@
-import{b as e}from"./entry.e6c3838a.js";const n=e({props:{code:{type:String,default:""},language:{type:String,default:null},filename:{type:String,default:null},highlights:{type:Array,default:()=>[]}},computed:{isHeader(){return this.language||this.filename},isRounded(){return this.language||this.filename?"rounded-b-1rem":"rounded-1rem"}}});export{n as _};

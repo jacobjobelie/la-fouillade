@@ -1,1 +1,0 @@
-export { default } from "file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
