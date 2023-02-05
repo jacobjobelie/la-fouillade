@@ -1,13 +1,12 @@
 import { NuxtModule } from '@nuxt/schema'
 declare module '@nuxt/schema' {
   interface NuxtConfig {
-    ["supabase"]?: typeof import("@nuxtjs/supabase").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["windicss"]?: typeof import("nuxt-windicss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["colorMode"]?: typeof import("@nuxtjs/color-mode").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["nuxt-config-schema"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/supabase", NuxtConfig["supabase"]] | ["nuxt-windicss", NuxtConfig["windicss"]] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/color-mode", NuxtConfig["colorMode"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
+    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["nuxt-windicss", NuxtConfig["windicss"]] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/color-mode", NuxtConfig["colorMode"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
   }
   interface RuntimeConfig {
    app: {
@@ -16,10 +15,6 @@ declare module '@nuxt/schema' {
       buildAssetsDir: string,
 
       cdnURL: string,
-   },
-
-   supabase: {
-      serviceKey: any,
    },
 
    content: {
@@ -143,28 +138,6 @@ declare module '@nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
-   supabase: {
-      url: any,
-
-      key: any,
-
-      client: any,
-
-      redirect: boolean,
-
-      cookies: {
-         name: string,
-
-         lifetime: number,
-
-         domain: string,
-
-         path: string,
-
-         sameSite: string,
-      },
-   },
-
    content: {
       locales: Array<any>,
 

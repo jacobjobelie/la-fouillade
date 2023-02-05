@@ -5,7 +5,7 @@ import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/std-env/dist/index.mjs';
-import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, assertMethod, readBody, setCookie, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/h3/dist/index.mjs';
+import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { renderToString } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/vue/server-renderer/index.mjs';
@@ -52,7 +52,7 @@ import htmlTags from 'file:///Users/sam/Documents/Projects/la-fouillade/node_mod
 import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/shiki-es/dist/shiki.node.mjs';
 import consola from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unenv/runtime/npm/consola.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"supabase":{"client":{},"redirect":false,"cookies":{"name":"sb","lifetime":28800,"domain":"","path":"/","sameSite":"lax"}},"content":{"locales":[],"experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}}},"supabase":{},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"content":{"locales":[],"experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}}},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -79,8 +79,8 @@ function overrideConfig(obj, parentKey = "") {
   }
 }
 overrideConfig(_runtimeConfig);
-const config$3 = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config$3;
+const config$2 = deepFreeze(_runtimeConfig);
+const useRuntimeConfig = () => config$2;
 function deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -149,9 +149,9 @@ function defineRenderHandler(handler) {
   });
 }
 
-const config$2 = useRuntimeConfig();
+const config$1 = useRuntimeConfig();
 const _routeRulesMatcher = toRouteMatcher(
-  createRouter({ routes: config$2.nitro.routeRules })
+  createRouter({ routes: config$1.nitro.routeRules })
 );
 function createRouteRulesHandler() {
   return eventHandler((event) => {
@@ -416,14 +416,14 @@ function cloneWithProxy(obj, overrides) {
 }
 const cachedEventHandler = defineCachedEventHandler;
 
-const config$1 = {"darkMode":"class","theme":{"extend":{"boxShadow":{"nsm":"0 2px 8px 2px rgb(104 112 118 / 0.07), 0 2px 4px -1px rgb(104 112 118 / 0.04)","nmd":"0 12px 20px 6px rgb(104 112 118 / 0.08)","nlg":"0 12px 34px 6px rgb(104 112 118 / 0.18)","nxl":"0 25px 65px 0px rgb(104 112 118 / 0.35)"}}},"shortcuts":{"flex-center":"flex justify-center items-center","flex-between":"flex justify-between items-center","btn":{"color":"white","@apply":"py-2 px-4 font-semibold rounded-lg","&:hover":{"@apply":"bg-green-700","color":"black"}},"txt-2":" dark:text-gray-200 text-gray-700","bg-success":" dark:bg-green-400 bg-green-400 hover:bg-green-100","btn-green":"text-white bg-green-500 hover:bg-green-700"},"plugins":[],"css":["assets/style.css","@fontsource/lato","@fontsource/jetbrains-mono","@fontsource/material-icons","@fontsource/material-icons-outlined","@fortawesome/fontawesome-svg-core/styles.css"],"content":{"highlight":{"theme":{"default":"github-dark"},"preload":["c","cpp","java","shell","python","js","ts","css","html"]}}};
+const config = {"darkMode":"class","theme":{"extend":{"boxShadow":{"nsm":"0 2px 8px 2px rgb(104 112 118 / 0.07), 0 2px 4px -1px rgb(104 112 118 / 0.04)","nmd":"0 12px 20px 6px rgb(104 112 118 / 0.08)","nlg":"0 12px 34px 6px rgb(104 112 118 / 0.18)","nxl":"0 25px 65px 0px rgb(104 112 118 / 0.35)"}}},"shortcuts":{"flex-center":"flex justify-center items-center","flex-between":"flex justify-between items-center","btn":{"color":"white","@apply":"py-2 px-4 font-semibold rounded-lg","&:hover":{"@apply":"bg-green-700","color":"black"}},"txt-2":" dark:text-gray-200 text-gray-700","bg-success":" dark:bg-green-400 bg-green-400 hover:bg-green-100","btn-green":"text-white bg-green-500 hover:bg-green-700"},"plugins":[],"css":["assets/style.css","@fontsource/lato","@fontsource/jetbrains-mono","@fontsource/material-icons","@fontsource/material-icons-outlined","@fortawesome/fontawesome-svg-core/styles.css"],"content":{"highlight":{"theme":{"default":"github-dark"},"preload":["c","cpp","java","shell","python","js","ts","css","html"]}}};
 
 const _PtOl6XkSS6 = async (nitroApp) => {
   const utils = createUtils({
     enablePreflight: false,
     scan: false,
     preflight: false,
-    config: config$1,
+    config,
   }, { name: 'nuxt-windicss-nitro' });
   nitroApp.hooks.hook('content:file:afterParse', async (content) => {
     if (!content.body || !Array.isArray(content.body.children))
@@ -550,58 +550,6 @@ const errorHandler = (async function errorhandler(error, event) {
     event.node.res.statusMessage = res.statusText;
   }
   event.node.res.end(await res.text());
-});
-
-function buildAssetsURL(...path) {
-  return joinURL(publicAssetsURL(), useRuntimeConfig().app.buildAssetsDir, ...path);
-}
-function publicAssetsURL(...path) {
-  const publicBase = useRuntimeConfig().app.cdnURL || useRuntimeConfig().app.baseURL;
-  return path.length ? joinURL(publicBase, ...path) : publicBase;
-}
-
-const config = useRuntimeConfig().public;
-const _tym077 = defineEventHandler(async (event) => {
-  assertMethod(event, "POST");
-  const body = await readBody(event);
-  const cookieOptions = config.supabase.cookies;
-  const { event: signEvent, session } = body;
-  if (!event) {
-    throw new Error("Auth event missing!");
-  }
-  if (signEvent === "SIGNED_IN" || signEvent === "TOKEN_REFRESHED") {
-    if (!session) {
-      throw new Error("Auth session missing!");
-    }
-    setCookie(
-      event,
-      `${cookieOptions.name}-access-token`,
-      session.access_token,
-      {
-        domain: cookieOptions.domain,
-        maxAge: cookieOptions.lifetime ?? 0,
-        path: cookieOptions.path,
-        sameSite: cookieOptions.sameSite
-      }
-    );
-    setCookie(event, `${cookieOptions.name}-refresh-token`, session.refresh_token, {
-      domain: cookieOptions.domain,
-      maxAge: cookieOptions.lifetime ?? 0,
-      path: cookieOptions.path,
-      sameSite: cookieOptions.sameSite
-    });
-  }
-  if (signEvent === "SIGNED_OUT") {
-    setCookie(event, `${cookieOptions.name}-access-token`, "", {
-      maxAge: -1,
-      path: cookieOptions.path
-    });
-    setCookie(event, `${cookieOptions.name}-refresh-token`, "", {
-      maxAge: -1,
-      path: cookieOptions.path
-    });
-  }
-  return "auth cookie set";
 });
 
 const get = (obj, path) => path.split(".").reduce((acc, part) => acc && acc[part], obj);
@@ -3179,6 +3127,14 @@ const getPreview = (event) => {
   return { key };
 };
 
+function buildAssetsURL(...path) {
+  return joinURL(publicAssetsURL(), useRuntimeConfig().app.buildAssetsDir, ...path);
+}
+function publicAssetsURL(...path) {
+  const publicBase = useRuntimeConfig().app.cdnURL || useRuntimeConfig().app.baseURL;
+  return path.length ? joinURL(publicBase, ...path) : publicBase;
+}
+
 async function getContentIndex(event) {
   const defaultLocale = useRuntimeConfig().content.defaultLocale;
   let contentIndex = await cacheStorage.getItem("content-index.json");
@@ -3607,7 +3563,6 @@ const _lazy_hwSjGD = () => Promise.resolve().then(function () { return renderer$
 
 const handlers = [
   { route: '/__nuxt_error', handler: _lazy_hwSjGD, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_supabase/session', handler: _tym077, lazy: false, middleware: false, method: undefined },
   { route: '/api/_content/query/:qid/**:params', handler: _xkjXFU, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _xkjXFU, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query', handler: _xkjXFU, lazy: false, middleware: false, method: "get" },

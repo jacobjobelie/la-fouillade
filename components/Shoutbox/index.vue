@@ -30,10 +30,10 @@ type Shout = {
   }
 }
 
-const supabase = useSupabaseClient()
+// const supabase = useSupabaseClient()
 
 const shouts = ref<Shout[]>([])
-const user = useSupabaseUser()
+// const user = useSupabaseUser()
 
 async function freshFetch() {
   let { data } = await supabase.from('shouts').select(`*`)
@@ -59,5 +59,5 @@ async function onSubmit(values) {
     freshFetch()
   }, 1000)
 }
-freshFetch()
+// freshFetch()
 </script>

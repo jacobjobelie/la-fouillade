@@ -4,8 +4,8 @@
       <div class="w-full h-full grid gap-2 grid-rows-[auto,auto,1fr]">
         <Text h1>{{ welcom }}</Text>
         <div class="w-full h-full">
-          <!-- <h2>sticky notes</h2>
-          <Shoutbox /> -->
+
+          <FetchMd/>
 
   <NavItemB
         icon="fa-feather-pointed"
@@ -37,15 +37,16 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
 import { ref } from 'vue'
-import { createGif } from '../ts/gif'
-import { createMap } from '../ts/ol'
+// import { createGif } from '../ts/gif'
+// import { createMap } from '../ts/ol'
 
 const welcom = ref('Destination: La Fouillade - July 1-8 2023')
 const mapEl = ref<HTMLDivElement>()
 const cEl = ref<HTMLDivElement>()
 
+
 onMounted(() => {
-  createMap(mapEl.value!)
+  // createMap(mapEl.value!)
 })
 
 let i = 1
