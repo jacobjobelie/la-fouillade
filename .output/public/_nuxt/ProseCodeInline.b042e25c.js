@@ -1,1 +1,0 @@
-/* empty css                                                                        */import{a as o,o as t,f as r,r as s}from"./entry.e6c3838a.js";const a={},c={class:"text-purple-500"};function n(e,d){return t(),r("code",c,[s(e.$slots,"default",{},void 0,!0)])}const f=o(a,[["render",n],["__scopeId","data-v-0c0ab9a6"]]);export{f as default};
