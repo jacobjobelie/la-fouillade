@@ -18,7 +18,7 @@ import { createHooks } from 'file:///Users/sam/Documents/Projects/la-fouillade/n
 import { hash } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/ohash/dist/index.mjs';
 import { createStorage, prefixStorage } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unstorage/dist/index.mjs';
 import unstorage_47drivers_47fs from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/nitropack/node_modules/defu/dist/defu.mjs';
+import defu from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/defu/dist/defu.mjs';
 import { toRouteMatcher, createRouter } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/radix3/dist/index.mjs';
 import { visit } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unist-util-visit/index.js';
 import { createUtils } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/@windicss/plugin-utils/dist/index.mjs';
@@ -48,7 +48,6 @@ import { u } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_module
 import { encode } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/mdurl/index.js';
 import slugify from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/slugify/slugify.js';
 import { position } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unist-util-position/index.js';
-import htmlTags from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/html-tags/index.js';
 import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/shiki-es/dist/shiki.node.mjs';
 import consola from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unenv/runtime/npm/consola.mjs';
 
@@ -92,7 +91,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/sam/Documents/Projects/la-fouillade/server/assets"}];
 
 const assets = createStorage();
 
@@ -1841,6 +1840,126 @@ function table(h, node) {
   return h(node, "table", wrap([h(result[0].position, "thead", wrap([result[0]], true))].concat(body || []), true));
 }
 
+const htmlTags = [
+  "a",
+  "abbr",
+  "address",
+  "area",
+  "article",
+  "aside",
+  "audio",
+  "b",
+  "base",
+  "bdi",
+  "bdo",
+  "blockquote",
+  "body",
+  "br",
+  "button",
+  "canvas",
+  "caption",
+  "cite",
+  "code",
+  "col",
+  "colgroup",
+  "data",
+  "datalist",
+  "dd",
+  "del",
+  "details",
+  "dfn",
+  "dialog",
+  "div",
+  "dl",
+  "dt",
+  "em",
+  "embed",
+  "fieldset",
+  "figcaption",
+  "figure",
+  "footer",
+  "form",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "head",
+  "header",
+  "hgroup",
+  "hr",
+  "html",
+  "i",
+  "iframe",
+  "img",
+  "input",
+  "ins",
+  "kbd",
+  "label",
+  "legend",
+  "li",
+  "link",
+  "main",
+  "map",
+  "mark",
+  "math",
+  "menu",
+  "menuitem",
+  "meta",
+  "meter",
+  "nav",
+  "noscript",
+  "object",
+  "ol",
+  "optgroup",
+  "option",
+  "output",
+  "p",
+  "param",
+  "picture",
+  "pre",
+  "progress",
+  "q",
+  "rb",
+  "rp",
+  "rt",
+  "rtc",
+  "ruby",
+  "s",
+  "samp",
+  "script",
+  "section",
+  "select",
+  "slot",
+  "small",
+  "source",
+  "span",
+  "strong",
+  "style",
+  "sub",
+  "summary",
+  "sup",
+  "svg",
+  "table",
+  "tbody",
+  "td",
+  "template",
+  "textarea",
+  "tfoot",
+  "th",
+  "thead",
+  "time",
+  "title",
+  "tr",
+  "track",
+  "u",
+  "ul",
+  "var",
+  "video",
+  "wbr"
+];
+
 function paragraph(h, node) {
   if (node.children && node.children[0] && node.children[0].type === "html") {
     const tagName = kebabCase(getTagName(node.children[0].value) || "div");
@@ -3307,17 +3426,15 @@ function serverQueryContent(event, query, ...pathParts) {
 }
 
 function jsonParse(value) {
-  return JSON.parse(value, (key, value2) => {
-    const withOperator = typeof value2 === "string" && value2.match(/^--([A-Z]+) (.+)$/) || [];
-    if (withOperator[1] === "REGEX") {
-      const regex = withOperator[2].match(/\/(.*)\/([dgimsuy]*)$/);
-      return regex ? new RegExp(regex[1], regex[2] || "") : value2;
-    }
-    if (key === "_path") {
-      return decodeURI(value2);
-    }
-    return value2;
-  });
+  return JSON.parse(value, regExpReviver);
+}
+function regExpReviver(_key, value) {
+  const withOperator = typeof value === "string" && value.match(/^--([A-Z]+) (.+)$/) || [];
+  if (withOperator[1] === "REGEX") {
+    const regex = withOperator[2].match(/\/(.*)\/([dgimsuy]*)$/);
+    return regex ? new RegExp(regex[1], regex[2] || "") : value;
+  }
+  return value;
 }
 
 const parseJSONQueryParams = (body) => {
@@ -3342,7 +3459,7 @@ const getContentQuery = (event) => {
   const qid = event.context.params.qid?.replace(/.json$/, "");
   const query = getQuery(event) || {};
   if (qid && query._params) {
-    memory[qid] = parseJSONQueryParams(query._params);
+    memory[qid] = parseJSONQueryParams(decodeURIComponent(query._params));
     if (memory[qid].where && !Array.isArray(memory[qid].where)) {
       memory[qid].where = [memory[qid].where];
     }
@@ -3352,7 +3469,7 @@ const getContentQuery = (event) => {
     return memory[qid];
   }
   if (query._params) {
-    return parseJSONQueryParams(query._params);
+    return parseJSONQueryParams(decodeURIComponent(query._params));
   }
   if (typeof query.only === "string" && query.only.includes(",")) {
     query.only = query.only.split(",").map((s) => s.trim());
