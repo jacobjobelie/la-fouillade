@@ -1,6 +1,8 @@
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+
 export default defineNuxtConfig({
   modules: [
-    '@nuxtjs/supabase',
+    // '@nuxtjs/supabase',
     'nuxt-windicss',
     '@nuxt/content',
     '@vueuse/nuxt',
@@ -39,6 +41,7 @@ export default defineNuxtConfig({
   vite: {
     optimizeDeps: {},
     esbuildOptions: {},
+    assetsInclude: ['**/*.md']
   },
   // server config variable
 

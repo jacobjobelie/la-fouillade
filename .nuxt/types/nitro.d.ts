@@ -2,8 +2,8 @@
 declare module 'nitropack' {
   type Awaited<T> = T extends PromiseLike<infer U> ? Awaited<U> : T
   interface InternalApi {
-    '/api/_supabase/session': {
-      'default': Awaited<ReturnType<typeof import('../../node_modules/@nuxtjs/supabase/dist/runtime/server/api/session').default>>
+    '/__nuxt_error': {
+      'default': Awaited<ReturnType<typeof import('../../node_modules/nuxt/dist/core/runtime/nitro/renderer').default>>
     }
     '/api/_content/query/:qid/**:params': {
       'get': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>
@@ -14,7 +14,7 @@ declare module 'nitropack' {
     '/api/_content/query': {
       'get': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/query').default>>
     }
-    '/api/_content/cache.1675554459002.json': {
+    '/api/_content/cache.1675830789486.json': {
       'get': Awaited<ReturnType<typeof import('../../node_modules/@nuxt/content/dist/runtime/server/api/cache').default>>
     }
     '/api/_content/navigation/:qid/**:params': {
