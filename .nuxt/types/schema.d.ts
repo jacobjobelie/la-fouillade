@@ -146,7 +146,7 @@ declare module '@nuxt/schema' {
    supabase: {
       url: string,
 
-      key: any,
+      key: string,
 
       client: any,
 
