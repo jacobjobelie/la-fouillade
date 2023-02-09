@@ -7,31 +7,10 @@
 
           <FetchMd/>
 
-  <NavItemB
-        icon="fa-feather-pointed"
-        text="Directions"
-        to="/article/directions"
-        activated=""
-      />
-        </div>
-        <div class="relative w-full h-full grid items-center place-items-center">
-          <div class="grid grid-cols-2 gap-2 grid-rows-1 w-full h-full">
-            <div class="w-full h-full">
-              <img class="w-full h-full object-cover" src="/img/IMG_3434.jpeg"/>
-            </div>
-            <div class="relative grid gap-2 grid-cols-1 grid-rows-[1fr,1fr,auto] w-full h-full">
-              <div class="relative w-full h-full">
-              </div>
-              <div class="relative w-full h-full">
-                <div class="absolute top-0 left-0 h-full w-full" ref="mapEl"></div>
-              </div>
-              <p class="italic m-0">le chateâu Longcol</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+    </div>
+    </div>
 </template>
 
 <script setup lang="ts">
