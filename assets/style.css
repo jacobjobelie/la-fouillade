@@ -60,3 +60,12 @@ ul ul {
 .code-family {
   font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
 }
+
+img[alt="img-sm"]
+{
+  @apply  w-46;
+}
+img[alt="img-lg"]
+{
+  @apply  w-96;
+}
