@@ -1,6 +1,5 @@
 <template>
   <span class="wrapper">
-    <SparkleInstance />
     <slot></slot>
   </span>
 </template>
@@ -8,7 +7,6 @@
 <script setup lang="ts">
 import { reactive } from 'vue'
 import { getUid } from '../../utils/getUid'
-import SparkleInstance from './SparkleInstance.vue'
 
 type sparklesProps = {
   color?: string
