@@ -136,6 +136,7 @@ declare global {
   const useArrayFilter: typeof import('@vueuse/core')['useArrayFilter']
   const useArrayFind: typeof import('@vueuse/core')['useArrayFind']
   const useArrayFindIndex: typeof import('@vueuse/core')['useArrayFindIndex']
+  const useArrayFindLast: typeof import('@vueuse/core')['useArrayFindLast']
   const useArrayJoin: typeof import('@vueuse/core')['useArrayJoin']
   const useArrayMap: typeof import('@vueuse/core')['useArrayMap']
   const useArrayReduce: typeof import('@vueuse/core')['useArrayReduce']
@@ -200,7 +201,7 @@ declare global {
   const useFullscreen: typeof import('@vueuse/core')['useFullscreen']
   const useGamepad: typeof import('@vueuse/core')['useGamepad']
   const useGeolocation: typeof import('@vueuse/core')['useGeolocation']
-  const useHead: typeof import('../../node_modules/nuxt/dist/head/runtime')['useHead']
+  const useHead: typeof import('../../node_modules/nuxt/dist/app')['useHead']
   const useIdle: typeof import('@vueuse/core')['useIdle']
   const useInfiniteScroll: typeof import('@vueuse/core')['useInfiniteScroll']
   const useIntersectionObserver: typeof import('@vueuse/core')['useIntersectionObserver']
@@ -246,6 +247,7 @@ declare global {
   const useRafFn: typeof import('@vueuse/core')['useRafFn']
   const useRefHistory: typeof import('@vueuse/core')['useRefHistory']
   const useRequestEvent: typeof import('../../node_modules/nuxt/dist/app')['useRequestEvent']
+  const useRequestFetch: typeof import('../../node_modules/nuxt/dist/app')['useRequestFetch']
   const useRequestHeaders: typeof import('../../node_modules/nuxt/dist/app')['useRequestHeaders']
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
   const useRoute: typeof import('../../node_modules/nuxt/dist/app')['useRoute']
@@ -256,8 +258,8 @@ declare global {
   const useScriptTag: typeof import('@vueuse/core')['useScriptTag']
   const useScroll: typeof import('@vueuse/core')['useScroll']
   const useScrollLock: typeof import('@vueuse/core')['useScrollLock']
-  const useSeoMeta: typeof import('../../node_modules/nuxt/dist/head/runtime')['useSeoMeta']
-  const useServerSeoMeta: typeof import('../../node_modules/nuxt/dist/head/runtime')['useServerSeoMeta']
+  const useSeoMeta: typeof import('../../node_modules/nuxt/dist/app')['useSeoMeta']
+  const useServerSeoMeta: typeof import('../../node_modules/nuxt/dist/app')['useServerSeoMeta']
   const useSessionStorage: typeof import('@vueuse/core')['useSessionStorage']
   const useShare: typeof import('@vueuse/core')['useShare']
   const useSlots: typeof import('vue')['useSlots']
@@ -321,6 +323,11 @@ declare global {
   const withMemo: typeof import('vue')['withMemo']
   const withModifiers: typeof import('vue')['withModifiers']
   const withScopeId: typeof import('vue')['withScopeId']
+}
+// for type re-export
+declare global {
+  // @ts-ignore
+  export type { Component,ComponentPublicInstance,ComputedRef,InjectionKey,PropType,Ref,VNode } from 'vue'
 }
 // for vue template auto import
 import { UnwrapRef } from 'vue'
@@ -461,6 +468,7 @@ declare module 'vue' {
     readonly useArrayFilter: UnwrapRef<typeof import('@vueuse/core')['useArrayFilter']>
     readonly useArrayFind: UnwrapRef<typeof import('@vueuse/core')['useArrayFind']>
     readonly useArrayFindIndex: UnwrapRef<typeof import('@vueuse/core')['useArrayFindIndex']>
+    readonly useArrayFindLast: UnwrapRef<typeof import('@vueuse/core')['useArrayFindLast']>
     readonly useArrayJoin: UnwrapRef<typeof import('@vueuse/core')['useArrayJoin']>
     readonly useArrayMap: UnwrapRef<typeof import('@vueuse/core')['useArrayMap']>
     readonly useArrayReduce: UnwrapRef<typeof import('@vueuse/core')['useArrayReduce']>
@@ -525,7 +533,7 @@ declare module 'vue' {
     readonly useFullscreen: UnwrapRef<typeof import('@vueuse/core')['useFullscreen']>
     readonly useGamepad: UnwrapRef<typeof import('@vueuse/core')['useGamepad']>
     readonly useGeolocation: UnwrapRef<typeof import('@vueuse/core')['useGeolocation']>
-    readonly useHead: UnwrapRef<typeof import('../../node_modules/nuxt/dist/head/runtime')['useHead']>
+    readonly useHead: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useHead']>
     readonly useIdle: UnwrapRef<typeof import('@vueuse/core')['useIdle']>
     readonly useInfiniteScroll: UnwrapRef<typeof import('@vueuse/core')['useInfiniteScroll']>
     readonly useIntersectionObserver: UnwrapRef<typeof import('@vueuse/core')['useIntersectionObserver']>
@@ -571,6 +579,7 @@ declare module 'vue' {
     readonly useRafFn: UnwrapRef<typeof import('@vueuse/core')['useRafFn']>
     readonly useRefHistory: UnwrapRef<typeof import('@vueuse/core')['useRefHistory']>
     readonly useRequestEvent: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestEvent']>
+    readonly useRequestFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestFetch']>
     readonly useRequestHeaders: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRequestHeaders']>
     readonly useResizeObserver: UnwrapRef<typeof import('@vueuse/core')['useResizeObserver']>
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useRoute']>
@@ -581,8 +590,8 @@ declare module 'vue' {
     readonly useScriptTag: UnwrapRef<typeof import('@vueuse/core')['useScriptTag']>
     readonly useScroll: UnwrapRef<typeof import('@vueuse/core')['useScroll']>
     readonly useScrollLock: UnwrapRef<typeof import('@vueuse/core')['useScrollLock']>
-    readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/head/runtime')['useSeoMeta']>
-    readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/head/runtime')['useServerSeoMeta']>
+    readonly useSeoMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useSeoMeta']>
+    readonly useServerSeoMeta: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app')['useServerSeoMeta']>
     readonly useSessionStorage: UnwrapRef<typeof import('@vueuse/core')['useSessionStorage']>
     readonly useShare: UnwrapRef<typeof import('@vueuse/core')['useShare']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
