@@ -2,7 +2,6 @@
   <div class="h-full mx-auto p-4">
     <div class="relative w-full h-full grid items-center place-items-center">
       <div class="w-full h-full grid gap-2 grid-rows-[auto,auto,1fr]">
-        <NavBar/>
         <Text h1>{{ welcom }}</Text>
         <div class="w-full h-full">
           <FetchMd/>
