@@ -69,3 +69,12 @@ img[alt="img-lg"]
 {
   @apply  w-96;
 }
+
+/* ----------------  */
+
+.x-banner{
+  @apply  w-full bg-orange-300 h-12;
+}
+.x-love{
+  @apply  w-full bg-pink-400 h-12 text-2xl;
+}
