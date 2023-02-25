@@ -4,12 +4,12 @@
       <Sparkle />
     </NuxtLink> -->
     <div id="links" class="flex gap-4 px-3">
-       <NavItemB
+       <!-- <NavItemB
         icon="fa-feather-pointed"
         text="Directions"
         to="/flights"
         :activated="routeActivated"
-      />
+      /> -->
 
     </div>
     <div class="flex gap-4 pl-3 ml-3">
