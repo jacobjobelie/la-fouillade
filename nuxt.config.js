@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
   ],
-  // ssr:false,
+  ssr:false,
   target: 'static',
   colorMode: {
     preference: 'system',
