@@ -30,9 +30,8 @@ export default defineComponent({
   },
 
   setup() {
-    let dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    const enabled = ref(dark)
+    const colorMode = useColorMode()
+    const enabled = computed(()=>colorMode.preference === 'dark')
 
     return {
       enabled,
