@@ -78,3 +78,29 @@ img[alt="img-lg"]
 .x-love{
   @apply  w-full bg-pink-400 h-12 text-2xl;
 }
+
+.x-banner-a1{
+  @apply  w-full bg-orange-300 h-12  object-cover overflow-hidden opacity-100;
+  background-image: url('/img/marble/SKM_C65823022714112.pdf.png');
+  background-size: cover;
+  background-clip: border-box;
+}
+.x-banner-a1::after{
+  @apply absolute w-full h-12 object-cover max-h-12 overflow-hidden opacity-75 mix-blend-screen;
+  content: '';
+  background-image: url('/img/marble/SKM_C65823022714132.pdf.png');
+  background-clip: border-box;
+}
+
+.x-banner-a2{
+  @apply  w-full bg-orange-300 h-12  object-cover overflow-hidden opacity-100;
+  background-image: url('/img/marble/SKM_C65823022714180.pdf.png');
+  background-size: cover;
+  background-clip: border-box;
+}
+.x-banner-a2::after{
+  @apply absolute w-full h-12 object-cover max-h-12 overflow-hidden opacity-75 mix-blend-screen;
+  content: '';
+  background-image: url('/img/marble/SKM_C65823022714182.pdf.png');
+  background-clip: border-box;
+}
