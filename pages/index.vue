@@ -1,12 +1,20 @@
 <template>
-  <div class="h-full mx-auto px-4">
+  <div class="h-full mx-auto ">
     <div class="relative w-full h-full grid items-center place-items-center">
       <div class="w-full h-full grid gap-2 grid-rows-[auto,1fr]">
-        <div class="relative w-full flex text-center justify-center flex-col">
+        <div class="relative w-full flex text-center justify-center flex-col mb-6">
           <!-- <Text h1>{{ welcom }}</Text> -->
-          <Text h1>Fête Fou</Text>
-          <Text h3>(crazy party)</Text>
-          <Text h2>La Fouillade</Text>
+          <div class="w-full h-full text-light-500">
+            <PictureSlot class="w-full h-500px" marble="/img/marble/IMG_4643.jpg" imgClass="">
+              <div class="relative flex-col flex items-center justify-center org rounded-4xl text-green-200 p-4">
+                <div class="absolute w-full h-full header-border"></div>
+                <h2 class="text-9xl m-0 header-text extrabold">Fête Fou</h2>
+                <h3 class="text-4xl m-0 header-text extrabold">(crazy party)</h3>
+                <h2 class="text-5xl m-0 mt-6 header-text extrabold">La Fouillade - Château du Longcol</h2>
+              </div>
+            </PictureSlot>
+
+          </div>
         </div>
         <div class="w-full h-full px-4">
           <!-- <FetchMd/> -->
@@ -24,7 +32,7 @@
             </div>
             <div
               class="w-1/2 h-32 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center border-gray-800 border-4 z-10">
-              <Text h2>Check-in 5pm, check-out 11am</Text>
+              <Text h2>Check-in 5pm, Check-out 11am</Text>
             </div>
           </div>
           <div class="w-full h-full px-4 ">
@@ -32,10 +40,12 @@
               iw="w-500px" borderColor="border-green-400" />
           </div>
           <div class="w-full ">
+            <Text h1>Travel</Text>
+            <Text h1>Toulouse -> Chateau</Text>
             <div class="w-full">
               <Travel>
                 <template #footer>
-                  <Text class="text-gray-400">Card footer</Text>
+                  <Text class="text-gray-400">EURO</Text>
                 </template>
               </Travel>
             </div>
@@ -67,5 +77,19 @@ let i = 1
 <style scoped>
 .bg {
   @apply mix-blend-screen
+}
+
+.org {
+  @apply border-green-300 border-6;
+
+  background-color: rgba(255, 173, 73, 0.8)
+}
+
+.header-text {
+  color: rgba(9, 81, 16, 0.8);
+}
+
+.header-border {
+  border: rgba(9, 81, 16, 0.8) 4px solid;
 }
 </style>
