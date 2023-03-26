@@ -23,6 +23,7 @@ type Props = {
   size?: string | number
   weight?: string | number
   gradient?: boolean
+  bg?: string
 }
 
 const props = defineProps<Props>()
@@ -43,6 +44,8 @@ const styleList = computed(() => {
     list.push('base')
   } else if (props.sm) {
     list.push('sm')
+  } else if (props.bg) {
+    list.push('bg')
   } else {
     list.push('p')
   }
@@ -51,6 +54,7 @@ const styleList = computed(() => {
   if (props.em) list.push('em')
   if (props.b) list.push('b')
   if (props.gradient) list.push('gradient')
+  console.log(list)
   return list
 })
 
@@ -67,7 +71,6 @@ const styleList = computed(() => {
 //   }
 // });
 
-console.log()
 </script>
 
 <style scoped>
