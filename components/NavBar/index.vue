@@ -30,7 +30,9 @@ export default defineComponent({
 
     useHead({
       title: 'SamSteph',
-      meta: [{ name: 'description', content: 'My amazing site.' }],
+      meta: [{ name: 'description', content: 'Wedding time.' }, {
+        name: 'viewport', content: 'width=device-width, user-scalable=no'
+      }],
       bodyAttrs: { class: 'test' },
       script: [{ children: "console.log('Hello world')" }],
     })
