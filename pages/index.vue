@@ -24,14 +24,14 @@
         <div class="w-full h-full flex flex-col items-center justify-center gap-4">
 
           <div class="relative w-full flex items-center justify-center flex-col gap-4">
-            <div class="absolute w-9/12 h-1/2 bg-yellow-300 bg-opacity-50 translate-y-1/2  rounded-2xl "></div>
-            <div class="absolute w-9/12 h-1/2 bg-green-500 bg-opacity-20 translate-y-1/2    rounded-2xl"></div>
+            <div class="absolute w-11/12 h-1/2 bg-yellow-300 bg-opacity-50 translate-y-1/2  rounded-2xl "></div>
+            <div class="absolute w-11/12 h-1/2 bg-green-500 bg-opacity-20 translate-y-1/2    rounded-2xl"></div>
             <div
-              class="w-1/2 h-32 bg-gray-800 text-light-800 rounded-2xl flex items-center justify-center border-green-300 border-4 z-10">
+              class="w-9/12 h-32 bg-gray-800 text-light-800 rounded-2xl flex items-center justify-center border-green-300 border-4 z-10">
               <Text h1>July 1 - July 8</Text>
             </div>
             <div
-              class="w-1/2 h-32 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center border-gray-800 border-4 z-10">
+              class="w-9/12 h-32 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center border-gray-800 border-4 z-10">
               <Text h2>Check-in 5pm, Check-out 11am</Text>
             </div>
           </div>

@@ -4,7 +4,7 @@
       <Sparkle />
     </NuxtLink> -->
     <div id="links" class="flex gap-4 px-3">
-       <!-- <NavItemB
+      <!-- <NavItemB
         icon="fa-feather-pointed"
         text="Directions"
         to="/flights"
@@ -19,7 +19,7 @@
 </template>
 
 <script lang="ts">
-import {} from 'nuxt'
+import { } from 'nuxt'
 export default defineComponent({
   setup() {
     const routeActivated = computed(() => {
@@ -29,7 +29,7 @@ export default defineComponent({
     })
 
     useHead({
-      title: 'My App',
+      title: 'SamSteph',
       meta: [{ name: 'description', content: 'My amazing site.' }],
       bodyAttrs: { class: 'test' },
       script: [{ children: "console.log('Hello world')" }],
