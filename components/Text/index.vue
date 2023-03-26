@@ -88,27 +88,32 @@ span::selection {
 }
 
 .h1 {
-  @apply text-5xl my-2.65rem font-semibold;
+  /* @apply text-5xl my-2.65rem font-semibold; */
+  @apply text-5xl font-semibold;
   @apply <sm: (text-3xl);
 }
 
 .h2 {
-  @apply text-4xl my-1.25rem font-medium;
+  /* @apply text-4xl my-1.25rem font-medium; */
+  @apply text-4xl font-medium;
   @apply <sm: (text-2xl);
 }
 
 .h3 {
-  @apply text-3xl my-1.2rem font-medium;
+  /* @apply text-3xl my-1.2rem font-medium; */
+  @apply text-3xl font-medium;
   @apply <sm: (text-xl);
 }
 
 .h4 {
-  @apply text-xl my-2 font-medium;
+  /* @apply text-xl my-2 font-medium; */
+  @apply text-xl font-medium;
   @apply <sm: (text-lg);
 }
 
 .p {
-  @apply text-lg my-2;
+  /* @apply text-lg my-2; */
+  @apply text-lg;
   @apply <md: (text-base);
 }
 
@@ -126,7 +131,8 @@ span::selection {
 }
 
 .title {
-  @apply my-8 font-bold;
+  /* @apply my-8 font-bold; */
+  @apply font-bold;
 }
 
 span em,

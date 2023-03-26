@@ -1,16 +1,16 @@
 <template>
-  <div class="h-full mx-auto ">
+  <div class="h-full mx-auto py-6">
     <div class="relative w-full h-full grid items-center place-items-center">
       <div class="w-full h-full grid gap-2 grid-rows-[auto,1fr]">
         <div class="relative w-full flex text-center justify-center flex-col mb-6">
           <!-- <Text h1>{{ welcom }}</Text> -->
           <div class="w-full h-full text-light-500">
-            <PictureSlot class="w-full h-500px" marble="/img/marble/IMG_4643.jpg" imgClass="">
+            <PictureSlot class="w-full " marble="/img/marble/IMG_4643.jpg" imgClass="">
               <div class="relative flex-col flex items-center justify-center org rounded-4xl text-green-200 p-4">
                 <div class="absolute w-full h-full header-border"></div>
-                <h2 class="text-9xl m-0 header-text header-color extrabold">Fête Fou</h2>
-                <h3 class="text-4xl m-0 header-text neon-color header-neon extrabold">(crazy party)</h3>
-                <h2 class="text-5xl m-0 mt-6 header-text header-color extrabold">La Fouillade - Château du Longcol</h2>
+                <h1 class=" m-0 header-text header-color extrabold">Fête Fou</h1>
+                <h3 class=" m-0 header-text neon-color header-neon extrabold">(crazy party)</h3>
+                <h2 class=" m-0 mt-6 header-text header-color extrabold">La Fouillade - Château du Longcol</h2>
               </div>
             </PictureSlot>
 
@@ -31,13 +31,14 @@
               <Text h1>July 1 - July 8</Text>
             </div>
             <div
-              class="w-9/12 h-32 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center border-gray-800 border-4 z-10">
-              <Text h2>Check-in 5pm, Check-out 11am</Text>
+              class="w-9/12 h-32 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-gray-800 border-4 z-10 text-center">
+              <Text h2>Check-in 5pm, </Text>
+              <Text h2>Check-out 11am</Text>
             </div>
           </div>
           <div class="w-full h-full px-4 ">
-            <Picture class="w-full h-500px" srcset="/img/whatsapp.jpeg" marble="/img/marble/SKM_C65823022714100.pdf.png"
-              iw="w-500px" borderColor="border-green-400" />
+            <Picture class="w-full " srcset="/img/whatsapp.png" marble="/img/marble/SKM_C65823022714100.pdf.png" iw=""
+              borderColor="border-green-400" />
           </div>
           <div class="w-full ">
             <Text h1>Travel</Text>

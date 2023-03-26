@@ -1,5 +1,5 @@
 <template>
-  <div class="h-6 w-full flex justify-between items-center px-2">
+  <div class="h-full w-full flex justify-between items-center px-2">
     <!-- <NuxtLink to="/">
       <Sparkle />
     </NuxtLink> -->

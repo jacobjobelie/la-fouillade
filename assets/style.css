@@ -8,6 +8,10 @@
   src: url("/fonts/uncle-bob-mf-cufonfonts/bob.ttf");
 }
 
+html, body{
+  @apply w-screen min-w-screen bg-red-400 overflow-x-hidden;
+  width: 100wv;
+}
 
 /* http://www.identifont.com/similar?3U3 */
 :root {
@@ -28,23 +32,28 @@
 }
 
 
+h1 {
+  @apply text-9xl font-semibold;
+  @apply <sm: (text-5xl);
+}
+
 h2 {
-  @apply text-4xl my-1.25rem font-medium;
+  @apply text-4xl  font-medium;
   @apply <sm: (text-2xl);
 }
 
 h3 {
-  @apply text-3xl my-1.2rem font-medium;
+  @apply text-3xl  font-medium;
   @apply <sm: (text-xl);
 }
 
 h4 {
-  @apply text-xl my-2 font-medium;
+  @apply text-xl font-medium;
   @apply <sm: (text-lg);
 }
 
 p,li,ul {
-  @apply text-lg my-2;
+  @apply text-lg;
   @apply <md: (text-base);
 }
 
