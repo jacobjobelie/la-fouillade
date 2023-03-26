@@ -5,7 +5,7 @@ import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { renderToString } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue/server-renderer/index.mjs';
@@ -14,11 +14,11 @@ import destr from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules
 import { createCall, createFetch } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unenv/runtime/fetch/index.mjs';
 import { createHooks } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/hookable/dist/index.mjs';
 import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/defu/dist/defu.mjs';
 import { hash } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ohash/dist/index.mjs';
 import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ufo/dist/index.mjs';
 import { createStorage, prefixStorage } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/defu/dist/defu.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/drivers/fs.mjs';
 import { toRouteMatcher, createRouter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/radix3/dist/index.mjs';
 import { visit } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-visit/index.js';
 import { createUtils } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@windicss/plugin-utils/dist/index.mjs';
@@ -51,15 +51,25 @@ import { position } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_
 import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/shiki-es/dist/shiki.node.mjs';
 import consola from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unenv/runtime/npm/consola.mjs';
 
+const inlineAppConfig = {};
+
+
+
+const appConfig = defuFn(inlineAppConfig);
+
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}}},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
-const getEnv = (key) => {
+overrideConfig(_runtimeConfig);
+const runtimeConfig = deepFreeze(_runtimeConfig);
+const useRuntimeConfig = () => runtimeConfig;
+deepFreeze(appConfig);
+function getEnv(key) {
   const envKey = snakeCase(key).toUpperCase();
   return destr(
     process.env[ENV_PREFIX + envKey] ?? process.env[ENV_PREFIX_ALT + envKey]
   );
-};
+}
 function isObject$1(input) {
   return typeof input === "object" && !Array.isArray(input);
 }
@@ -77,9 +87,6 @@ function overrideConfig(obj, parentKey = "") {
     }
   }
 }
-overrideConfig(_runtimeConfig);
-const config$2 = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config$2;
 function deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -101,8 +108,6 @@ for (const asset of serverAssets) {
 
 const storage = createStorage({});
 
-const useStorage = () => storage;
-
 storage.mount('/assets', assets);
 
 storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/content","ignore":["**/node_modules/**","**/.git/**"]}));
@@ -112,16 +117,20 @@ storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"ba
 storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
 storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
+function useStorage(base = "") {
+  return base ? prefixStorage(storage, base) : storage;
+}
+
 const defaultCacheOptions = {
   name: "_",
   base: "/cache",
   swr: true,
   maxAge: 1
 };
-function defineCachedFunction(fn, opts) {
+function defineCachedFunction(fn, opts = {}) {
   opts = { ...defaultCacheOptions, ...opts };
   const pending = {};
-  const group = opts.group || "nitro";
+  const group = opts.group || "nitro/functions";
   const name = opts.name || fn.name || "_";
   const integrity = hash([opts.integrity, fn, opts]);
   const validate = opts.validate || (() => true);
@@ -136,7 +145,7 @@ function defineCachedFunction(fn, opts) {
     const _resolve = async () => {
       const isPending = pending[key];
       if (!isPending) {
-        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0) {
+        if (entry.value !== void 0 && (opts.staleMaxAge || 0) >= 0 && opts.swr === false) {
           entry.value = void 0;
           entry.integrity = void 0;
           entry.mtime = void 0;
@@ -144,7 +153,14 @@ function defineCachedFunction(fn, opts) {
         }
         pending[key] = Promise.resolve(resolver());
       }
-      entry.value = await pending[key];
+      try {
+        entry.value = await pending[key];
+      } catch (error) {
+        if (!isPending) {
+          delete pending[key];
+        }
+        throw error;
+      }
       if (!isPending) {
         entry.mtime = Date.now();
         entry.integrity = integrity;
@@ -473,12 +489,7 @@ function defineRenderHandler(handler) {
       for (const header in response.headers) {
         event.node.res.setHeader(header, response.headers[header]);
       }
-      if (response.statusCode) {
-        event.node.res.statusCode = response.statusCode;
-      }
-      if (response.statusMessage) {
-        event.node.res.statusMessage = response.statusMessage;
-      }
+      setResponseStatus(event, response.statusCode, response.statusMessage);
     }
     return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
   });
@@ -489,7 +500,7 @@ function hasReqHeader(event, name, includes) {
   return value && typeof value === "string" && value.toLowerCase().includes(includes);
 }
 function isJsonRequest(event) {
-  return hasReqHeader(event, "accept", "application/json") || hasReqHeader(event, "user-agent", "curl/") || hasReqHeader(event, "user-agent", "httpie/") || event.node.req.url?.endsWith(".json");
+  return hasReqHeader(event, "accept", "application/json") || hasReqHeader(event, "user-agent", "curl/") || hasReqHeader(event, "user-agent", "httpie/") || hasReqHeader(event, "sec-fetch-mode", "cors") || event.path.startsWith("/api/") || event.path.endsWith(".json");
 }
 function normalizeError(error) {
   const cwd = typeof process.cwd === "function" ? process.cwd() : "/";
@@ -521,10 +532,7 @@ const errorHandler = (async function errorhandler(error, event) {
     stack: statusCode !== 404 ? `<pre>${stack.map((i) => `<span class="stack${i.internal ? " internal" : ""}">${i.text}</span>`).join("\n")}</pre>` : "",
     data: error.data
   };
-  event.node.res.statusCode = errorObject.statusCode !== 200 && errorObject.statusCode || 500;
-  if (errorObject.statusMessage) {
-    event.node.res.statusMessage = errorObject.statusMessage;
-  }
+  setResponseStatus(event, errorObject.statusCode !== 200 && errorObject.statusCode || 500, errorObject.statusMessage);
   if (error.unhandled || error.fatal) {
     const tags = [
       "[nuxt]",
@@ -536,7 +544,7 @@ const errorHandler = (async function errorhandler(error, event) {
     console.error(tags, errorObject.message + "\n" + stack.map((l) => "  " + l.text).join("  \n"));
   }
   if (isJsonRequest(event)) {
-    event.node.res.setHeader("Content-Type", "application/json");
+    setResponseHeader(event, "Content-Type", "application/json");
     event.node.res.end(JSON.stringify(errorObject));
     return;
   }
@@ -550,19 +558,14 @@ const errorHandler = (async function errorhandler(error, event) {
     {
       errorObject.description = errorObject.message;
     }
-    event.node.res.setHeader("Content-Type", "text/html;charset=UTF-8");
+    setResponseHeader(event, "Content-Type", "text/html;charset=UTF-8");
     event.node.res.end(template(errorObject));
     return;
   }
   for (const [header, value] of res.headers.entries()) {
     setResponseHeader(event, header, value);
   }
-  if (res.status && res.status !== 200) {
-    event.node.res.statusCode = res.status;
-  }
-  if (res.statusText) {
-    event.node.res.statusMessage = res.statusText;
-  }
+  setResponseStatus(event, res.status && res.status !== 200 ? res.status : void 0, res.statusText);
   event.node.res.end(await res.text());
 });
 
@@ -648,7 +651,7 @@ const createQuery = (fetcher, intitialParams) => {
     params: () => queryParams,
     only: $set("only", ensureArray),
     without: $set("without", ensureArray),
-    where: $set("where", (q) => [...ensureArray(queryParams.where), q]),
+    where: $set("where", (q) => [...ensureArray(queryParams.where), ...ensureArray(q)]),
     sort: $set("sort", (sort) => [...ensureArray(queryParams.sort), ...ensureArray(sort)]),
     limit: $set("limit", (v) => parseInt(String(v), 10)),
     skip: $set("skip", (v) => parseInt(String(v), 10)),
@@ -796,8 +799,8 @@ function createPipelineFetcher(getContentsList) {
   const surround = (data, { query, before, after }) => {
     const matchQuery = typeof query === "string" ? { _path: query } : query;
     const index = data.findIndex((item) => match(item, matchQuery));
-    before = before || 1;
-    after = after || 1;
+    before = before ?? 1;
+    after = after ?? 1;
     const slice = new Array(before + after).fill(null, 0);
     return index === -1 ? slice : slice.map((_, i) => data[index - before + i + Number(i >= before)] || null);
   };
@@ -2052,7 +2055,7 @@ function compiler(_options) {
     if (node.type === "element") {
       if (node.tagName === "li") {
         let hasPreviousParagraph = false;
-        node.children = node.children.flatMap((child) => {
+        node.children = node.children?.flatMap((child) => {
           if (child.tagName === "p") {
             if (hasPreviousParagraph) {
               child.children.unshift({
@@ -2079,7 +2082,7 @@ function compiler(_options) {
     }
     if (node.type === "text") {
       if (node.value === "\n") {
-        return null;
+        return void 0;
       }
       return {
         type: "text",
@@ -2087,7 +2090,7 @@ function compiler(_options) {
       };
     }
     if (node.type === "comment") {
-      return null;
+      return void 0;
     }
     node.children = parseAsJSON(node.children || []);
     return node;
@@ -2119,7 +2122,7 @@ function nodeChildren(node) {
   if (Array.isArray(node.children) || typeof node.children === "string") {
     return node.children;
   }
-  if (typeof node.children.default === "function") {
+  if (typeof node.children?.default === "function") {
     return node.children.default();
   }
   return [];
@@ -3011,7 +3014,7 @@ const useShikiHighlighter = createSingleton((opts) => {
     const { highlights = [], colorMap = {} } = opts2 || {};
     return lines.map((line, lineIndex) => ({
       type: "element",
-      tag: "span",
+      tag: "div",
       props: { class: ["line", highlights.includes(lineIndex + 1) ? "highlight" : ""].join(" ").trim() },
       children: line.map(tokenSpan)
     }));
@@ -3365,8 +3368,13 @@ const getContent = async (event, id) => {
   }
   const cached = await cacheParsedStorage.getItem(id);
   const meta = await sourceStorage.getMeta(id);
+  const mtime = meta.mtime;
+  const size = meta.size || 0;
   const hash$1 = hash({
-    meta,
+    // Last modified time
+    mtime,
+    // File size
+    size,
     // Add Content version to the hash, to revalidate the cache on content update
     version: contentConfig.cacheVersion,
     integrity: contentConfig.cacheIntegrity
@@ -3471,7 +3479,7 @@ const getContentQuery = (event) => {
   if (params) {
     return decodeQueryParams(params.replace(/.json$/, ""));
   }
-  const qid = event.context.params.qid?.replace(/.json$/, "");
+  const qid = event.context.params?.qid?.replace(/.json$/, "");
   const query = getQuery(event) || {};
   if (qid && query._params) {
     memory[qid] = parseJSONQueryParams(decodeURIComponent(query._params));
@@ -3480,7 +3488,7 @@ const getContentQuery = (event) => {
     }
     return memory[qid];
   }
-  if (memory[qid]) {
+  if (qid && memory[qid]) {
     return memory[qid];
   }
   if (query._params) {
@@ -3632,7 +3640,7 @@ const collator = new Intl.Collator(void 0, { numeric: true, sensitivity: "base" 
 function sortAndClear(nav) {
   const sorted = nav.sort((a, b) => collator.compare(a._file, b._file));
   for (const item of sorted) {
-    if (item.children.length) {
+    if (item.children?.length) {
       sortAndClear(item.children);
     } else {
       delete item.children;
@@ -3824,8 +3832,8 @@ const _template = (messages) => _render({ messages: { ..._messages, ...messages 
 const template = _template;
 
 const errorDev = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  template: template
+      __proto__: null,
+      template: template
 });
 
 const appRootId = "__nuxt";
@@ -4017,14 +4025,14 @@ function splitPayload(ssrContext) {
 }
 
 const renderer$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: renderer
+      __proto__: null,
+      default: renderer
 });
 
 const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  default: _virtual__headStatic
+      __proto__: null,
+      default: _virtual__headStatic
 });
 //# sourceMappingURL=index.mjs.map
