@@ -8,9 +8,9 @@
             <PictureSlot class="w-full h-500px" marble="/img/marble/IMG_4643.jpg" imgClass="">
               <div class="relative flex-col flex items-center justify-center org rounded-4xl text-green-200 p-4">
                 <div class="absolute w-full h-full header-border"></div>
-                <h2 class="text-9xl m-0 header-text extrabold">Fête Fou</h2>
-                <h3 class="text-4xl m-0 header-text extrabold">(crazy party)</h3>
-                <h2 class="text-5xl m-0 mt-6 header-text extrabold">La Fouillade - Château du Longcol</h2>
+                <h2 class="text-9xl m-0 header-text header-color extrabold">Fête Fou</h2>
+                <h3 class="text-4xl m-0 header-text neon-color header-neon extrabold">(crazy party)</h3>
+                <h2 class="text-5xl m-0 mt-6 header-text header-color extrabold">La Fouillade - Château du Longcol</h2>
               </div>
             </PictureSlot>
 
@@ -86,10 +86,15 @@ let i = 1
 }
 
 .header-text {
-  color: rgba(9, 81, 16, 0.8);
+  font-family: 'bob';
+}
+
+.header-neon {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--main-c);
 }
 
 .header-border {
-  border: rgba(9, 81, 16, 0.8) 4px solid;
+  border: var(--main-c) 4px solid;
 }
 </style>

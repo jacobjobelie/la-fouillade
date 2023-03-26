@@ -3,14 +3,30 @@
   src: url("/fonts/tengel__.ttf");
 }
 
+@font-face {
+  font-family: "bob";
+  src: url("/fonts/uncle-bob-mf-cufonfonts/Uncle Bob MF.ttf");
+}
+
+
 /* http://www.identifont.com/similar?3U3 */
 :root {
   font-family: Avenir, Lato, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #213547;
-  box-sizing: border-box
+  box-sizing: border-box;
+  --main-c:rgba(9, 81, 16, 0.8);
+  --neon-c:rgba(176, 255, 5, 0.8);
 }
+
+.header-color {
+  color: var(--main-c);
+}
+.neon-color {
+  color: var(--neon-c);
+}
+
 
 h2 {
   @apply text-4xl my-1.25rem font-medium;
