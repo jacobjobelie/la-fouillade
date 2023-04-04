@@ -1,7 +1,11 @@
 @font-face {
+  font-family: "SIMPLIFICA";
+  src: url("/fonts/SIMPLIFICA.ttf");
+}
+/* @font-face {
   font-family: "Tengel";
   src: url("/fonts/tengel__.ttf");
-}
+} */
 
 @font-face {
   font-family: "bob";
@@ -9,19 +13,20 @@
 }
 
 html, body{
-  @apply w-screen min-w-screen bg-red-400 overflow-x-hidden;
+  @apply w-screen min-w-screen bg-red-400 overflow-x-hidden tracking-wider;
   width: 100wv;
 }
 
 /* http://www.identifont.com/similar?3U3 */
 :root {
-  font-family: Avenir, Lato, Helvetica, Arial, sans-serif;
+  font-family: 'SIMPLIFICA', Avenir, Lato, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #213547;
   box-sizing: border-box;
   --main-c:rgba(9, 81, 16, 0.8);
   --neon-c:rgba(176, 255, 5, 0.8);
+  --peach-c:rgba(255, 173, 73, 0.8);
 }
 
 .header-color {
@@ -52,9 +57,9 @@ h4 {
   @apply <sm: (text-lg);
 }
 
-p,li,ul {
-  @apply text-lg;
-  @apply <md: (text-base);
+p,li,ul,a {
+  @apply text-xl font-medium;
+  @apply <sm: (text-lg);
 }
 
 li{

@@ -49,6 +49,9 @@
               marble="/img/marble/SKM_C65823022714100.pdf.png" borderColor="border-green-400" />
           </div>
         </section>
+        <section class="w-full px-4 flex items-center justify-center">
+          <Text @click="fetchWassap" h3>{{ wassapText }}</Text>
+        </section>
 
         <section class="w-full h-full px-4 ">
           <div class="relative w-full flex items-center justify-center flex-col gap-4">
@@ -64,7 +67,6 @@
                 <Text h2>🔗 Toulouse → </Text>
                 <Text h2>Château de Longcol</Text>
               </NuxtLink>
-
             </div>
             <Text p>Once in Toulouse there are 2 options.</Text>
             <div class="w-full flex flex-row <sm:(flex-col)">
@@ -98,14 +100,18 @@ import { ref } from 'vue'
 const welcom = ref('Destination: La Fouillade - July 1-8 2023')
 const mapEl = ref<HTMLDivElement>()
 const cEl = ref<HTMLDivElement>()
+const wassapText = ref('🔗 Click to get Invite link')
+
+async function fetchWassap() {
+  if (wassapText.value.includes('https://')) return
+  const { data } = await useAsyncData('count', () => $fetch('/api/wassap'))
+  wassapText.value = data.value || 'failed to get the link :('
+}
 
 
-onMounted(() => {
-  // createMap(mapEl.value!)
-})
-
-let i = 1
 </script>
+
+
 
 <style scoped>
 .bg {
@@ -115,7 +121,7 @@ let i = 1
 .org {
   @apply border-green-300 border-6;
 
-  background-color: rgba(255, 173, 73, 0.8)
+  background-color: var(--peach-c);
 }
 
 .header-text {
@@ -128,6 +134,7 @@ let i = 1
 }
 
 .header-border {
-  border: var(--main-c) 4px solid;
+  @apply p-4 border-solid;
+  border-color: var(--main-c);
 }
 </style>

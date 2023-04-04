@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
   ],
   // ssr:false,
-  target: 'static',
+  // target: 'static',
   colorMode: {
     preference: 'system',
     fallback: 'light',

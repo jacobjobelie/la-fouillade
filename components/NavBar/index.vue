@@ -13,7 +13,7 @@
 
     </div>
     <div class="flex gap-4 pl-3 ml-3">
-      <Switch @changd="changeMode" />
+      <Switch :enabled="enabled" @changd="changeMode" />
     </div>
   </div>
 </template>
@@ -37,25 +37,21 @@ export default defineComponent({
       script: [{ children: "console.log('Hello world')" }],
     })
 
-    const homeActivatedStyles = computed(() => {
-      if (routeActivated.value === '/') {
-        return 'drop-shadow-lg'
-      } else return ''
-    })
-    const c = useColorMode()
 
-    function changeMode(v: boolean) {
+    const colorMode = useColorMode()
+    const darkMode = computed(() => colorMode.preference === 'dark')
+    function changeMode({ v }: Record<string, boolean>) {
       if (!v) {
-        c.preference = 'light'
+        colorMode.preference = 'light'
       } else {
-        c.preference = 'dark'
+        colorMode.preference = 'dark'
       }
     }
 
     return {
       routeActivated,
-      homeActivatedStyles,
       changeMode,
+      enabled: darkMode,
     }
   },
 })

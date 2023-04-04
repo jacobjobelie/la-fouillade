@@ -5,7 +5,7 @@ import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
 import { provider, isWindows } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/nitropack/node_modules/h3/dist/index.mjs';
 import { createRenderer } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import devalue from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@nuxt/devalue/dist/devalue.mjs';
 import { renderToString } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue/server-renderer/index.mjs';
@@ -3699,9 +3699,11 @@ const _KJdSOO = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
+const _lazy_l4OOLV = () => Promise.resolve().then(function () { return wassap$1; });
 const _lazy_Gzzh7x = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
+  { route: '/api/wassap', handler: _lazy_l4OOLV, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_Gzzh7x, lazy: true, middleware: false, method: undefined },
   { route: '/api/_content/query/:qid/**:params', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
   { route: '/api/_content/query/:qid', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
@@ -3834,6 +3836,15 @@ const template = _template;
 const errorDev = /*#__PURE__*/Object.freeze({
       __proto__: null,
       template: template
+});
+
+const wassap = defineEventHandler(() => {
+  return "https://chat.whatsapp.com/G81tmsan3Jy7RiX46AP8rZ";
+});
+
+const wassap$1 = /*#__PURE__*/Object.freeze({
+      __proto__: null,
+      default: wassap
 });
 
 const appRootId = "__nuxt";
