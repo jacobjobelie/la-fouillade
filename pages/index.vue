@@ -22,8 +22,9 @@
             borderColor="border-yellow-400" />
         </section>
 
-        <section class="w-full px-4 flex items-center justify-center">
+        <section class="w-full px-4 flex items-center justify-center gap-4">
           <a target="_blank" class="h3 link" :href="linksRef.gLongcolNajac">🔗 google maps</a>
+          <a target="_blank" class="h3 link" :href="linksRef.longcol">🔗 the Château </a>
         </section>
 
         <section class="w-full h-full flex flex-col items-center justify-center gap-4">
