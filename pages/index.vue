@@ -70,11 +70,6 @@
                 <Text h2>Château de Longcol</Text>
               </NuxtLink>
             </div>
-            <Text p>Once in Toulouse there are 2 options.</Text>
-            <div class="w-full flex flex-row <sm:(flex-col)">
-              <div> car</div>
-              <div> train</div>
-            </div>
           </div>
           <div class="w-full">
             <!-- <Travel>
