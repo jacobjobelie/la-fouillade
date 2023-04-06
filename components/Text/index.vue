@@ -17,6 +17,7 @@ type Props = {
   sm?: boolean
   p?: boolean
   em?: boolean
+  link?: boolean
   b?: boolean
   code?: boolean
   title?: boolean
@@ -46,6 +47,8 @@ const styleList = computed(() => {
     list.push('sm')
   } else if (props.bg) {
     list.push('bg')
+  } else if (props.link) {
+    list.push('link')
   } else {
     list.push('p')
   }
@@ -81,58 +84,6 @@ span::selection {
   @apply text-white bg-gray-500;
 }
 
-.hero {
-  @apply !text-7xl !my-3rem !font-light;
-  @apply <sm: ( !text-5xl);
-}
-
-.h1 {
-  /* @apply text-5xl my-2.65rem font-semibold; */
-  @apply text-5xl font-semibold;
-  @apply <sm: (text-3xl);
-}
-
-.h2 {
-  /* @apply text-4xl my-1.25rem font-medium; */
-  @apply text-4xl font-medium;
-  @apply <sm: (text-2xl);
-}
-
-.h3 {
-  /* @apply text-3xl my-1.2rem font-medium; */
-  @apply text-3xl font-medium;
-  @apply <sm: (text-xl);
-}
-
-.h4 {
-  /* @apply text-xl my-2 font-medium; */
-  @apply text-xl font-medium;
-  @apply <sm: (text-lg);
-}
-
-.p {
-  /* @apply text-lg my-2; */
-  @apply text-lg;
-  @apply <md: (text-base);
-}
-
-.base {
-  @apply text-base;
-}
-
-.sm {
-  @apply text-sm;
-}
-
-.code {
-  @apply font-medium after: content-["`"] before:content-["`"] text-purple-500;
-  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
-}
-
-.title {
-  /* @apply my-8 font-bold; */
-  @apply font-bold;
-}
 
 span em,
 .em {

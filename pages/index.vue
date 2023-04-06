@@ -14,7 +14,6 @@
                 <h2 class=" m-0 mt-6 header-text header-color extrabold">La Fouillade - Château du Longcol</h2>
               </div>
             </PictureSlot>
-
           </div>
         </section>
 
@@ -23,9 +22,11 @@
             borderColor="border-yellow-400" />
         </section>
 
+        <section class="w-full px-4 flex items-center justify-center">
+          <a target="_blank" class="h3 link" :href="linksRef.gLongcolNajac">🔗 google maps</a>
+        </section>
 
         <section class="w-full h-full flex flex-col items-center justify-center gap-4">
-
           <div class="relative w-full flex items-center justify-center flex-col gap-4">
             <div class="absolute w-11/12 h-1/2 bg-yellow-300 bg-opacity-50 translate-y-1/2  rounded-2xl "></div>
             <div class="absolute w-11/12 h-1/2 bg-green-500 bg-opacity-20 translate-y-1/2    rounded-2xl"></div>
@@ -49,6 +50,7 @@
               marble="/img/marble/SKM_C65823022714100.pdf.png" borderColor="border-green-400" />
           </div>
         </section>
+
         <section class="w-full px-4 flex items-center justify-center">
           <Text @click="fetchWassap" h3>{{ wassapText }}</Text>
         </section>
@@ -94,11 +96,13 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
 import { ref } from 'vue'
+import { links } from '../utils/data'
 // import { createGif } from '../ts/gif'
 // import { createMap } from '../ts/ol'
 
 const welcom = ref('Destination: La Fouillade - July 1-8 2023')
 const mapEl = ref<HTMLDivElement>()
+const linksRef = ref(links)
 const cEl = ref<HTMLDivElement>()
 const wassapText = ref('🔗 Click to get Invite link')
 
