@@ -102,10 +102,14 @@ const mapEl = ref<HTMLDivElement>()
 const cEl = ref<HTMLDivElement>()
 const wassapText = ref('🔗 Click to get Invite link')
 
+function b64_to_utf8(str: string): string {
+  return decodeURIComponent(escape(window.atob(str)));
+}
+
 async function fetchWassap() {
   if (wassapText.value.includes('https://')) return
-  const { data } = await useAsyncData('count', () => $fetch('/api/wassap'))
-  wassapText.value = data.value || 'failed to get the link :('
+  const { data } = await useAsyncData<string>('count', () => $fetch('/api/wassap'))
+  wassapText.value = data.value || b64_to_utf8('aHR0cHM6Ly9jaGF0LndoYXRzYXBwLmNvbS9HODF0bXNhbjNKeTdSaVg0NkFQOHJa') || 'failed to get the link :('
 }
 
 
