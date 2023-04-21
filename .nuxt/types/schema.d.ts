@@ -1,4 +1,4 @@
-import { NuxtModule } from 'nuxt/schema'
+import { NuxtModule, RuntimeConfig } from 'nuxt/schema'
 declare module 'nuxt/schema' {
   interface NuxtConfig {
     ["windicss"]?: typeof import("nuxt-windicss").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
@@ -45,7 +45,7 @@ declare module 'nuxt/schema' {
 
       sources: any,
 
-      ignores: Array<string>,
+      ignores: Array<any>,
 
       locales: Array<any>,
 
@@ -133,6 +133,8 @@ declare module 'nuxt/schema' {
          clientDB: boolean,
 
          stripQueryParameters: boolean,
+
+         advancedIgnoresPattern: boolean,
       },
    },
   }
@@ -148,6 +150,8 @@ declare module 'nuxt/schema' {
          stripQueryParameters: boolean,
 
          clientDB: boolean,
+
+         advancedIgnoresPattern: boolean,
       },
 
       api: {
@@ -226,3 +230,13 @@ declare module 'nuxt/schema' {
    },
   }
 }
+declare module 'vue' {
+        interface ComponentCustomProperties {
+          $config: RuntimeConfig
+        }
+      }
+declare module '@vue/runtime-dom' {
+        interface ComponentCustomProperties {
+          $config: RuntimeConfig
+        }
+      }

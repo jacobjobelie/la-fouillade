@@ -1,9 +1,9 @@
 {
-  "_hash": "DmtvNzPkoz",
+  "_hash": "OoqWQ9E6Nz",
   "project": {
-    "rootDir": "/Users/sam/Documents/Work/la-fouillade"
+    "rootDir": "/Users/sam/Documents/Projects/la-fouillade"
   },
   "versions": {
-    "nuxt": "3.3.3"
+    "nuxt": "3.4.2"
   }
 }

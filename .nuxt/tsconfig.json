@@ -65,9 +65,6 @@
       "#color-mode-options": [
         ".nuxt/color-mode-options"
       ],
-      "@vueuse/head": [
-        "node_modules/@unhead/vue/dist/index"
-      ],
       "#imports": [
         ".nuxt/imports"
       ],

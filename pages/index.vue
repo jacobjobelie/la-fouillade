@@ -71,6 +71,12 @@
                 <Text h2>Château de Longcol</Text>
               </NuxtLink>
             </div>
+            <div
+              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center">
+              <NuxtLink to="/travel/menu" class="underline">
+                <Text h2>🔗 1rst night menu </Text>
+              </NuxtLink>
+            </div>
           </div>
           <div class="w-full">
             <!-- <Travel>
@@ -100,17 +106,6 @@ const welcom = ref('Destination: La Fouillade - July 1-8 2023')
 const mapEl = ref<HTMLDivElement>()
 const linksRef = ref(links)
 const cEl = ref<HTMLDivElement>()
-const wassapText = ref('🔗 Click to get Invite link')
-
-function b64_to_utf8(str: string): string {
-  return decodeURIComponent(escape(window.atob(str)));
-}
-
-async function fetchWassap() {
-  if (wassapText.value.includes('https://')) return
-  const { data } = await useAsyncData<string>('count', () => $fetch('/api/wassap'))
-  wassapText.value = data.value || b64_to_utf8('aHR0cHM6Ly9jaGF0LndoYXRzYXBwLmNvbS9HODF0bXNhbjNKeTdSaVg0NkFQOHJa') || 'failed to get the link :('
-}
 
 
 </script>
