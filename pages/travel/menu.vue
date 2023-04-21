@@ -14,14 +14,14 @@
             <div class="absolute w-11/12 h-1/2 bg-yellow-300 bg-opacity-50 translate-y-1/2  rounded-2xl "></div>
             <div class="absolute w-11/12 h-1/2 bg-green-500 bg-opacity-20 translate-y-1/2    rounded-2xl"></div>
             <div
-              class="w-9/12 py-8 bg-gray-800 text-light-800 rounded-2xl flex flex-col gap-4 items-center justify-center border-green-300 border-4 z-10">
+              class="content py-8 bg-gray-800 text-light-800 rounded-2xl flex flex-col gap-4 items-center justify-center border-green-300 border-4 z-10 px-2">
               <Text h4>For the first night, for those that are there, we can eat together. This one (and the big meal
                 mid-week) is on the house!</Text>
               <Text h2>Choose 1 from each course & let us know in the Whatsapp group (homepage)</Text>
               <Text h3>Breakfast the next morning? take a look at the end.</Text>
             </div>
             <div
-              class="w-9/12 py-4 px-2 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-4">
+              class="content py-4 px-2 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-4">
               <div class="flex flex-row justify-start align-bottom items-center gap-2 whitespace-nowrap flex-wrap">
                 <img class=" w-full h-full object-cover" src="/img/meal.png" />
               </div>
