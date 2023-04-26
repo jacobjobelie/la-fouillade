@@ -106,6 +106,17 @@ const welcom = ref('Destination: La Fouillade - July 1-8 2023')
 const mapEl = ref<HTMLDivElement>()
 const linksRef = ref(links)
 const cEl = ref<HTMLDivElement>()
+const wassapText = ref('🔗 Click to get Invite link')
+
+function b64_to_utf8(str: string): string {
+  return decodeURIComponent(escape(window.atob(str)));
+}
+
+async function fetchWassap() {
+  if (wassapText.value.includes('https://')) return
+  const { data } = await useAsyncData<string>('count', () => $fetch('/api/wassap'))
+  wassapText.value = data.value || b64_to_utf8('aHR0cHM6Ly9jaGF0LndoYXRzYXBwLmNvbS9HODF0bXNhbjNKeTdSaVg0NkFQOHJa') || 'failed to get the link :('
+}
 
 
 </script>
