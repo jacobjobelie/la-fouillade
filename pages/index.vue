@@ -77,6 +77,12 @@
                 <Text h2>🔗 1rst night menu </Text>
               </NuxtLink>
             </div>
+            <div
+              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center">
+              <NuxtLink to="/travel/bikes" class="underline">
+                <Text h2>🔗 bikes </Text>
+              </NuxtLink>
+            </div>
           </div>
           <div class="w-full">
             <!-- <Travel>
