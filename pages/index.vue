@@ -65,16 +65,39 @@
               <Text h1>Travel</Text>
             </div>
             <div
-              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center">
+              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-8">
               <NuxtLink to="/travel/toulouse" class="underline">
                 <Text h2>🔗 Toulouse → </Text>
                 <Text h2>Château de Longcol</Text>
               </NuxtLink>
             </div>
             <div
-              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center">
-              <NuxtLink to="/travel/menu" class="underline">
-                <Text h2>🔗 1rst night menu </Text>
+              class="w-9/12 py-8 bg-gray-800 text-light-800 rounded-2xl flex items-center justify-center border-green-300 border-4 z-10">
+              <Text h1>Meals</Text>
+            </div>
+            <div
+              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-8">
+              <NuxtLink to="/meals/menu" class="underline">
+                <Text h2>🔗 1st Night Menu </Text>
+              </NuxtLink>
+              <NuxtLink to="/meals/wedding" class="underline">
+                <Text h2>🔗 Wednesday Wedding Celebration</Text>
+              </NuxtLink>
+              <NuxtLink to="/meals/groceries" class="underline">
+                <Text h2>🔗 Groceries</Text>
+              </NuxtLink>
+            </div>
+            <div
+              class="w-9/12 py-8 bg-gray-800 text-light-800 rounded-2xl flex items-center justify-center border-green-300 border-4 z-10">
+              <Text h1>Excursions</Text>
+            </div>
+            <div
+              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-8">
+              <NuxtLink to="/travel/bikes" class="underline">
+                <Text h2>🔗 Bike Rental</Text>
+              </NuxtLink>
+              <NuxtLink to="/travel/daytrips" class="underline">
+                <Text h2>🔗 Day Trips</Text>
               </NuxtLink>
             </div>
           </div>

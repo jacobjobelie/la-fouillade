@@ -26,7 +26,7 @@ html, body{
   box-sizing: border-box;
   --main-c:rgba(9, 81, 16, 0.8);
   --neon-c:rgba(176, 255, 5, 0.8);
-  --peach-c:rgba(255, 173, 73, 0.8);
+  --peach-c:rgba(255, 173, 73, 0.4);
 }
 
 .header-color {
@@ -79,6 +79,12 @@ li{
 .content{
 
   @apply w-9/12 <sm: (w-full);
+
+}
+
+.cta-text{
+
+  @apply text-rose-600 dark:(text-rose-500) font-black;
 
 }
 
