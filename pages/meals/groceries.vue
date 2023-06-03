@@ -16,7 +16,7 @@
             <div class="absolute w-11/12 h-1/2 bg-green-500 bg-opacity-20 translate-y-1/2    rounded-2xl"></div>
             <div
               class="content py-8 bg-gray-800 text-light-800 rounded-2xl flex flex-col gap-4 items-center justify-center border-green-300 border-4 z-10 px-4">
-              <Text h3>Perhaps we cook some meals together?</Text>
+              <Text h3>Perhaps we cook some meals together? Keeping it simple, less cook, more play</Text>
             </div>
             <div
               class="content py-8 bg-gray-800 text-light-800 rounded-2xl flex flex-col gap-4 items-center justify-center border-green-300 border-4 z-10 px-4">
@@ -37,6 +37,18 @@
               <div
                 class="content py-8 bg-gray-800 text-light-800 rounded-2xl flex flex-col gap-4 items-center justify-center border-green-300 border-4 z-10 px-4">
                 <Text h2>fresh markets</Text>
+                <Text h3>
+                  Jeudi : VILLEFRANCHE DE ROUERGUE 20 min
+                  <Text h3>
+                    Vendredi : SAUVETERRE DE ROUERGUE 45min
+                  </Text>
+                  <Text h3>
+                    Samedi : CORDES SUR CIEL 35 min
+                  </Text>
+                  <Text h3>
+                    Dimanche : NAJAC 10 min / ST ANTONIN NOBLE VAL 45min / VILLENEUVE D’AVEYRON 35 min
+                  </Text>
+                </Text>
                 <Text h3>Marché de villefranche-de-rouergue</Text>
                 <Text h4>Sundays 8am-13:00</Text>
                 <NuxtLink to="https://www.bastides-gorges-aveyron.fr/savourer/marches/marche-de-villefranche-de-rouergue/"

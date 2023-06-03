@@ -18,11 +18,28 @@
               <div
                 class="py-2 bg-gray-800 text-light-800 rounded-2xl flex gap-4 flex-row items-center flex-wrap justify-center <md:(gap-2 items-start justify-start)">
                 <Text h4>There is a place</Text>
-                <NuxtLink href="https://www.activites-loisirs-aveyron.com/en-gb/home">AAGAC</NuxtLink> <Text>in Najac,
+                <NuxtLink className="a-light" href="https://www.activites-loisirs-aveyron.com/en-gb/home">AAGAC</NuxtLink>
+                <Text>in Najac,
                   that
                   rents Electric bikes (and offers other activities)</Text>
                 <Text h3>With an electric bike it should be do-able to ride to the nearby towns.</Text>
                 <Text h4>170 euros for 5 days. Delivery & pickup to Château & helmet included.</Text>
+
+                <h3 class="cta-text">
+                  Fill out the form below or text the WhatsApp group on the home page.
+                </h3>
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfwkmTOe__bHvyfaMUep67-8s-eaSbPZX8J4H_DvynOzS3y4w/viewform?embedded=true"
+                  width="640" height="440" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+              </div>
+            </div>
+            <div
+              class=" py-4 px-2 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-4">
+              <div class="flex flex-row justify-start align-bottom items-center gap-2 whitespace-nowrap flex-wrap">
+                <NuxtLink className="a-dark"
+                  href="https://www.alltrails.com/explore/france/aveyron/la-fouillade?b_tl_lat=44.25894257508321&b_tl_lng=1.9950115882961654&b_br_lat=44.25367284956798&b_br_lng=2.007562853995097&mobileMap=true">
+                  🔗 alltrails at the chateau/</NuxtLink>
               </div>
             </div>
             <div

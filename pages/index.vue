@@ -44,6 +44,10 @@
 
         </section>
 
+        <section class="w-full h-full px-4">
+          <Picture class="w-full h-500px" srcset="/img/tourism.jpg" marble="/img/marble/SKM_C65823022714160.pdf.png"
+            borderColor="border-yellow-400" />
+        </section>
 
         <section class="w-full h-full px-4 ">
           <div class="w-full h-full ">
@@ -66,10 +70,11 @@
             </div>
             <div
               class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-8">
-              <NuxtLink to="/travel/toulouse" class="underline">
+              <NuxtLink className="a-dark" to="/travel/toulouse" class="underline">
                 <Text h2>🔗 Toulouse → </Text>
                 <Text h2>Château de Longcol</Text>
               </NuxtLink>
+              <Text h3>^form if you need picking up from train station.</Text>
             </div>
             <div
               class="w-9/12 py-8 bg-gray-800 text-light-800 rounded-2xl flex items-center justify-center border-green-300 border-4 z-10">
@@ -77,13 +82,13 @@
             </div>
             <div
               class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-8">
-              <NuxtLink to="/meals/menu" class="underline">
+              <NuxtLink className="a-dark" to="/meals/menu" class="underline">
                 <Text h2>🔗 1st Night Menu </Text>
               </NuxtLink>
-              <NuxtLink to="/meals/wedding" class="underline">
+              <NuxtLink className="a-dark" to="/meals/wedding" class="underline">
                 <Text h2>🔗 Wednesday Wedding Celebration</Text>
               </NuxtLink>
-              <NuxtLink to="/meals/groceries" class="underline">
+              <NuxtLink className="a-dark" to="/meals/groceries" class="underline">
                 <Text h2>🔗 Groceries</Text>
               </NuxtLink>
             </div>
@@ -93,19 +98,14 @@
             </div>
             <div
               class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center gap-8">
-              <NuxtLink to="/travel/bikes" class="underline">
+              <NuxtLink className="a-dark" to="/travel/bikes" class="underline">
                 <Text h2>🔗 Bike Rental</Text>
               </NuxtLink>
-              <NuxtLink to="/travel/daytrips" class="underline">
+              <NuxtLink className="a-dark" to="/travel/daytrips" class="underline">
                 <Text h2>🔗 Day Trips</Text>
               </NuxtLink>
             </div>
-            <div
-              class="w-9/12 py-4 bg-green-200 text-gray-700 rounded-2xl flex items-center justify-center flex-col border-purple-300 border-4 z-10 text-center">
-              <NuxtLink to="/travel/bikes" class="underline">
-                <Text h2>🔗 bikes </Text>
-              </NuxtLink>
-            </div>
+
           </div>
           <div class="w-full">
             <!-- <Travel>
