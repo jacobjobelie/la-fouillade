@@ -1,55 +1,56 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/vue/server-renderer/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/ofetch/dist/node.mjs';
-import destr from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/destr/dist/index.mjs';
-import { createCall, createFetch } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/hookable/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/ohash/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/ufo/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/radix3/dist/index.mjs';
-import { visit } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unist-util-visit/index.js';
-import { createUtils } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/@windicss/plugin-utils/dist/index.mjs';
-import { extname, join } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unified/index.js';
-import { toString } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/mdast-util-to-string/index.js';
-import { preprocess } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/micromark/dev/lib/preprocess.js';
-import { postprocess } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/micromark/dev/lib/postprocess.js';
-import { stringifyPosition } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/micromark-util-resolve-all/index.js';
-import remarkEmoji from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/rehype-raw/index.js';
-import remarkMDC, { parseFrontMatter } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/remark-mdc/dist/index.mjs';
-import remarkParse from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/remark-parse/index.js';
-import remark2rehype from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/remark-rehype/index.js';
-import { all } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/detab/index.js';
-import { u } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unist-builder/index.js';
-import { encode } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/mdurl/index.js';
-import slugify from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/slugify/slugify.js';
-import { position } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unist-util-position/index.js';
-import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/shiki-es/dist/shiki.node.mjs';
-import { consola } from 'file:///Users/sam/Documents/Projects/la-fouillade/node_modules/unenv/runtime/npm/consola.mjs';
+import { provider, isWindows } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseStatus, getRequestHeader, setResponseHeader, getRequestHeaders, getQuery as getQuery$1, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/devalue/index.js';
+import { renderToString } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/vue/server-renderer/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ofetch/dist/node.mjs';
+import destr from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/destr/dist/index.mjs';
+import { createCall, createFetch } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/hookable/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/scule/dist/index.mjs';
+import { klona } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ohash/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/ufo/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/radix3/dist/index.mjs';
+import { visit } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-visit/index.js';
+import { createUtils } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/@windicss/plugin-utils/dist/index.mjs';
+import { extname, join } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unified/index.js';
+import { toString } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/mdast-util-to-string/index.js';
+import { preprocess } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark/dev/lib/preprocess.js';
+import { postprocess } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark/dev/lib/postprocess.js';
+import { stringifyPosition } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/micromark-util-resolve-all/index.js';
+import remarkEmoji from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/rehype-raw/index.js';
+import remarkMDC, { parseFrontMatter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-mdc/dist/index.mjs';
+import remarkParse from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-parse/index.js';
+import remark2rehype from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/remark-rehype/index.js';
+import { all } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/detab/index.js';
+import { u } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-builder/index.js';
+import { encode } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/mdurl/index.js';
+import slugify from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/slugify/slugify.js';
+import { position } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unist-util-position/index.js';
+import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/shiki-es/dist/shiki.node.mjs';
+import { consola } from 'file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/unenv/runtime/npm/consola.mjs';
 
 const inlineAppConfig = {};
 
@@ -57,48 +58,219 @@ const inlineAppConfig = {};
 
 const appConfig = defuFn(inlineAppConfig);
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false,"advancedIgnoresPattern":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4000/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}}},"content":{"cacheVersion":2,"cacheIntegrity":"DEUS1EsQEX","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":[],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false,"advancedIgnoresPattern":false}}};
+const _inlineRuntimeConfig = {
+  "app": {
+    "baseURL": "/",
+    "buildAssetsDir": "/_nuxt/",
+    "cdnURL": ""
+  },
+  "nitro": {
+    "envPrefix": "NUXT_",
+    "routeRules": {
+      "/__nuxt_error": {
+        "cache": false
+      }
+    }
+  },
+  "public": {
+    "content": {
+      "locales": [],
+      "defaultLocale": "",
+      "integrity": "",
+      "experimental": {
+        "stripQueryParameters": false,
+        "clientDB": false,
+        "advancedIgnoresPattern": false
+      },
+      "api": {
+        "baseURL": "/api/_content"
+      },
+      "navigation": {
+        "fields": []
+      },
+      "tags": {
+        "p": "prose-p",
+        "a": "prose-a",
+        "blockquote": "prose-blockquote",
+        "code-inline": "prose-code-inline",
+        "code": "prose-code",
+        "em": "prose-em",
+        "h1": "prose-h1",
+        "h2": "prose-h2",
+        "h3": "prose-h3",
+        "h4": "prose-h4",
+        "h5": "prose-h5",
+        "h6": "prose-h6",
+        "hr": "prose-hr",
+        "img": "prose-img",
+        "ul": "prose-ul",
+        "ol": "prose-ol",
+        "li": "prose-li",
+        "strong": "prose-strong",
+        "table": "prose-table",
+        "thead": "prose-thead",
+        "tbody": "prose-tbody",
+        "td": "prose-td",
+        "th": "prose-th",
+        "tr": "prose-tr"
+      },
+      "highlight": false,
+      "wsUrl": "ws://localhost:4000/",
+      "documentDriven": false,
+      "host": "",
+      "trailingSlash": false,
+      "anchorLinks": {
+        "depth": 4,
+        "exclude": [
+          1
+        ]
+      }
+    }
+  },
+  "content": {
+    "cacheVersion": 2,
+    "cacheIntegrity": "DEUS1EsQEX",
+    "transformers": [],
+    "base": "",
+    "api": {
+      "baseURL": "/api/_content"
+    },
+    "watch": {
+      "ws": {
+        "port": {
+          "port": 4000,
+          "portRange": [
+            4000,
+            4040
+          ]
+        },
+        "hostname": "localhost",
+        "showURL": false
+      }
+    },
+    "sources": {},
+    "ignores": [],
+    "locales": [],
+    "defaultLocale": "",
+    "highlight": false,
+    "markdown": {
+      "tags": {
+        "p": "prose-p",
+        "a": "prose-a",
+        "blockquote": "prose-blockquote",
+        "code-inline": "prose-code-inline",
+        "code": "prose-code",
+        "em": "prose-em",
+        "h1": "prose-h1",
+        "h2": "prose-h2",
+        "h3": "prose-h3",
+        "h4": "prose-h4",
+        "h5": "prose-h5",
+        "h6": "prose-h6",
+        "hr": "prose-hr",
+        "img": "prose-img",
+        "ul": "prose-ul",
+        "ol": "prose-ol",
+        "li": "prose-li",
+        "strong": "prose-strong",
+        "table": "prose-table",
+        "thead": "prose-thead",
+        "tbody": "prose-tbody",
+        "td": "prose-td",
+        "th": "prose-th",
+        "tr": "prose-tr"
+      },
+      "anchorLinks": {
+        "depth": 4,
+        "exclude": [
+          1
+        ]
+      },
+      "remarkPlugins": {},
+      "rehypePlugins": {}
+    },
+    "yaml": {},
+    "csv": {
+      "delimeter": ",",
+      "json": true
+    },
+    "navigation": {
+      "fields": []
+    },
+    "documentDriven": false,
+    "experimental": {
+      "clientDB": false,
+      "stripQueryParameters": false,
+      "advancedIgnoresPattern": false
+    }
+  }
+};
 const ENV_PREFIX = "NITRO_";
-const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
-overrideConfig(_runtimeConfig);
-const runtimeConfig = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => runtimeConfig;
-deepFreeze(appConfig);
-function getEnv(key) {
+const ENV_PREFIX_ALT = _inlineRuntimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
+const _sharedRuntimeConfig = _deepFreeze(
+  _applyEnv(klona(_inlineRuntimeConfig))
+);
+function useRuntimeConfig(event) {
+  if (!event) {
+    return _sharedRuntimeConfig;
+  }
+  if (event.context.nitro.runtimeConfig) {
+    return event.context.nitro.runtimeConfig;
+  }
+  const runtimeConfig = klona(_inlineRuntimeConfig);
+  _applyEnv(runtimeConfig);
+  event.context.nitro.runtimeConfig = runtimeConfig;
+  return runtimeConfig;
+}
+_deepFreeze(klona(appConfig));
+function _getEnv(key) {
   const envKey = snakeCase(key).toUpperCase();
   return destr(
     process.env[ENV_PREFIX + envKey] ?? process.env[ENV_PREFIX_ALT + envKey]
   );
 }
-function isObject$1(input) {
+function _isObject(input) {
   return typeof input === "object" && !Array.isArray(input);
 }
-function overrideConfig(obj, parentKey = "") {
+function _applyEnv(obj, parentKey = "") {
   for (const key in obj) {
     const subKey = parentKey ? `${parentKey}_${key}` : key;
-    const envValue = getEnv(subKey);
-    if (isObject$1(obj[key])) {
-      if (isObject$1(envValue)) {
+    const envValue = _getEnv(subKey);
+    if (_isObject(obj[key])) {
+      if (_isObject(envValue)) {
         obj[key] = { ...obj[key], ...envValue };
       }
-      overrideConfig(obj[key], subKey);
+      _applyEnv(obj[key], subKey);
     } else {
       obj[key] = envValue ?? obj[key];
     }
   }
+  return obj;
 }
-function deepFreeze(object) {
+function _deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
     const value = object[name];
     if (value && typeof value === "object") {
-      deepFreeze(value);
+      _deepFreeze(value);
     }
   }
   return Object.freeze(object);
 }
+new Proxy(/* @__PURE__ */ Object.create(null), {
+  get: (_, prop) => {
+    console.warn(
+      "Please use `useRuntimeConfig()` instead of accessing config directly."
+    );
+    const runtimeConfig = useRuntimeConfig();
+    if (prop in runtimeConfig) {
+      return runtimeConfig[prop];
+    }
+    return void 0;
+  }
+});
 
-const serverAssets = [{"baseName":"server","dir":"/Users/sam/Documents/Projects/la-fouillade/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/Users/selie/Documents/Hacks/la-fouillade/server/assets"}];
 
 const assets = createStorage();
 
@@ -110,12 +282,12 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/sam/Documents/Projects/la-fouillade/content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/sam/Documents/Projects/la-fouillade/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/sam/Documents/Projects/la-fouillade","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/sam/Documents/Projects/la-fouillade/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/sam/Documents/Projects/la-fouillade/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/sam/Documents/Projects/la-fouillade/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt/content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/selie/Documents/Hacks/la-fouillade","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/selie/Documents/Hacks/la-fouillade/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/selie/Documents/Hacks/la-fouillade/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -388,6 +560,9 @@ function createRouteRulesHandler() {
           targetPath = withoutBase(targetPath, strpBase);
         }
         target = joinURL(target.slice(0, -3), targetPath);
+      } else if (event.path.includes("?")) {
+        const query = getQuery(event.path);
+        target = withQuery(target, query);
       }
       return proxyRequest(event, target, {
         fetch: $fetch.raw,
@@ -412,7 +587,7 @@ function getRouteRulesForPath(path) {
 
 const config = {"darkMode":"class","theme":{"extend":{"boxShadow":{"nsm":"0 2px 8px 2px rgb(104 112 118 / 0.07), 0 2px 4px -1px rgb(104 112 118 / 0.04)","nmd":"0 12px 20px 6px rgb(104 112 118 / 0.08)","nlg":"0 12px 34px 6px rgb(104 112 118 / 0.18)","nxl":"0 25px 65px 0px rgb(104 112 118 / 0.35)"}}},"shortcuts":{"flex-center":"flex justify-center items-center","flex-between":"flex justify-between items-center","btn":{"color":"white","@apply":"py-2 px-4 font-semibold rounded-lg","&:hover":{"@apply":"bg-green-700","color":"black"}},"txt-2":" dark:text-gray-200 text-gray-700","bg-success":" dark:bg-green-400 bg-green-400 hover:bg-green-100","btn-green":"text-white bg-green-500 hover:bg-green-700"},"plugins":[],"css":["assets/style.css","@fontsource/lato","@fontsource/jetbrains-mono","@fontsource/material-icons","@fontsource/material-icons-outlined","@fortawesome/fontawesome-svg-core/styles.css"],"content":{"highlight":{"theme":{"default":"github-dark"},"preload":["c","cpp","java","shell","python","js","ts","css","html"]}}};
 
-const _PtOl6XkSS6 = async (nitroApp) => {
+const _CNTTPx5jdr = async (nitroApp) => {
   const utils = createUtils({
     enablePreflight: false,
     scan: false,
@@ -453,15 +628,15 @@ const _PtOl6XkSS6 = async (nitroApp) => {
 
 const script = "\"use strict\";const w=window,de=document.documentElement,knownColorSchemes=[\"dark\",\"light\"],preference=window.localStorage.getItem(\"nuxt-color-mode\")||\"system\";let value=preference===\"system\"?getColorScheme():preference;const forcedColorMode=de.getAttribute(\"data-color-mode-forced\");forcedColorMode&&(value=forcedColorMode),addColorScheme(value),w[\"__NUXT_COLOR_MODE__\"]={preference,value,getColorScheme,addColorScheme,removeColorScheme};function addColorScheme(e){const o=\"\"+e+\"\",t=\"\";de.classList?de.classList.add(o):de.className+=\" \"+o,t&&de.setAttribute(\"data-\"+t,e)}function removeColorScheme(e){const o=\"\"+e+\"\",t=\"\";de.classList?de.classList.remove(o):de.className=de.className.replace(new RegExp(o,\"g\"),\"\"),t&&de.removeAttribute(\"data-\"+t)}function prefersColorScheme(e){return w.matchMedia(\"(prefers-color-scheme\"+e+\")\")}function getColorScheme(){if(w.matchMedia&&prefersColorScheme(\"\").media!==\"not all\"){for(const e of knownColorSchemes)if(prefersColorScheme(\":\"+e).matches)return e}return\"light\"}\n";
 
-const _KP2DAmLwW8 = (function(nitro) {
+const _m6JzmhzKUD = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _PtOl6XkSS6,
-_KP2DAmLwW8
+  _CNTTPx5jdr,
+_m6JzmhzKUD
 ];
 
 function defineRenderHandler(handler) {
@@ -3209,7 +3384,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file:///Users/sam/Documents/Projects/la-fouillade/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file:///Users/selie/Documents/Hacks/la-fouillade/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -3290,11 +3465,11 @@ function makeIgnored(ignores, experimental = false) {
 }
 
 const isPreview = (event) => {
-  const previewToken = getQuery(event).previewToken || getCookie(event, "previewToken");
+  const previewToken = getQuery$1(event).previewToken || getCookie(event, "previewToken");
   return !!previewToken;
 };
 const getPreview = (event) => {
-  const key = getQuery(event).previewToken || getCookie(event, "previewToken");
+  const key = getQuery$1(event).previewToken || getCookie(event, "previewToken");
   return { key };
 };
 
@@ -3512,7 +3687,7 @@ const getContentQuery = (event) => {
     return decodeQueryParams(params.replace(/.json$/, ""));
   }
   const qid = event.context.params?.qid?.replace(/.json$/, "");
-  const query = getQuery(event) || {};
+  const query = getQuery$1(event) || {};
   if (qid && query._params) {
     memory[qid] = parseJSONQueryParams(decodeURIComponent(query._params));
     if (memory[qid].where && !Array.isArray(memory[qid].where)) {
@@ -3561,7 +3736,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _xkjXFU = defineEventHandler(async (event) => {
+const _ok7Qeb = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (query.first) {
     const content = await serverQueryContent(event, query).findOne();
@@ -3592,7 +3767,7 @@ const _xkjXFU = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _aBEnDY = defineEventHandler(async (event) => {
+const _zscNKH = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -3694,7 +3869,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _Q1D32b = defineEventHandler(async (event) => {
+const _KJdSOO = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -3731,20 +3906,20 @@ const _Q1D32b = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_u9Slg3 = () => Promise.resolve().then(function () { return wassap$1; });
-const _lazy_hwSjGD = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_l4OOLV = () => Promise.resolve().then(function () { return wassap$1; });
+const _lazy_Gzzh7x = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/wassap', handler: _lazy_u9Slg3, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_hwSjGD, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _xkjXFU, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _xkjXFU, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _xkjXFU, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _aBEnDY, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _Q1D32b, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _Q1D32b, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _Q1D32b, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_hwSjGD, lazy: true, middleware: false, method: undefined }
+  { route: '/api/wassap', handler: _lazy_l4OOLV, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_Gzzh7x, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _ok7Qeb, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _zscNKH, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _KJdSOO, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _KJdSOO, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _KJdSOO, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_Gzzh7x, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -3766,6 +3941,7 @@ function createNitroApp() {
   globalThis.$fetch = $fetch;
   h3App.use(
     eventHandler((event) => {
+      event.context.nitro = event.context.nitro || {};
       const envContext = event.node.req.__unenv__;
       if (envContext) {
         Object.assign(event.context, envContext);
@@ -3885,9 +4061,10 @@ const appRootTag = "div";
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('/Users/sam/Documents/Projects/la-fouillade/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('/Users/selie/Documents/Hacks/la-fouillade/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('/Users/sam/Documents/Projects/la-fouillade/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/Users/selie/Documents/Hacks/la-fouillade/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -3942,19 +4119,22 @@ const getSPARenderer = lazyCachedFunction(async () => {
     renderToString
   };
 });
-const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.js(\?.*)?$/;
+const PAYLOAD_URL_RE = /\/_payload(\.[a-zA-Z0-9]+)?.json(\?.*)?$/ ;
 const renderer = defineRenderHandler(async (event) => {
   const nitroApp = useNitroApp();
-  const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery(event) : null;
+  const ssrError = event.node.req.url?.startsWith("/__nuxt_error") ? getQuery$1(event) : null;
   if (ssrError && ssrError.statusCode) {
     ssrError.statusCode = parseInt(ssrError.statusCode);
   }
   if (ssrError && event.node.req.socket.readyState !== "readOnly") {
-    throw createError("Cannot directly render error page!");
+    throw createError({
+      statusCode: 404,
+      statusMessage: "Page Not Found: /__nuxt_error"
+    });
   }
   const islandContext = void 0;
   let url = ssrError?.url || islandContext?.url || event.node.req.url;
-  const isRenderingPayload = PAYLOAD_URL_RE.test(url);
+  const isRenderingPayload = PAYLOAD_URL_RE.test(url) && !islandContext;
   if (isRenderingPayload) {
     url = url.substring(0, url.lastIndexOf("/")) || "/";
     event.node.req.url = url;
@@ -3973,10 +4153,15 @@ const renderer = defineRenderHandler(async (event) => {
     islandContext
   };
   const renderer = ssrContext.noSSR ? await getSPARenderer() : await getSSRRenderer();
-  const _rendered = await renderer.renderToString(ssrContext).catch((error) => {
-    throw !ssrError && ssrContext.payload?.error || error;
+  const _rendered = await renderer.renderToString(ssrContext).catch(async (error) => {
+    const _err = !ssrError && ssrContext.payload?.error || error;
+    await ssrContext.nuxt?.hooks.callHook("app:error", _err);
+    throw _err;
   });
   await ssrContext.nuxt?.hooks.callHook("app:rendered", { ssrContext });
+  if (ssrContext._renderResponse) {
+    return ssrContext._renderResponse;
+  }
   if (event.node.res.headersSent || event.node.res.writableEnded) {
     return;
   }
@@ -3988,14 +4173,14 @@ const renderer = defineRenderHandler(async (event) => {
     return response2;
   }
   const renderedMeta = await ssrContext.renderMeta?.() ?? {};
-  const inlinedStyles = "";
+  const inlinedStyles = Boolean(islandContext) ? await renderInlineStyles(ssrContext.modules ?? ssrContext._registeredComponents ?? []) : "";
   const NO_SCRIPTS = routeOptions.experimentalNoScripts;
   const htmlContext = {
     island: Boolean(islandContext),
     htmlAttrs: normalizeChunks([renderedMeta.htmlAttrs]),
     head: normalizeChunks([
       renderedMeta.headTags,
-      null,
+      null ,
       NO_SCRIPTS ? null : _rendered.renderResourceHints(),
       _rendered.renderStyles(),
       inlinedStyles,
@@ -4008,7 +4193,7 @@ const renderer = defineRenderHandler(async (event) => {
     ]),
     body: [_rendered.html],
     bodyAppend: normalizeChunks([
-      NO_SCRIPTS ? void 0 : renderPayloadScript({ ssrContext, data: ssrContext.payload }),
+      NO_SCRIPTS ? void 0 : renderPayloadJsonScript({ id: "__NUXT_DATA__", ssrContext, data: ssrContext.payload }) ,
       routeOptions.experimentalNoScripts ? void 0 : _rendered.renderScripts(),
       // Note: bodyScripts may contain tags other than <script>
       renderedMeta.bodyScripts
@@ -4054,20 +4239,38 @@ function renderHTMLDocument(html) {
 <body ${joinAttrs(html.bodyAttrs)}>${joinTags(html.bodyPrepend)}${joinTags(html.body)}${joinTags(html.bodyAppend)}</body>
 </html>`;
 }
+async function renderInlineStyles(usedModules) {
+  const styleMap = await getSSRStyles();
+  const inlinedStyles = /* @__PURE__ */ new Set();
+  for (const mod of usedModules) {
+    if (mod in styleMap) {
+      for (const style of await styleMap[mod]()) {
+        inlinedStyles.add(`<style>${style}</style>`);
+      }
+    }
+  }
+  return Array.from(inlinedStyles).join("");
+}
 function renderPayloadResponse(ssrContext) {
   return {
-    body: `export default ${devalue(splitPayload(ssrContext).payload)}`,
+    body: stringify(splitPayload(ssrContext).payload, ssrContext._payloadReducers) ,
     statusCode: ssrContext.event.node.res.statusCode,
     statusMessage: ssrContext.event.node.res.statusMessage,
     headers: {
-      "content-type": "text/javascript;charset=utf-8",
+      "content-type": "application/json;charset=utf-8" ,
       "x-powered-by": "Nuxt"
     }
   };
 }
-function renderPayloadScript(opts) {
-  opts.data.config = opts.ssrContext.config;
-  return `<script>window.__NUXT__=${devalue(opts.data)}<\/script>`;
+function renderPayloadJsonScript(opts) {
+  const attrs = [
+    'type="application/json"',
+    `id="${opts.id}"`,
+    `data-ssr="${!(opts.ssrContext.noSSR)}"`,
+    opts.src ? `data-src="${opts.src}"` : ""
+  ].filter(Boolean);
+  const contents = opts.data ? stringify(opts.data, opts.ssrContext._payloadReducers) : "";
+  return `<script ${attrs.join(" ")}>${contents}<\/script><script>window.__NUXT__={};window.__NUXT__.config=${uneval(opts.ssrContext.config)}<\/script>`;
 }
 function splitPayload(ssrContext) {
   const { data, prerenderedAt, ...initial } = ssrContext.payload;
@@ -4087,5 +4290,12 @@ const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
       __proto__: null,
       default: _virtual__headStatic
+});
+
+const styles = {};
+
+const styles$1 = /*#__PURE__*/Object.freeze({
+      __proto__: null,
+      default: styles
 });
 //# sourceMappingURL=index.mjs.map
