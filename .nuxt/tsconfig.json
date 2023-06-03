@@ -65,6 +65,9 @@
       "#color-mode-options": [
         ".nuxt/color-mode-options"
       ],
+      "#vue-router": [
+        ".nuxt/vue-router"
+      ],
       "#imports": [
         ".nuxt/imports"
       ],
