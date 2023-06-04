@@ -3,10 +3,10 @@
     <div class="w-full h-full">
       <div :class="`absolute h-full w-full ${borderColor} border-4 rounded-xl`" />
       <div class="absolute h-full w-full rounded-3rem bg-clip-border overflow-hidden ">
-        <img class="w-full h-full object-cover" :src="marble">
+        <img :class="`w-full h-full object-cover`" :src="marble">
       </div>
       <div :class="`relative w-11/12 h-full z-10 ${iw} flex items-center justify-center mx-auto py-4`">
-        <img class=" h-full self-center  object-cover " :src="srcset">
+        <img :class="`h-full self-center  ${contain ? 'object-contain' : 'object-cover'} `" :src="srcset">
       </div>
     </div>
   </div>
@@ -18,6 +18,7 @@ import { computed } from '@vue/reactivity'
 type Props = {
   srcset: string
   marble: string
+  contain?: boolean
   borderColor: string
   iw?: string
 }

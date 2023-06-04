@@ -45,8 +45,8 @@
         </section>
 
         <section class="w-full h-full px-4">
-          <Picture class="w-full h-500px" srcset="/img/tourism.jpg" marble="/img/marble/SKM_C65823022714160.pdf.png"
-            borderColor="border-yellow-400" />
+          <Picture contain class="w-full h-500px object-contain" :srcset="tImg"
+            marble="/img/marble/SKM_C65823022714160.pdf.png" borderColor="border-yellow-400" />
         </section>
 
         <section class="w-full h-full px-4 ">
@@ -127,15 +127,28 @@
 <script setup lang="ts">
 import { computed } from '@vue/reactivity'
 import { ref } from 'vue'
+import { useMediaQuery } from '@vueuse/core'
 import { links } from '../utils/data'
+import { image } from '@vee-validate/rules'
 // import { createGif } from '../ts/gif'
 // import { createMap } from '../ts/ol'
 
-const welcom = ref('Destination: La Fouillade - July 1-8 2023')
+const images = ref({
+  t: '/img/tourism.jpg',
+  tm: '/img/tourism-mobile.jpg',
+})
 const mapEl = ref<HTMLDivElement>()
 const linksRef = ref(links)
 const cEl = ref<HTMLDivElement>()
 const wassapText = ref('🔗 Click to get Invite link')
+
+const isSmallScreen = useMediaQuery('(min-width: 200px) and (max-width: 640px)')
+const isLargeScreen = useMediaQuery('(min-width: 641px)')
+const tImg = computed(() => {
+  if (isSmallScreen.value) return images.value.tm
+  if (isLargeScreen.value) return images.value.t
+})
+
 
 function b64_to_utf8(str: string): string {
   return decodeURIComponent(escape(window.atob(str)));
