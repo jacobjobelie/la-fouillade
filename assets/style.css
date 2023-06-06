@@ -35,6 +35,9 @@ html, body{
 .neon-color {
   color: var(--neon-c);
 }
+.neon-stroke {
+  -webkit-text-stroke-color:  var(--neon-c);
+}
 
 
 h1 {

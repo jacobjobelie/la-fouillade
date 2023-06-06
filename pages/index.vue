@@ -9,9 +9,9 @@
             <PictureSlot class="w-full " marble="/img/marble/IMG_4643.jpg" imgClass="">
               <div class="relative flex-col flex items-center justify-center org rounded-4xl text-green-200 px-4 py-8">
                 <div class="absolute w-full h-full header-border"></div>
-                <h1 class=" m-0 header-text header-color extrabold">Fête Fou</h1>
+                <h1 class=" m-0 header-text header-color extrabold neon-stroke  text-stroke-1">Fête Fou</h1>
                 <h3 class=" m-0 header-text neon-color header-neon extrabold">(crazy party)</h3>
-                <h2 class=" m-0 mt-6 header-text header-color extrabold">La Fouillade - Château du Longcol</h2>
+                <h2 class=" m-0 mt-6 header-text header-color extrabold ">La Fouillade - Château du Longcol</h2>
               </div>
             </PictureSlot>
           </div>
@@ -60,7 +60,7 @@
           <Text @click="fetchWassap" h3>{{ wassapText }}</Text>
         </section>
 
-        <section class="w-full h-full px-4 ">
+        <section class="w-full h-full px-4 mt-8">
           <div class="relative w-full flex items-center justify-center flex-col gap-4">
             <div class="absolute w-11/12 h-1/2 bg-yellow-300 bg-opacity-50 translate-y-1/2  rounded-2xl "></div>
             <div class="absolute w-11/12 h-1/2 bg-green-500 bg-opacity-20 translate-y-1/2    rounded-2xl"></div>
@@ -74,7 +74,7 @@
                 <Text h2>🔗 Toulouse → </Text>
                 <Text h2>Château de Longcol</Text>
               </NuxtLink>
-              <Text h3>^form if you need picking up from train station.</Text>
+              <Text h3>^use the form if you need picking up from train station in Najac.</Text>
             </div>
             <div
               class="w-9/12 py-8 bg-gray-800 text-light-800 rounded-2xl flex items-center justify-center border-green-300 border-4 z-10">
@@ -147,6 +147,7 @@ const isLargeScreen = useMediaQuery('(min-width: 641px)')
 const tImg = computed(() => {
   if (isSmallScreen.value) return images.value.tm
   if (isLargeScreen.value) return images.value.t
+  return images.value.t
 })
 
 
