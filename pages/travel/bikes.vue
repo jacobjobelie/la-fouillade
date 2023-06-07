@@ -18,7 +18,8 @@
               <div
                 class="py-2 bg-gray-800 text-light-800 rounded-2xl flex gap-4 flex-row items-center flex-wrap justify-center <md:(gap-2 items-start justify-start)">
                 <Text h4>There is a place</Text>
-                <NuxtLink className="a-light" href="https://www.activites-loisirs-aveyron.com/en-gb/home">AAGAC</NuxtLink>
+                <NuxtLink className="a-light" href="https://www.activites-loisirs-aveyron.com/en-gb/home">🔗 AAGAC
+                </NuxtLink>
                 <Text>in Najac,
                   that
                   rents Electric bikes (and offers other activities)</Text>
@@ -30,7 +31,7 @@
                 </h3>
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSfwkmTOe__bHvyfaMUep67-8s-eaSbPZX8J4H_DvynOzS3y4w/viewform?embedded=true"
-                  width="640" height="440" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                  width="100%" height="440" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
               </div>
             </div>

@@ -36,7 +36,7 @@ html, body{
   color: var(--neon-c);
 }
 .neon-stroke {
-  -webkit-text-stroke-color:  var(--neon-c);
+ -webkit-text-stroke-color:  var(--neon-c);
 }
 
 
@@ -51,7 +51,7 @@ h2 {
 }
 
 h3 {
-  @apply text-3xl  font-medium;
+  @apply text-3xl  font-medium whitespace-normal;
   @apply <sm: (text-xl);
 }
 
@@ -189,10 +189,10 @@ img[alt="img-lg"]
 }
 
 .a-light{
-  @apply text-blue-600 border-dashed border-1 border-blue-600 px-2 py-1 dark:(text-blue-200 border-blue-200) hover:(underline-light-200 underline-solid underline-2 underline)
+  @apply border-dashed border-1 border-blue-600 px-2 py-1 dark:( border-blue-200) hover:(underline-light-200 underline-solid underline-2 underline)
 }
 .a-dark{
-  @apply text-blue-200 border-dashed border-1 border-1 border-blue-200 px-2 py-1 dark:(text-blue-600 border-blue-600) hover:(underline-light-200 underline-solid underline-2 underline)
+  @apply  border-dashed border-1 border-1 border-blue-200 px-2 py-1 dark:(border-blue-600) hover:(underline-light-200 underline-solid underline-2 underline)
 }
 
 .base {
